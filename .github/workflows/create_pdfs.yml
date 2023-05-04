@@ -33,7 +33,7 @@ jobs:
       - uses: matthejue/texlive-action-personal-copy/full@master
         with:
           run: |
-            apk add make
+            # apk add make
             cd ./Tutorat_${{ github.event.inputs.number }}*
             latexmk -pdf main.tex
         # continue-on-error: true
