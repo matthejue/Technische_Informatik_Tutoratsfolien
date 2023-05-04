@@ -34,7 +34,7 @@ jobs:
         with:
           run: |
             # apk add make
-            cd ./Tutorat_${{ github.event.inputs.number }}*
+            cd ./Tutorat_${{ github.event.inputs.number }}
             latexmk -pdf main.tex
         # continue-on-error: true
 
@@ -42,8 +42,8 @@ jobs:
         uses: svenstaro/upload-release-action@v2
         with:
           repo_token: ${{ secrets.UPLOAD_TO_REPO }}
-          file: Tutorat_${{ github.event.inputs.number }}*/main.pdf
-          asset_name: Exercise_class_${{ github.event.inputs.number }}.pdf
+          file: Tutorat_${{ github.event.inputs.number }}/main.pdf
+          asset_name: Tutorat_${{ github.event.inputs.number }}.pdf
           tag: ${{ github.ref_name }}
           overwrite: true
-          body: "Document ${{ github.event.inputs.number }}.pdf was added / updated most recently"
+          body: "Document Tutorat_${{ github.event.inputs.number }}.pdf was added / updated most recently"
