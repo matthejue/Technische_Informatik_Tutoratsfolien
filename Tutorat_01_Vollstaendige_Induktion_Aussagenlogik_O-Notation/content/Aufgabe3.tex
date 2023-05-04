@@ -1,0 +1,68 @@
+%!Tex Root = ../main.tex
+% ./Packete.tex
+% ./Design.tex
+% ./Deklarationen.tex
+% ./Vorbereitung.tex
+% ./Aufgabe1.tex
+% ./Aufgabe2.tex
+% ./Aufgabe4.tex
+% ./Bonus.tex
+
+\section{Aufgabe 3}
+
+\setcounter{task}{1}
+
+\begin{frame}[allowframebreaks]{Aufgabe 3}{O-Notation}
+  \begin{requirementsnoinc}
+    \begin{align}
+      &\operatorname*{lim}_{n\to\infty}{\frac{f(n)}{g(n)}}\leq c        &\Rightarrow &f(n)\in O(g(n))     &\qquad(c\in\mathbb{N}_{0})\\
+      &\operatorname*{lim}_{n\rightarrow\infty}\frac{f(n)}{g(n)}=\infty &\Rightarrow &f(n)\not\in O(g(n)) & \\
+      &\operatorname*{lim}_{n\to\infty}{\frac{\log(c\cdot n)}{n}}=0     &            &                    &(c\in\mathbb{N}_{\geq1}) \\
+      &\operatorname*{lim}_{n\to\infty}{\frac{n}{(\log n)^{c}}}=\infty  &            &                    &(c\in\mathbb{N}_{\geq1}) 
+    \end{align}
+  \end{requirementsnoinc}
+  \begin{solutionnoinc}
+    \begin{dmath*}[compact]
+      \operatorname*{lim}_{n\to\infty}{\frac{f(n)}{g(n)}}
+      =\operatorname*{lim}_{n\to\infty}{\frac{100n+\log n}{n+(\log n)^{2}}}
+      \leq\operatorname*{lim}_{n\to\infty}{\frac{100n+\log n}{n+1^{2}}}
+      =\operatorname*{lim}_{n\to\infty}{\frac{100n+\frac{\log n}{n}}{1+{\frac{1}{n}}}}
+      ={\frac{100+0}{1+0}}
+      \overset{(3)}{=}100\in\mathrm{N}_{0}
+      \stackrel{\left(1\right)}{\Rightarrow}f(n)\in O(g(n))
+    \end{dmath*}
+  \end{solutionnoinc}
+  \begin{solution}
+    \begin{dmath*}[compact]
+      \operatorname*{lim}_{n\rightarrow\infty}{\frac{g(n)}{f(n)}}
+      =\operatorname*{lim}_{n\rightarrow\infty}{\frac{n+(\log n)^{2}}{100n+\log n}}
+      =\operatorname*{lim}_{n\rightarrow\infty}{\frac{1+{\frac{(\log n)^{2}}{n}}}{100+{\frac{\log n}{n}}}}
+      ={\frac{1+0}{100+0}}
+      \overset{(4)}{=}{\frac{1}{100}}
+      \leq1\in\mathbb{N}_{0}\;
+      \stackrel{\left(1\right)}{\Rightarrow}g(n)\in O\left(f(n)\right)
+    \end{dmath*}
+  \end{solution}
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Aufgabe 3}{O-Notation}
+  \begin{solutionnoinc}
+    \begin{dmath*}[compact]
+      \operatorname*{lim}_{n\to\infty}{\frac{f(n)}{g(n)}}
+      =\operatorname*{lim}_{n\to\infty}{\frac{{\frac{n^{2}}{\log n}}}{n(\log n)^{2}}}
+      =\operatorname*{lim}_{n\to\infty}{\frac{{\frac{n}{\log n}}}{(\log n)^{2}}}
+      =\operatorname*{lim}_{n\to\infty}{\frac{n}{(\log n)^{3}}}\ {\overset{(4)}{=}}\infty
+      \stackrel{(2)}{\Rightarrow}f(n)\notin O(g(n))
+    \end{dmath*}
+  \end{solutionnoinc}
+  \begin{solution}
+    \begin{dmath*}[compact]
+      \operatorname*{lim}_{n\to\infty}{\frac{g(n)}{f(n)}}
+      =\operatorname*{lim}_{n\to\infty}{\frac{n(\log n)^{2}}{{\frac{n^{2}}{\log n}}}}
+      =\operatorname*{lim}_{n\to\infty}{\frac{(\log n)^{2}}{{\frac{n}{\log n}}}}
+      =\operatorname*{lim}_{n\to\infty}{\frac{(\log n)^{3}}{n}}\ {\overset{L'Hopital}{=}}\infty
+      =0\in\mathbb{N}_{0}
+      \stackrel{\left(1\right)}{\Rightarrow}g(n)\in O(f(n))
+    \end{dmath*}
+  \end{solution}
+\end{frame}

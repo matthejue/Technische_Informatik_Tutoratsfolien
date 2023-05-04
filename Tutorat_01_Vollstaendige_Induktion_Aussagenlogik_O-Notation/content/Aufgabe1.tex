@@ -1,0 +1,38 @@
+%!Tex Root = ../main.tex
+% ./Packete.tex
+% ./Design.tex
+% ./Deklarationen.tex
+% ./Vorbereitung.tex
+% ./Aufgabe2.tex
+% ./Aufgabe3.tex
+% ./Aufgabe4.tex
+% ./Bonus.tex
+
+\section{Aufgabe 1}
+
+\setcounter{task}{1}
+
+\begin{frame}[allowframebreaks]{Aufgabe 1}{Vollständige Induktion}
+  \begin{requirementsnoinc}
+    \begin{itemize}
+      \item $\displaystyle\sum_{i=0}^{n}z^{i}={\frac{z^{n+1}-1}{z-1}}$
+      \item \alert{es gelte:} $\displaystyle z\in\mathbb{R}\setminus\{1\}\ \mathrm{und}\ n\in\mathbb{N}$
+    \end{itemize}
+  \end{requirementsnoinc}
+  \begin{solutionnoinc}
+    \begin{itemize}
+      \item \alert{Induktionsanfang:} $n=0$
+        \[
+          \sum_{i=0}^{0}z^{i}=1 = \frac{z-1}{z-1}=\frac{z^{0+1}-1}{z-1} 
+        \]
+      \item \alert{Induktionsschritt:} $n \to n+1$
+        \begin{align*}
+          \sum_{i=0}^{n+1}z^{i}&=(\sum_{i=0}^{n}z^{i})+z^{n+1}\\
+                               &= \frac{z^{n+1}-1}{z-1}+z^{n+1}\quad\mathrm{wegen~Induktionsvoraussetzung}\\
+                               &= \frac{z^{n+1}-1+z^{n+1}\cdot(z-1)}{z-1}\\
+                               &= \frac{z^{n+1}-1+z^{n+2}-z^{n+1}}{z-1}\\
+                               &= \frac{z^{n+2}-1}{z-1}
+        \end{align*}
+    \end{itemize}
+  \end{solutionnoinc}
+\end{frame}
