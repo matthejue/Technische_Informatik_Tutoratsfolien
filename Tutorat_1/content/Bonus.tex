@@ -37,15 +37,40 @@
       \item Mit $\epsilon(2)$ gilt wegen des Induktionsfalls auch $\epsilon(3)$.
       \item $\ldots$
     \end{enumerate}
-    \item asdf
   \end{itemize}
-  \begin{example}{Vollstständige Induktion}
-    \includegraphics[width=\textwidth]{./figures/vollstaendige_induktion.png}
-  \end{example}
+  \includegraphics[width=0.6\textwidth]{./figures/vollständige_induktion_1.png}
+  \includegraphics[width=0.8\textwidth]{./figures/vollständige_induktion_2.png}
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Bonus}{O-Notation}
+  \begin{itemize}
+    \item Man will Funktionen irendwie vergleichen und das einzige sinnvolle was man vergleichen kann ist die \alert{Wachstumsrate}, denn für zwei Funktionen kann gleichzeitig gelten: $g = O(f)$, also $g$ wächst nicht stärker als $f$ und $g > f$, also $g$ ist überall echt größer als $f$
+    \item Konstate Faktoren und Summanden $c \cdot x$ und $c + x$ sollen keine Rolle, aber es geht um \alert{Wachstumsrate}, Konstante Faktoren und Summanden spielen keine Rolle
+    \item Die Operatoren $O, \Omega, \Theta, o, \omega$ sind auf Funktionen, was die Operatoren $\le, \ge, =, <, >$ auf Zahlen sind
+    \item man sagt die \enquote{Laufzeit eines Algorihmus ist: $\Omega(n\cdot log(n))$}, man sagt \alert{NICHT}, dass ein \enquote{Algorithmus Laufzeit mindestens $O(n\cdot log(n))$ hat}
+    \item \alert{formal:} 
+    \begin{itemize}
+      \item $O(f)= \{g: \mathbb{N}\to\mathbb{R} | \exists n_0\in\mathbb{N}, \exists C > 0, \forall n\ge n_0, g(n)\le C \cdot f(n)\}$
+      \item $\Omega(f)= \{g: \mathbb{N}\to\mathbb{R} | \exists n_0\in\mathbb{N}, \exists C > 0, \forall n\ge n_0, g(n)\ge C \cdot f(n)\}$
+    \end{itemize}
+    \item \alert{Bestimmung über Grenzwerte:}
+    \begin{enumerate}
+      \item $\displaystyle f=O(g) \Leftrightarrow \operatorname{lim}_{n\to\infty}\frac{f(n)}{g(n)} < \infty$
+      \item $\displaystyle f=\Omega(g) \Leftrightarrow \operatorname{lim}_{n\to\infty}\frac{f(n)}{g(n)} > 0$
+      \item $\displaystyle f=\Theta(g) \Leftrightarrow \operatorname{lim}_{n\to\infty}\frac{f(n)}{g(n)} > 0$ und $\displaystyle\operatorname{lim}_{n\to\infty}\frac{f(n)}{g(n)} < \infty$
+      \item $\displaystyle f=o(g) \Leftrightarrow \operatorname{lim}_{n\to\infty}\frac{f(n)}{g(n)} = 0$
+      \item $\displaystyle f=\omega(g) \Leftrightarrow \operatorname{lim}_{n\to\infty}\frac{f(n)}{g(n)} = \infty$
+    \end{enumerate}
+  \end{itemize}
 \end{frame}
 
 \begin{frame}{Bonus}{Regel von L'Hopital}
   \begin{itemize}
-    \item asdf
+    \item $\displaystyle \operatorname*{lim}_{x\to c}{\frac{f(x)}{g(x)}}=\operatorname*{lim}_{x\to c}{\frac{f^{\prime}(x)}{g^{\prime}(x)}}$
+    \begin{itemize}
+      \item wird verwendet bei Grenzwertbetrachtung bei der man bei Zähler und Nenner entweder den Fall $\frac{0}{0}$ oder $\frac{\pm\infty}{\pm\infty}$ hat und beide Ableitungen differenzierbar % und $g(x)\ne 0$ für $x\ne y$ für den Fall $\frac{0}{0}$ und $g(x)'\ne 0$ für den Fall $\frac{\infty}{\infty}$ 
+      \item dann Zähler und Nenner des Bruches getrennt voneinander ableiten und dann nochmal Grenwertbetrachtung
+      \item wenn nochmal unbestimmter Ausdruck rauskommt und wieder entweder der Fall $\frac{0}{0}$ oder $\frac{\infty}{\infty}$ und beide Ableitungen differenzierbar, dann nochmal anwenden oder sonst Pech gehabt
+    \end{itemize}
   \end{itemize}
 \end{frame}
