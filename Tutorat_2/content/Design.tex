@@ -7,6 +7,15 @@
 % ./Aufgabe3.tex
 % ./Bonus.tex
 
+\newtoggle{gabriella}
+\toggletrue{gabriella}
+% \togglefalse{gabriella}
+\iftoggle{gabriella}{
+  \def\gabriella{1}
+}{
+  \def\gabriella{0}
+}
+
 % ┌──────────────────────┐
 % │ Beamer Configuration │
 % └──────────────────────┘
@@ -22,8 +31,6 @@
 % as beamer itself already provides these functionalities, there is no need to load hyperref, color, graphicx, graphics
 % \usepackage{xcolor}
 
-\newtoggle{gabriella}
-\toggletrue{gabriella}
 \iftoggle{gabriella}{
   \definecolor{PrimaryColor}{HTML}{E50074}
   \definecolor{PrimaryColorDimmed}{HTML}{FF9FCF}

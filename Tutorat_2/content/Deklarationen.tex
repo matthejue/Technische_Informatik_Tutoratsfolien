@@ -72,7 +72,7 @@ enhanced,colframe=PrimaryColor,colback=BoxColor,hbox,listing only,halign title=c
 {verbatim,colback=SecondaryColorDimmed,colframe=SecondaryColor}
 {$\mathtt{#1}$}
 
-\newtcolorbox{Sidenote}{enhanced,breakable,drop fuzzy shadow,sharpish corners, notitle,arc=0mm,left=3mm,right=3mm,boxrule=1mm, borderline vertical={1mm}{0pt}{PrimaryColor},title=Sidenote,attach boxed title to top text left={yshift=0mm},
+\newtcolorbox{Sidenote}{enhanced,breakable,drop fuzzy shadow,sharpish corners, notitle,arc=0mm,left=3mm,right=3mm,boxrule=1mm, borderline vertical={1mm}{0pt}{PrimaryColor},title=Anmerkung,attach boxed title to top text left={yshift=0mm},
 interior style={fill=BoxColor},
 frame style={color=BoxColor},
 % https://tex.stackexchange.com/questions/459870/paragraph-breaks-inside-tcolorbox, maybe also parbox=false
@@ -156,8 +156,14 @@ after title={\hspace{0.2cm}\includegraphics[height=3mm]{./figures/lupe.png}}
 % \renewcommand{\labelitemiii}{$\textcolor{PrimaryColor}{\diamond}$}
 % \renewcommand{\labelitemiv}{$\textcolor{PrimaryColor}{\ast}$}
 
-\newcommand{\notebook}{\hfill\includegraphics[height=3mm]{./figures/note.png}}
-\newcommand{\anotebook}{\hfill\includegraphics[height=3mm]{./figures/anote.png}}
+
+\iftoggle{gabriella}{
+  \newcommand{\notebook}{\hfill\includegraphics[height=3mm]{./figures/noteg.png }}
+  \newcommand{\anotebook}{\hfill\includegraphics[height=3mm]{./figures/anoteg.png}}
+}{
+  \newcommand{\notebook}{\hfill\includegraphics[height=3mm]{./figures/note.png }}
+  \newcommand{\anotebook}{\hfill\includegraphics[height=3mm]{./figures/anote.png}}
+}
 
 \newcommand{\magnifier}{\hfill\includegraphics[height=3mm]{./figures/lupe.png}}
 

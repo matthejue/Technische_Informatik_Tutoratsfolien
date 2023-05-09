@@ -28,8 +28,8 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:zoom="0.72439514"
-     inkscape:cx="242.27109"
-     inkscape:cy="334.76205"
+     inkscape:cx="485.23241"
+     inkscape:cy="714.38911"
      inkscape:window-width="1906"
      inkscape:window-height="1020"
      inkscape:window-x="6"
@@ -157,6 +157,122 @@
        id="rect453-5-3-9"
        style="fill:#000000;fill-opacity:1;stroke-width:0.243835"
        d="m 145.79884,81.629042 3.28025,2.51009 -5.50382,4.00903 z"
+       sodipodi:nodetypes="cccc" />
+    <rect
+       style="fill:#ff9fcf;fill-opacity:1;stroke:none;stroke-width:0.2"
+       id="rect61-36"
+       width="61.900909"
+       height="72.33075"
+       x="141.7437"
+       y="192.5656"
+       inkscape:export-filename="noteg.png"
+       inkscape:export-xdpi="44.447723"
+       inkscape:export-ydpi="44.447723" />
+    <g
+       id="g2170-7"
+       transform="translate(92.86868,158.34468)"
+       style="fill:#333333;fill-opacity:1">
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.2"
+         id="rect273-5"
+         width="14.476717"
+         height="4.8255725"
+         x="41.636658"
+         y="43.06958" />
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.2"
+         id="rect273-3-3"
+         width="14.476717"
+         height="4.8255725"
+         x="41.636658"
+         y="59.672192" />
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.2"
+         id="rect273-3-6-5"
+         width="14.476717"
+         height="4.8255725"
+         x="41.636658"
+         y="76.274803" />
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.2"
+         id="rect273-3-6-7-6"
+         width="14.476717"
+         height="4.8255725"
+         x="41.636658"
+         y="92.877419" />
+    </g>
+    <path
+       id="rect453-2"
+       style="fill:#000000;fill-opacity:1;stroke-width:0.243835"
+       d="m 169.30376,229.74976 30.33352,-40.2074 8.01465,6.04647 -30.33351,40.2074 z"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       id="rect453-5-9"
+       style="fill:#ffe6d5;stroke-width:0.243835"
+       d="m 169.30375,229.74976 8.01467,6.04647 -13.95912,10.16796 z"
+       sodipodi:nodetypes="cccc" />
+    <path
+       id="rect453-5-3-1"
+       style="fill:#000000;fill-opacity:1;stroke-width:0.243835"
+       d="m 165.58287,239.44507 3.28025,2.51009 -5.50382,4.00903 z"
+       sodipodi:nodetypes="cccc" />
+    <rect
+       style="fill:#f9b797;fill-opacity:1;stroke:none;stroke-width:0.2"
+       id="rect61-3-2"
+       width="61.900909"
+       height="72.33075"
+       x="235.60915"
+       y="189.10434"
+       inkscape:export-filename="anoteg.png"
+       inkscape:export-xdpi="44.447723"
+       inkscape:export-ydpi="44.447723" />
+    <g
+       id="g2170-6-7"
+       transform="translate(186.73415,154.88343)"
+       style="fill:#333333;fill-opacity:1">
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.2"
+         id="rect273-7-0"
+         width="14.476717"
+         height="4.8255725"
+         x="41.636658"
+         y="43.06958" />
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.2"
+         id="rect273-3-5-9"
+         width="14.476717"
+         height="4.8255725"
+         x="41.636658"
+         y="59.672192" />
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.2"
+         id="rect273-3-6-3-3"
+         width="14.476717"
+         height="4.8255725"
+         x="41.636658"
+         y="76.274803" />
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.2"
+         id="rect273-3-6-7-5-6"
+         width="14.476717"
+         height="4.8255725"
+         x="41.636658"
+         y="92.877419" />
+    </g>
+    <path
+       id="rect453-6-0"
+       style="fill:#000000;fill-opacity:1;stroke-width:0.243835"
+       d="m 263.16923,226.2885 30.33352,-40.2074 8.01465,6.04648 -30.33351,40.20739 z"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       id="rect453-5-2-6"
+       style="fill:#ffe6d5;stroke-width:0.243835"
+       d="m 263.16922,226.28851 8.01467,6.04646 -13.95912,10.16796 z"
+       sodipodi:nodetypes="cccc" />
+    <path
+       id="rect453-5-3-9-2"
+       style="fill:#000000;fill-opacity:1;stroke-width:0.243835"
+       d="m 259.44834,235.98381 3.28025,2.51009 -5.50382,4.00903 z"
        sodipodi:nodetypes="cccc" />
     <g
        id="g4675"
