@@ -1,0 +1,14 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYGZsh{} INPUT
+CALL INPUT ACC
+STORE ACC 30
+\PYGZsh{} PROGRAM
+LOADI ACC 0
+STORE ACC 31
+LOADI ACC 1
+STORE ACC 32
+LOAD ACC 30
+SUBI ACC 1
+STORE ACC 30
+JUMP== 9
+\end{Verbatim}

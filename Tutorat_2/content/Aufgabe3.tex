@@ -1,0 +1,65 @@
+%!Tex Root = ../main.tex
+% ./Packete.tex
+% ./Design.tex
+% ./Deklarationen.tex
+% ./Vorbereitung.tex
+% ./Aufgabe1.tex
+% ./Aufgabe2.tex
+% ./Aufgabe4.tex
+% ./Bonus.tex
+
+\section{Aufgabe 3}
+
+\setcounter{exercise}{1}
+
+\begin{frame}[allowframebreaks]{Aufgabe \thesection}{XYZ}
+  \begin{requirementsnoinc}
+    \[
+      \sum_{j=1}^{m}p(a_{j})=1,p(a_{i})> 0.5
+    \]
+  \end{requirementsnoinc}
+  \begin{solutionnoinc}
+    \begin{align*}
+      &\sum_{j=1}^{i-1}p(a_{j})+p(a_{i})+\sum_{j=i+1}^{m}p(a_{j})=1\\
+      &\sum_{j=1}^{i-1}p(a_{j})+\sum_{j=i+1}^{m}p(a_{j})< 0.5
+    \end{align*}
+  \end{solutionnoinc}
+  \begin{solutionnoinc}
+    \begin{itemize}
+      \item Beim Bau des binären Baums sind alle Häufigkeitsteilsummen kleiner als $p(a_i)$, daher wird $a_i$ erst zu dem Baum hinzugefügt, nachdem alle andere Knoten bereits zu einem Knoten zusammengefügt wurden. 
+      \item Dieser wird durch eine Kante mit einem neuen Knoten (Wurzel) verbunden, die andere Kante der Wurzel führt direkt zu $a_i$.
+    \end{itemize}
+    \vspace{0.5cm}
+    \resizebox{\textwidth}{!}{
+      \begin{minipage}[t]{16cm}
+        \ctikzfig{3a}
+      \end{minipage}
+    }
+  \end{solutionnoinc}
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Aufgabe \thesection}{XYZ}
+  \begin{requirementsnoinc}
+    \begin{itemize}
+      \item $p(a_{i})< \frac{1}{3}$ und $|c(a_{i})|=1$
+    \end{itemize}
+  \end{requirementsnoinc}
+  \begin{solutionnoinc}
+    \begin{itemize}
+      \item Wegen $|c(ai )| = 1$ ist $a_i$ einer der beiden direkten Vorgänger der Wurzel des Codebaumes. Für den anderen Vorgänger $v$ gilt:
+      \begin{enumerate}[a)]
+        \item Er ist mit einer Häufigkeitssumme $> 2/3$ beschriftet, da die Summe an der Wurzel $1$ ist und $p(a_i) < 1/3$.
+        \item Der Vorgänger $v$ ist kein Blatt wegen $m \ge 3$.
+      \end{enumerate}
+      \item Also hat $v$ mindestens einen Vorgänger $v_1$ mit Häufigkeitssumme größer als $\frac{1}{3}$. Der Algorithmus hätte dann aber zum Zeitpunkt des Einfügens von $v$ nicht $v_1$, sondern einen Knoten mit einer kleineren Häufigkeitssumme als Vorgänger von $v$ auswählen müssen. Ein solcher Kandidat wäre z.B. $a_i$ mit $p(a_i) < 1/3$ gewesen.
+      \item Widerspruch!
+    \end{itemize}
+  \end{solutionnoinc}
+  \begin{solutionnoinc}
+    \ctikzfig{3b}
+    % \resizebox{\textwidth}{!}{
+    % \begin{minipage}[t]{16cm}
+    %   \end{minipage}
+    % }
+  \end{solutionnoinc}
+\end{frame}

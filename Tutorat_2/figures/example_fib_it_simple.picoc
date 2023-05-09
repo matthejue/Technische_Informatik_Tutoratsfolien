@@ -1,0 +1,16 @@
+int fib(int fib_nr) {
+  int fib_i;
+  int fib_i_1 = 0;
+  int fib_i_2 = 1;
+  while (fib_nr) {
+    fib_i = fib_i_1 + fib_i_2;
+    fib_i_2 = fib_i_1;
+    fib_i_1 = fib_i;
+    fib_nr = fib_nr - 1;
+  }
+  return fib_i;
+}
+
+void main() {
+  print(fib(input()));
+}

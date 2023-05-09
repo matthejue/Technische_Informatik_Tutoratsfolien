@@ -1,0 +1,13 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+LOAD ACC 31
+ADD ACC 32
+STORE ACC 33
+LOAD ACC 32
+STORE ACC 31
+LOAD ACC 33
+STORE ACC 32
+JUMP \PYGZhy{}11
+\PYGZsh{} OUTPUT
+LOAD ACC 33
+CALL PRINT ACC
+\end{Verbatim}

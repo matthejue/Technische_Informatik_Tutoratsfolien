@@ -1,0 +1,20 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=rectangle node] (6) at (-5, 6) {$0.49$};
+		\node [style=circle node] (9) at (-3, 5) {$0.5$};
+		\node [style=circle node] (10) at (-4, 0) {1};
+		\node [style=rectangle node] (11) at (2, 6) {$\ge 0.5$};
+		\node [style=circle node] (14) at (6, 2) {$\le 0.5$};
+		\node [style=circle node] (15) at (4, 0) {1};
+		\node [style=circle node] (21) at (-2, 2) {0.5};
+		\node [style=circle node] (24) at (-1, 5) {0.01};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw (15) to (14);
+		\draw (11) to (15);
+		\draw (10) to (21);
+		\draw (6) to (21);
+		\draw (9) to (10);
+		\draw (21) to (24);
+	\end{pgfonlayer}
+\end{tikzpicture}
