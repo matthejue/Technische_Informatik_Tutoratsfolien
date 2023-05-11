@@ -42,18 +42,56 @@
   \includegraphics[width=0.8\textwidth]{./figures/vollständige_induktion_2.png}
 \end{frame}
 
-\begin{frame}[allowframebreaks]{Bonus}{O-Notation}
+\begin{frame}{Bonus}{O-Notation}
   \begin{itemize}
     \item Man will Funktionen irendwie vergleichen und das einzige sinnvolle was man vergleichen kann ist die \alert{Wachstumsrate}, denn für zwei Funktionen kann gleichzeitig gelten: $g = O(f)$, also $g$ wächst nicht stärker als $f$ und $g > f$, also $g$ ist überall echt größer als $f$
     \item Konstate Faktoren und Summanden $c \cdot x$ und $c + x$ sollen keine Rolle, aber es geht um \alert{Wachstumsrate}, Konstante Faktoren und Summanden spielen keine Rolle
     \item Die Operatoren $O, \Omega, \Theta, o, \omega$ sind auf Funktionen, was die Operatoren $\le, \ge, =, <, >$ auf Zahlen sind
-    \item man sagt die \enquote{Laufzeit eines Algorihmus ist: $\Omega(n\cdot log(n))$}, man sagt \alert{NICHT}, dass ein \enquote{Algorithmus Laufzeit mindestens $O(n\cdot log(n))$ hat}
+    \item $f= O(g)$ wird gesprochen als \enquote{$f$ ist Groß-O von $g$}, wobei eigentlich $f\in O(g)$ mathematisch korrekt ist
+    \begin{itemize}
+      \item man sagt die \enquote{Laufzeit eines Algorihmus ist: $\Omega(n\cdot log(n))$}, man sagt \alert{NICHT}, dass ein \enquote{Algorithmus Laufzeit mindestens $O(n\cdot log(n))$ hat}
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Bonus}{\vspace{0.5cm}Landau-Symbole}
+  \begin{itemize}
     \item \alert{formal:} 
     \begin{itemize}
-      \item $O(f)= \{g: \mathbb{N}\to\mathbb{R} | \exists n_0\in\mathbb{N}, \exists C > 0, \forall n\ge n_0, g(n)\le C \cdot f(n)\}$
-      \item $\Omega(f)= \{g: \mathbb{N}\to\mathbb{R} | \exists n_0\in\mathbb{N}, \exists C > 0, \forall n\ge n_0, g(n)\ge C \cdot f(n)\}$
-      \item $o(f)= \{g: \mathbb{N}\to\mathbb{R} | \exists n_0\in\mathbb{N}, \exists C > 0, \forall n\ge n_0, g(n)\ge C \cdot f(n)\}$
-      \item $\omega(f)= \{g: \mathbb{N}\to\mathbb{R} | \exists n_0\in\mathbb{N}, \exists C > 0, \forall n\ge n_0, g(n)\ge C \cdot f(n)\}$
+      \item $O(g)= \{h: \mathbb{N}\to\mathbb{R} \;|\; \exists n_0\in\mathbb{N}, \exists c > 0, \forall n\ge n_0, h(n)\le c \cdot g(n)\}$
+        \begin{itemize}
+          \item $f\in \Omega(g)$ bedeutet \enquote{$f$ wächst \alert{höchstens} so stark wie $g$} 
+        \end{itemize}
+      \item $\Omega(g)= \{h: \mathbb{N}\to\mathbb{R} \;|\; \exists n_0\in\mathbb{N}, \exists c > 0, \forall n\ge n_0, h(n)\ge c \cdot g(n)\}$
+        \begin{itemize}
+          \item $f\in \Omega(g)$ bedeutet \enquote{$f$ wächst \alert{mindestens} so stark wie $g$} 
+        \end{itemize}
+      \item $\Theta(g)= \{h: \mathbb{N}\to\mathbb{R} \;|\; \exists n_0\in\mathbb{N}, \exists c_1 > 0, \exists c_2 > 0, \forall n\ge n_0, c_1 \cdot g(n) \le h(n)\le c_2 \cdot g(n)\}$
+        \begin{itemize}
+          \item $f\in \Theta(g)$ bedeutet\enquote{$f$ wächst \alert{genauso} stark wie $g$} 
+        \end{itemize}
+      \item $o(g)= \{h: \mathbb{N}\to\mathbb{R} \;|\; \forall c > 0, \exists n_0\in\mathbb{N}, \forall n\ge n_0, h(n)\le c \cdot g(n)\}$
+        \begin{itemize}
+          \item $f\in o(g)$ bedeutet \enquote{$f$ wächst \alert{(strikt) langsamer} als $g$} 
+        \end{itemize}
+      \item $\omega(g)= \{h: \mathbb{N}\to\mathbb{R} \;|\; \forall c > 0, \exists n_0\in\mathbb{N}, \forall n\ge n_0, h(n)\ge c \cdot g(n)\}$
+        \begin{itemize}
+          \item $f\in \omega(g)$ bedeutet \enquote{$f$ wächst \alert{(strikt) schneller} als $g$} 
+        \end{itemize}
+    \end{itemize}
+  \end{itemize}
+  \begin{Sidenote}
+    \begin{itemize}
+      \item $o(g)\cap\omega(g)=\emptyset$, 
+      \item $\Theta(g) = O(g)\cap\Omega(g)$
+      \item $f(n)\in\Theta(g(n))$ $\Leftrightarrow$ $f(n)\in O(g(n))$ and $f(n)\in \Omega(g(n))$
+    \end{itemize}
+  \end{Sidenote}
+  \begin{itemize}
+    \item \alert{Transpose symmetry:}
+    \begin{itemize}
+      \item $f(n)=O(g(n))$ $\Leftrightarrow$ $g(n)=\Omega(f(n))$
+      \item $f(n)=o(g(n))$ $\Leftrightarrow$ $g(n)=\omega(f(n))$
     \end{itemize}
     \item \alert{Bestimmung über Grenzwerte:}
     \begin{enumerate}
