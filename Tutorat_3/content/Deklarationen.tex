@@ -160,10 +160,15 @@ after title={\hspace{0.2cm}\includegraphics[height=3mm]{./figures/lupe.png}}
 \iftoggle{gabriella}{
   \newcommand{\notebook}{\hfill\includegraphics[height=3mm]{./figures/noteg.png }}
   \newcommand{\anotebook}{\hfill\includegraphics[height=3mm]{./figures/anoteg.png}}
-}{
+}{}
+\iftoggle{juergen}{
   \newcommand{\notebook}{\hfill\includegraphics[height=3mm]{./figures/note.png }}
   \newcommand{\anotebook}{\hfill\includegraphics[height=3mm]{./figures/anote.png}}
-}
+}{}
+\iftoggle{krister}{
+  \newcommand{\notebook}{\hfill\includegraphics[height=3mm]{./figures/notek.png }}
+  \newcommand{\anotebook}{\hfill\includegraphics[height=3mm]{./figures/anotek.png}}
+}{}
 
 \newcommand{\magnifier}{\hfill\includegraphics[height=3mm]{./figures/lupe.png}}
 

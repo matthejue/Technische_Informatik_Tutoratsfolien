@@ -8,12 +8,33 @@
 % ./Bonus.tex
 
 \newtoggle{gabriella}
-% \toggletrue{gabriella}
+\newtoggle{juergen}
+\newtoggle{krister}
+
 \togglefalse{gabriella}
+\togglefalse{juergen}
+\togglefalse{krister}
+
+% \toggletrue{gabriella}
+% \toggletrue{juergen}
+\toggletrue{krister}
+
 \iftoggle{gabriella}{
   \def\gabriella{1}
 }{
   \def\gabriella{0}
+}
+
+\iftoggle{juergen}{
+  \def\juergen{1}
+}{
+  \def\juergen{0}
+}
+
+\iftoggle{krister}{
+  \def\krister{1}
+}{
+  \def\krister{0}
 }
 
 % ┌──────────────────────┐
@@ -36,12 +57,19 @@
   \definecolor{PrimaryColorDimmed}{HTML}{FF949E}
   \definecolor{SecondaryColor}{HTML}{F36622}
   \definecolor{SecondaryColorDimmed}{HTML}{F9B797}
-}{
+}{}
+\iftoggle{juergen}{
   \definecolor{PrimaryColor}{HTML}{0B64A0}
   \definecolor{PrimaryColorDimmed}{HTML}{A2D7F3}
   \definecolor{SecondaryColor}{HTML}{6FC1EC}
   \definecolor{SecondaryColorDimmed}{HTML}{CEEAF9}
-}
+}{}
+\iftoggle{krister}{
+  \definecolor{PrimaryColor}{HTML}{D89A72}
+  \definecolor{PrimaryColorDimmed}{HTML}{E9C5AE}
+  \definecolor{SecondaryColor}{HTML}{BDCB8D}
+  \definecolor{SecondaryColorDimmed}{HTML}{D6DEB8}
+}{}
 \colorlet{BoxColor}{gray!10!white}
 
 \setbeamercolor{normal text}{%
@@ -112,29 +140,43 @@
 \newcommand{\titlesecond}{Tutorat 3}
 \newcommand{\subtitlesecond}{Kodierung von Zahlen, Zahlensysteme, Darstellung negativer Festkommazahlen}
 \newcommand{\group}{
-  \if\gabriella0{
-      Gruppe 9
-  }\else{
-      Gruppe 4
-  }\fi
+\if\juergen1{
+    Gruppe 9
+}\fi 
+\if\gabriella1{
+    Gruppe 4
+}\fi
+\if\krister1{
+    Gruppe 8
+}\fi
 }
+
 \newcommand{\type}{
   \group\\[-0.25cm]
   \rule{6cm}{0.1mm}
 }
 \newcommand{\authorsecond}{
-\if\gabriella0{
+\if\juergen1{
   Jürgen Mattheis
-}\else{
+}\fi
+\if\gabriella1{
   Gabriella Frank
+}\fi
+\if\krister1{
+  Krister Möller
 }\fi
 }
 \newcommand{\mail}{
-\if\gabriella0{
+\if\juergen1{
   (\href{mailto://juergmatth@gmail.com}{juergmatth@gmail.com})
-}\else{
+}\fi
+\if\gabriella1{
   (\href{mailto://gabriella-frank@web.de}{gabriella-frank@web.de})
 }\fi
+\if\krister1{
+  (\href{mailto://kristermoeller@gmx.net}{kristermoeller@gmx.net})
+}\fi
+
 }
 \newcommand{\moreinformation}{
 \begin{columns}[t]
@@ -177,10 +219,10 @@
        \type
     \end{beamercolorbox}
     \begin{beamercolorbox}[sep=8pt,center,#1]{author}
-      \if\gabriella0{
-          \usebeamerfont{author}\emph{Präsentator:}\\ \authorsecond\\\mail
-      }\else{
+      \if\gabriella1{
           \usebeamerfont{author}\emph{Präsentatorin:}\\ \authorsecond\\\mail
+      }\else{
+          \usebeamerfont{author}\emph{Präsentator:}\\ \authorsecond\\\mail
       }\fi
     \end{beamercolorbox}
     \vspace{-1em}
@@ -277,10 +319,14 @@
 \setbeamersize{sidebar width right=1.5cm}
 \setbeamertemplate{sidebar right}{%
   \vspace*{\fill}
-  \if\gabriella0{
-    \includegraphics[width=1.5cm, height=\paperheight]{./figures/background.png}
-  }\else{
+  \if\gabriella1{
     \includegraphics[width=1.5cm, height=\paperheight]{./figures/backgrounda.png}
+  }\fi 
+  \if\juergen1{
+    \includegraphics[width=1.5cm, height=\paperheight]{./figures/background.png}
+  }\fi
+  \if\krister1{
+    \includegraphics[width=1.5cm, height=\paperheight]{./figures/backgroundk.png}
   }\fi
   \vspace*{\fill}
 }
@@ -296,14 +342,17 @@
 
   \setbeamertemplate{sidebar right}{%
     \vspace*{\fill}
-    \if\gabriella0{
-        \includegraphics[width=1.5cm, height=\paperheight]{./figures/background.png}
-    }\else{
+    \if\gabriella1{
         \includegraphics[width=1.5cm, height=\paperheight]{./figures/backgrounda.png}
-  }\fi
+    }\fi
+    \if\juergen1{
+        \includegraphics[width=1.5cm, height=\paperheight]{./figures/background.png}
+    }\fi
+    \if\krister1{
+        \includegraphics[width=1.5cm, height=\paperheight]{./figures/backgroundk.png}
+    }\fi
     \vspace*{\fill}
   }
-
   \begin{frame}
     \centering
     \textcolor{PrimaryColor}{\insertsectionHEAD}
