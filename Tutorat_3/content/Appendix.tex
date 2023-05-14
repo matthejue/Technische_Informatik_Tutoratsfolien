@@ -9,21 +9,23 @@
 % ./Aufgabe4.tex
 
 \section{Appendix}
-% Binärsystem Kommazahlen gehen mit 1.01 weiter 2^-1
 % die eine Aufgabe 3 vom letzten Übungsblatt Beweis nachreichen
-% surjektiv bezüglich Bildmenge ist sowieso klar, deswegen spricht man es nicht aus, aber ja stimmt
-% Bittricks, Xor gerade und ungerade usw. dieser RETI-Code, Folien zu Controlling Value und Non-Constrolling Value
+% surjektiv bezüglich Bildmenge ist sowieso klar, deswegen spricht man es nicht aus, aber ja stimmt. Die Sache mit Umerkehfunktion nur bei bijektiv nochmal iwo schön aufschreiben auf Folien
 % Klarstellung Bolesche Algebra, Polynomring was ist neutrales Element usw.
+% Binärsystem Kommazahlen gehen mit 1.01 weiter 2^-1
+% Bittricks, Xor gerade und ungerade usw. dieser RETI-Code, Folien zu Controlling Value und Non-Constrolling Value
 % Aussagenlogik: das |= Symbol Untermenge, Einführung in Logik: vollständige Theorie, Satisfiable, Unsatisfiable, Konjunktive und Disjunktive Normalform schnell Widerspruch nachweisen
 % hinreichend und notwendig
 % Implikation kann auch als if verstanden werden oder Untermenge, all die verschiedenen Weisen, wie man => verstehen kann, wie man bei hinreichend und notwendig sieht und bei |= Zeichen usw. sieht ¬a v b
 % Quantoren, Prädikatenlogik im Bezug auf O-Notation, dieses eine Bild zu Quantoren, dieses ganzen Gesetze zu den Quantoren
 % Geometrische Summenformel vielleicht in den Appendix
 % Festkommazahl und Gleitkommazahl vertiefen
-% 2er Komplement usw. ein paar Worte zum generellen Prinzip: die eine Zahl, die die Negation von sich selbst ist oder so ähnlich, die ganze Sache mit Addition, Subtraktion, Multiplikation usw. in binär, auf diese eine Rechnernetze Aufgabe mit Überlauf usw. eingehen
+% 2er Komplement usw. ein paar Worte zum generellen Prinzip, doppelte 0 wegbekommen indem man sie im negativen rauslässt und gleichzeitg dadurch mehr negative Zahlen (man merkt es beim Invertieren, wo man +1 rechnet, weil es ja jetzt mehr negative Zahen gibt und keine 0 mehr, daher 0+1=1, -2^n-1 +1 = -2^n), man könnte es auch als nach unten verschieben des Negativen Zahlenbereichs verglichen zum Einerkomplement bezeichnen, man muss es aber immer von den konkretten Werten her betrachten, die doppelte negative 0 wird übersprungen, die und größtmögliche Zahl abziehen für Symmetrie und daher -2^n-1 (Einerkomplement) bzw. bei Zweierkomplement wo es nur noch eine 0 ist, muss man daher 1 mehr abziehen, weil es durch die Fehlende 0 im negativen mehr negative Zahlen gibt, also gleich -2^n und so: die eine Zahl, die die Negation von sich selbst ist oder so ähnlich, die ganze Sache mit Addition, Subtraktion, Multiplikation usw. in binär, auf diese eine Rechnernetze Aufgabe mit Überlauf usw. eingehen
+% - welchen Zweck Zweierkomplement und so eignetlich hat, warum nicht einfach Betrag. Beim Gleitkommazahl wird Betrag ja immer noch verwendet
 % RETI ist eine Register-Memory Architektur und Accumulator Architektur
 % Karnaugh Map
 % es gibt Konstrollsignale und die anderen Signale
+% Herleitung Grenzwerte O-Notation
 
 \begin{frame}[fragile,allowframebreaks]{Appendix}{Hexadecimal System}
   \begin{itemize}
