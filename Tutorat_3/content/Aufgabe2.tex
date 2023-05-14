@@ -11,3 +11,27 @@
 \section{Aufgabe 2}
 
 \setcounter{exercise}{1}
+
+\begin{frame}[allowframebreaks]{Aufgabe \thesection}{Darstellung von Festkommazahlen - Invertieren}
+  \begin{requirementsnoinc}
+    \begin{itemize}
+      \item \alert{Geometrische Summenformel:} $\displaystyle\sum_{k=0}^{n}q^{k}={\frac{1-q^{n+1}}{1-q}}$
+      \begin{itemize}
+        \item \alert{wie im Beweis auf nächster Folie}: $\displaystyle\sum_{k=0}^{n-1}q^{k}={\frac{1-q^{n-1+1}}{1-q}} = \frac{1-q^{n}}{1-q}\cdot \frac{-1}{-1} = \frac{q^n-1}{q-1} $
+        \item \alert{für $q=2$:} $\displaystyle\sum_{k=0}^{n}2^{k}=\frac{1-2^{n+1}}{1-2} = \frac{1-2^{n+1}}{-1} = 2^{n+1}-1$
+      \end{itemize}
+    \end{itemize}
+  \end{requirementsnoinc}
+  \begin{solution}
+    \tiny
+    \begin{align*}
+      \zz [a^{\prime}]_{2}+1+[a]_{2}=0\\
+      [a^{\prime}]_{2}+1+[a]_{2}&=\sum_{i=0}^{n-1}a_{i}^{\prime}2^{i}-a_{n}^{\prime}2^{n}+1+\sum_{i=0}^{n-1}a_{i}2^{i}-a_{n}2^{n}\\
+                                &=\sum_{i=0}^{n-1}(a_{i}^{\prime}+a_{i}){2}^{i}-(a_{n}^{\prime}+a_{n})2^{n}+1\\
+                                &=\sum_{i=0}^{n-1}1\cdot2^{i}-1\cdot2^{n}+1\ \ \ \ \left(a_{i}^{\prime}+a_{i}=1\ \mathrm{da}\ a_{i}^{\prime}=a_{i}\ \mathrm{invertiert}\right)\\
+                                &={{}{\frac{2^{n}-1}{2-1}}-2^{n}+1}\\
+                                &={{}2^{n}-1-2^{n}+1}\\
+                                &=0
+    \end{align*}
+  \end{solution}
+\end{frame}
