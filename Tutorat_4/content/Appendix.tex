@@ -1,0 +1,51 @@
+%!Tex Root = ../main.tex
+% ./Packete.tex
+% ./Design.tex
+% ./Deklarationen.tex
+% ./Vorbereitung.tex
+% ./Aufgabe1.tex
+% ./Aufgabe2.tex
+% ./Aufgabe3.tex
+% ./Aufgabe4.tex
+
+\section{Appendix}
+
+\begin{frame}[allowframebreaks]{Appendix}{Hinweis zu Hypercubes und Karnaugh Map}
+  \begin{itemize}
+    \item Wenn sich zwei Knoten nur durch genau $1$ Bit unterscheiden, dann werden sie durch eine Kante verbunden.
+  \end{itemize}
+  \begin{figure}
+      \includegraphics[width=0.8\textwidth, center]{./figures/hypercubes.png}
+      \caption{Hypercubes von $n=0$ bis $n=4$}
+  \end{figure}
+  \newpage
+  \begin{figure}
+    \centering
+    \begin{subfigure}{0.4\textwidth}
+       \includegraphics[height=0.4\textheight, center]{./figures/donut.png}
+       \caption{Torus oder umgangssprachlich Donut}
+    \end{subfigure}
+    \begin{subfigure}{0.4\textwidth}
+       \includegraphics[height=0.4\textheight, center]{./figures/K_map.png}
+       \caption{Beispiel für Karnaugh Map}
+    \end{subfigure}
+  \end{figure}
+  \begin{itemize}
+      \item Anordnung ist so, weil man einen Hypercube bis $n=4$ (Tesseract) in einer flachen Tabelle darstellen will und im Hypercube gibt es immer nur eine Kante, wenn es nur genau $1$ Bit Unterschied bei $2$ Knoten gibt.
+      \item In der Karnaugh Map sind entsprechend immer nur Bitvektoren benachbart, die sich nur in einem Bit unterscheiden. 
+      \item Wie bei einem Donut sind Reihen und Spalten miteinander von unten nach oben und von links nach rechts über die Tabelle hinausgehend benachbart.
+      \item Von $\overline{a}b$ zu $ab$ gibt es nur $1$ Änderung. Von $\overline{a}b$ zu $a\overline{b}$ gibt es dagegen $2$ Änderungen. Daher sind $\overline{a}b$ und $ab$ benachbart.
+  \end{itemize} 
+\end{frame}
+ 
+% in welcher Reihenfolge am sinnvollsten bearbeiten
+% Fehler vom letzten Tutorat korrigiert
+
+% wie Kurschluss
+% Beweis
+% diese allgemeine mit Wertigkeit usw.
+% Wie Transistoren funktionieren
+% wie Hypercubes genau funktionieren
+
+% bei KNF und Karnaugh Map muss man immer von der negierten Maxtermen ausgehen bei eintragen in die Tabelle. Wobei es einfach ausgedrückt einfach die Invertierung der anderen Tabelle ist
+% wie man sich P-Kanal und N-Kanal gut merken kann, p und 0, N und I und lässt genau dann durch, wenn es 0 ist

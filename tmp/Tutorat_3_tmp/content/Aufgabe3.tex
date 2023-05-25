@@ -1,0 +1,44 @@
+%!Tex Root = ../main.tex
+% ./Packete.tex
+% ./Design.tex
+% ./Deklarationen.tex
+% ./Vorbereitung.tex
+% ./Aufgabe1.tex
+% ./Aufgabe2.tex
+% ./Aufgabe4.tex
+% ./Appendix.tex
+
+\section{Aufgabe 3}
+
+\setcounter{exercise}{1}
+
+\begin{frame}[allowframebreaks]{Aufgabe \thesection}{Darstellung von Festkommazahlen - Dezimalsystem}
+  \begin{solution}
+    \begin{itemize}
+      \item $x=10^n-1$, $\displaystyle [d_{n}d_{n-1}\ldots d_{0}]_9=\sum_{i=0}^{n-1}d_{i}\cdot 10^{i}-d_{n}\cdot\ x$
+      \item Die \alert{größte darstellbare Zahl} ist für beliebige $n>0$: $10^n - 1$ und für $n=4$: $10^4-1 = 9999$
+      \item Für einen symmetrischen Zahlenbereich kann man sich erstmal überlegen, dass man zwei Darstellung für die $0$ braucht und auch die Negation der größten darstellbaren Zahl darstellbar sein muss. D.h. für z.B. $n = 4$ muss man auch $-9999$ darstellen können. Und diesen Grenzfall erreicht man, indem man von $0$ $9999$ abzieht.
+    \end{itemize}
+  \end{solution}
+  \begin{exercisenoinc}
+    \begin{itemize}
+      \item \alert{Komplementieren} der Ziffern in der \alert{Neuner-KomplementDarstellung} definiert werden muss, damit das folgende Lemma gilt:
+      \item \alert{Lemma:} Sei $a$ eine Festkommazahl im Dezimalsystem, $a'$ die Festkommazahl im Dezimalsystem, die aus $a$ durch Komplementieren aller Ziffern hervorgeht. Dann gilt $[a']_9 + [a]_9 = 0$.
+    \end{itemize}
+  \end{exercisenoinc}
+  \begin{solutionnoinc}
+    \begin{itemize}
+      \item Das Einerkomplent im Binärsystem interpretiert Zahlen mit führenden $0$en als nichtnegative Zahlen und Zahlen
+mit führenden $1$en als negative Zahlen. Um das Einerkomplement einer Zahl zu bekommen werden alle Bits
+invertiert.
+      \item Analog dazu kann man das Neunerkomplement im Dezimalsystem bilden. In der Aufgabenstellung ist definiert, dass auch hier die höchstwertigste Ziffer nur $0$ oder $1$ sein kann. 
+      \item Das Invertieren wäre hier die Ersetzung nach folgender Funktion:\\[0.25cm] $inv : \{0, 1, \ldots, 8, 9\} \Rightarrow \{0, 1, \ldots, 8, 9\} : d_i \mapsto \begin{dcases}
+          9-d_i & 0\le i < n \\
+          1-d_i & i = n\;und\;d_i\in\{0, 1\}
+        \end{dcases}
+        $
+      \item Für $01784$ ist die komplementierte Zahl: $18215$\\[0.25cm]
+        $[01784]_{0}+[18215]_{9}=1784+(8215-9999)=(1784+8215)-9999=9999-9999=0$
+    \end{itemize}
+  \end{solutionnoinc}
+\end{frame}

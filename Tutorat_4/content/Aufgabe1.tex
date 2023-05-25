@@ -1,0 +1,161 @@
+%!Tex Root = ../main.tex
+% ./Packete.tex
+% ./Design.tex
+% ./Deklarationen.tex
+% ./Vorbereitung.tex
+% ./Aufgabe2.tex
+% ./Aufgabe3.tex
+% ./Aufgabe4.tex
+% ./Appendix.tex
+
+\section{Aufgabe 1}
+
+\setcounter{exercise}{1}
+
+\if\gabriella1{
+\begin{frame}{Aufgabe 1: Festkommazahl als 1-er und 2-er Komplement}{\alert{ Kurze Erinnerung:}}
+        Eigenschaft des 1er-Komplements:
+        \begin{itemize}
+            \item Symmetrie: d.h. Komplemente haben den gleichen Betrag
+        \end{itemize}
+
+        Eigenschaft des 2-er-Komplements:
+        \begin{itemize}
+            \item Asymmetreischer Zahlenbereich: Negativer Zahlenbereich wird im Vergelich zum 1-er-Komplement um eine zusätzliche negative Zahl erweitert, die doppelte Darstellung der $0$ entfällt (\enquote{Shift ins Negative})
+            \item Komplemente berechnen sich durch Komplementieren der Bits und es wird ein Bit (aber nicht notwendigerweise der Wert 1!) hinzuaddiert
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}{Aufgabe 1a)}
+        \begin{block}{Aufgabenstellung}
+            Gegeben sei $a=a_n...a_0a_{-1}...a_{-k}$. Gesucht ist der Wert von $a$ als 1er-Komplement und als 2er-Komplement mit jeweils $k$ Nachkommastellen.
+        \end{block}
+        \begin{block}{1er-Komplement:}
+        \begin{itemize}
+                \item Größte Darstellbare Zahl: $[01...1,1...1]_1 =: a_{max}$
+                \item $\overset{\text{\tiny Symmetrie}}{ \Rightarrow}$ kleinste Darstellbare Zahl $a_{min} = -a_{max}$
+                \item gesucht ist x: $a_{max} - x = 0$
+                \item $\Rightarrow$ x muss der größten darstellbaren Zahl entsprechen
+            \end{itemize}
+        \end{block}
+    \end{frame}
+    
+    \begin{frame}{Aufgabe 1a) 1er-Komplement}
+        Berechne die größte darstellbare Zahl (bzw. x): \newline
+        $a_{max} = [01...1,1...1]_1 \newline = \sum\limits_{i=-k}^{n-1}  2^i\newline = \Big(\sum\limits_{i=0}^{n-1} 2^i\Big) + \Big(\sum\limits_{i=-k}^{-1} 2^i\Big)\newline \overset{\text{\tiny geom. Summe}}{=} (2^n-1) + \Big(\sum\limits_{i=-k}^{-1}  2^i \Big) \newline =  (2^n-1) + \Big(\sum\limits_{i=-k}^{0} 2^i - 2^0\Big) \newline =  (2^n-1) + \Big(2^0 + 2^{-1} + ... + 2^{-k+1}+ 2^{-k} - 2^0\Big) \newline =  (2^n-1) + \Big(\frac{1}{2^0} + \frac{1}{2^{1}} + ... + \frac{1}{2^{k-1}}+ \frac{1}{2^{k}} - 2^0\Big)$ \newline
+    \end{frame}
+
+    \begin{frame}{Aufgabe 1a) 1er-Komplement}
+        $ = (2^n-1) + \Big(\sum\limits_{i=0}^{k} \big(\frac{1}{2}\big)^i - 2^0\Big)\newline
+        \overset{\text{\tiny geom. Summe}}{=}  (2^n-1) + \Big(\frac{\big(\frac{1}{2}\big)^{k+1} - 1}{\frac{1}{2} - 1} - 2^0\Big) \newline =  (2^n-1) + \Big(\frac{\big(\frac{1}{2}\big)^{k+1} - 1}{-\frac{1}{2}} - 2^0\Big) \newline =  (2^n-1) + \Big(2 - 2 \cdot\big(\frac{1}{2}\big)^{k+1} - 2^0\Big) \newline =  (2^n-1) + \Big(1 - \big(\frac{1}{2}\big)^{k} \Big)
+        \newline =  2^n - 2^{-k}$ \newline
+        $\Rightarrow [a_n...a_0a_{-1}...a_{-k}]_1 = \sum\limits_{i=-k}^{n-1} a_i \cdot 2^i - a_n \cdot (2^n - 2^{-k})\newline$
+    \end{frame}
+
+\begin{frame}{Aufgabe 1a) 1er-Komplement}
+  \begin{block}{2er-Komplement:}
+    \begin{itemize}
+        \item Größte darstellbare Zahl: $[01...1,1...1]_1 =: a_{max}$
+        \item $\overset{\text{\tiny \enquote{Shift ins Negative}}}{ \Rightarrow}$ kleinste Darstellbare Zahl: $a_{min} = -a_{max} - [0...01]_2$
+        \item gesucht ist $y = a_{max} + [0...01]_2$ 
+    \end{itemize}
+  \end{block}
+  Berechne y : \newline
+  $a_{max} + [0...01]_2 = a_{max} + 2^{-k} = (2^n - 2^{-k}) + 2^{-k} = 2^n$ \newline
+  $\Rightarrow [a_n...a_0a_{-1}...a_{-k}]_2 = \sum\limits_{i=-k}^{n-1} a_i \cdot 2^i - a_n \cdot 2^n$ 
+\end{frame}
+}\fi
+
+\begin{frame}{Aufgabe 1b}
+    \begin{block}{Aufgabenstellung:}
+        Stelle die folgenden Zahlen als 2-er-Komplement mit 2 Nachkommastellen und 6 Vorkommastellen (insgesamt 8 Bits) dar.
+    \end{block}
+    \begin{enumerate}
+        \item $-1,0_{10} = [(000001.00)^\prime]_2 + [000000.01]_2 = [111110.11]_2 + [000000.01]_2 = [111111.00]_2$
+        \item $2,25_{10} = 2 + 2^{-2} = [000010.01]_2$
+        \item $-2,4_{16} = - 2 - \frac{1}{4} = [(000010.01)^\prime]_2 +[000000.01]_2 = [111101.10]_2 + [000000.01]_2 = [111101.11]_2$
+        \item größte darst. Zahl: $[011111.11]_2$
+        \item größte darst. Zahl $ < 1$: $[000000.11]_2$
+        \item größte darst. Zahl $ < 0$: $[111111.11]_2$
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}[allowframebreaks, fragile]{Aufgabe \thesection}{Nachkommastellen bei den Darstellungen von Festkommazahlen\vspace{0.5cm}}
+    \begin{requirementsnoinc}
+        \resizebox{\textwidth}{!}{
+        \begin{minipage}[t]{26cm}
+          \begin{linenums}
+              \numberedcodebox[minted language=python, minted options={}]{./figures/value_of_representation.py}
+          \end{linenums}
+        \end{minipage}
+        }
+    \end{requirementsnoinc}
+    \begin{requirementsnoinc}
+        \begin{terminal}
+            |\prompt| ./value_of_representation.py
+            {0000->(0.0, 0.0), 0001->(0.25, 0.25), 0010->(0.5, 0.5), 0011->(0.75, 0.75), 0100->(1.0, 1.0), 0101->(1.25, 1.25), 
+            0110->(1.5, 1.5), 0111->(1.75, 1.75),  1000->(-1.75, -2.0), 1001->(-1.5, -1.75), 1010->(-1.25, -1.5), 
+            1011->(-1.0, -1.25), 1100->(-0.75, -1.0), 1101->(-0.5, -0.75), 1110->(-0.25, -0.5), 1111->(0.0, -0.25)}        
+        \end{terminal}
+    \end{requirementsnoinc}
+    \begin{solutionnoinc}
+        \begin{enumerate}
+            % \item asdf
+            % \item asdf
+            \item[3] $\begin{aligned}[t]
+            -2.4_{16} &= 2 \cdot 16^0 + 4 \cdot 16^{-1} - 16^{1} \\
+            &= 000010_2 \cdot (2^4)^0 + 0100_2 \cdot (2^4)^{-1} - 2^5 \\
+            &= 000010_2 \cdot 2^0 + 01_2 \cdot 2^{-2} - (01111111_2 + 00000001_2)  \\
+            &= 00001001_2 + 01111110_2 = 11110111_2
+            \end{aligned}$
+        \end{enumerate}
+    \end{solutionnoinc}
+
+    \begin{Sidenote}
+        \begin{itemize}
+            \item \enquote{kleinste Zahl größer $0$} ist das Gegenstück zur \enquote{größten Zahl kleiner $0$}
+        \end{itemize}
+    \end{Sidenote}
+
+    \begin{Sidenote}
+        \tiny
+        \begin{align*}
+            0xba &= 0xb \cdot 16^1 + 0xa \cdot 16^0\\
+            &= 0o13 \cdot 16^1 + 0o12 \cdot 16^0\\
+            &= (0o1 \cdot 8^1 + 0o3) \cdot 16^1 + (0o1 \cdot 8^1+  0o2) \cdot 16^0\\
+            &= (0o1 \cdot 8^1 + 0o3) \cdot (8 \cdot 2)^1 + (0o1 \cdot 8^1+  0o2) \cdot (8 \cdot 2)^0\\
+            &= 0o2 \cdot 8^2 + 0o6 \cdot 8^1 + 0o1 \cdot 8^1 \cdot (8 \cdot 2)^0 + 0o2 \cdot (8 \cdot 2)^0\\
+            &= 0o2 \cdot 8^2 + 0o7 \cdot 8^1 + 0o2 \cdot 1 = 0o272 \\
+            0xba &= 0xb \cdot 16^1 + 0xa \cdot 16^0\\
+            &= 0b1011 \cdot (2^4)^1 + 0b1010 \cdot (2^4)^0 = 0b10111010 
+        \end{align*}
+    \end{Sidenote}
+
+    \begin{Sidenote}
+        \begin{itemize}
+            \item Beim \alert{Einerkomplement} wird, da es zwei $0$en gibt wegen der Symmetrie die größtmögliche positive Zahl abgezogen. Diese ist: 
+            \begin{align*}
+            \sum_{i=-k}^{n-1}1\cdot2^{i} &= \sum_{i=0}^{n-1}1\cdot2^{i} + \sum_{i=-k}^{-1}1\cdot2^{i} \\
+            &= \sum_{i=0}^{n-1}2^{i} + \sum_{i=0}^{k-1} 2^{i-k}\\
+            &= \sum_{i=0}^{n-1}2^{i} + \sum_{i=0}^{k-1} \frac{2^{i}}{2^k}
+            \end{align*}
+            \begin{align*}
+            &= \sum_{i=0}^{n-1}2^{i} +  \frac{\sum_{i=0}^{k-1} 2^{i}}{2^k} \\
+            & = 2^n-1+\frac{2^k-1}{2^k}\\
+            & = 2^n-1+1-\frac{1}{2^k}\\
+            & = 2^n-2^{-k}
+            \end{align*}
+        \end{itemize}
+    \end{Sidenote}
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Aufgabe \thesection}{Nachkommastellen bei den Darstellungen von Festkommazahlen}
+    \begin{Sidenote}
+        \begin{itemize}
+            \item  Beim \alert{Zweierkomplement} wird, da es nur eine $0$ gibt wegen dem dadurch resultierenden asymmetrischen Zahlenbereich ($-2^{n-1}$ ist die größte negative Zahl und $2^{n-1}-1$ ist die größte positive Zahl) die größtmögliche Zahl größer $0$ + die kleinstmögliche Zahl größer $0$ (da die zusätzliche $0$ nicht mehr eine Kodierung braucht und übersprungen wird, sodass man direkt zur kleinstmöglichen Zahl größer $0$ geht, also $2^{-k}$) abgezogen:
+            \begin{align*}
+            \sum_{i=-k}^{n-1}1\cdot2^{i} + 2^{-k} &= \sum_{i=0}^{n-1}1\cdot2^{i} + \sum_{i=-k}^{-1}1\cdot2^{i} + 2^{-k} = 2^n-2^{-k} + 2^{-k} = 2^n
+            \end{align*}
+        \end{itemize}
+    \end{Sidenote}
+\end{frame}

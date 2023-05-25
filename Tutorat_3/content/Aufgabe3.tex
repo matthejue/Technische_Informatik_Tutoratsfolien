@@ -15,8 +15,9 @@
 \begin{frame}[allowframebreaks]{Aufgabe \thesection}{Darstellung von Festkommazahlen - Dezimalsystem}
   \begin{solution}
     \begin{itemize}
+      \item Für $n=4$: $09999$, für $n>0: 10^n-1$
       \item $x=10^n-1$, $\displaystyle [d_{n}d_{n-1}\ldots d_{0}]_9=\sum_{i=0}^{n-1}d_{i}\cdot 10^{i}-d_{n}\cdot\ x$
-      \item Die \alert{größte darstellbare Zahl} ist für beliebige $n>0$: $10^n - 1$ und für $n=4$: $10^4-1 = 9999$
+      \item Die \alert{größte darstellbare Zahl} ist: $10^n - 1$
       \item Für einen symmetrischen Zahlenbereich kann man sich erstmal überlegen, dass man zwei Darstellung für die $0$ braucht und auch die Negation der größten darstellbaren Zahl darstellbar sein muss. D.h. für z.B. $n = 4$ muss man auch $-9999$ darstellen können. Und diesen Grenzfall erreicht man, indem man von $0$ $9999$ abzieht.
     \end{itemize}
   \end{solution}
@@ -26,7 +27,7 @@
       \item \alert{Lemma:} Sei $a$ eine Festkommazahl im Dezimalsystem, $a'$ die Festkommazahl im Dezimalsystem, die aus $a$ durch Komplementieren aller Ziffern hervorgeht. Dann gilt $[a']_9 + [a]_9 = 0$.
     \end{itemize}
   \end{exercisenoinc}
-  \begin{solutionnoinc}
+  \begin{solution}
     \begin{itemize}
       \item Das Einerkomplent im Binärsystem interpretiert Zahlen mit führenden $0$en als nichtnegative Zahlen und Zahlen
 mit führenden $1$en als negative Zahlen. Um das Einerkomplement einer Zahl zu bekommen werden alle Bits
@@ -40,5 +41,83 @@ invertiert.
       \item Für $01784$ ist die komplementierte Zahl: $18215$\\[0.25cm]
         $[01784]_{0}+[18215]_{9}=1784+(8215-9999)=(1784+8215)-9999=9999-9999=0$
     \end{itemize}
+  \end{solution}
+  \begin{solutionnoinc}
+    \begin{itemize}
+        \item Beim Zweier-Komplement wird im Gegensatz zum Einer-Komplement bei der Auswertung negativer Zahlen 1 mehr abgezogen. 
+        \item Analog dazu unterscheidet sich das Zehner-Komplement auch vom Neuner-Komplement durch die zusätzliche Subtraktion von $1$ bei der Auswertung negativer Zahlen. 
+        \item Eine mögliche Argumentation ist, dass die Darstellung von $-0$ zu $-1$ geshiftet wird und somit keine doppelte Darstellung der $0$, sondern eine durchgehende Darstellung gewährleistet ist. Es wird bei negativen Zahlen also $y = 10^n$ statt $x = 10^n - 1$ abgezogen.
+    \end{itemize}
   \end{solutionnoinc}
+  \begin{solution}
+    \begin{itemize}
+        \item \alert{Beweis:}
+        \tiny
+        \begin{align*}
+            [a^{\prime}]_{10}+[a]_{10}+1&=\sum_{i=0}^{n-1}a_{i}^{\prime}b^{i}-a_{n}^{\prime}10^{n}+\sum_{i=0}^{n-1}a_{i}b^{i}-a_{n}b^{n}+1\\
+            &=\sum_{i=0}^{n-1}(a_{i}^{\prime}+a_{i}){10^{i}}-(a_{n}^{\prime}+a_{n}){10^{n}}+1\\
+            &=\sum_{i=0}^{n-1}(9)\cdot10^{i}-(1)\cdot10^{n}+1\\
+            &=9\cdot\sum_{i=0}^{n-1}10^{i}-10^{n}+1\\
+            &=9\cdot\frac{10^{n}-1}{10-1}-10^{n}+1\\
+            &=0
+        \end{align*}
+    \end{itemize}
+  \end{solution}
+  \begin{exercisenoinc} % {Aufgabenstellung}
+    \begin{itemize}
+        \item Wie muss man das Komplementieren definieren bei allgemeiner Basis $b$, sodass $[a^{\prime}]_{b-1}+[a]_{b-1} = 0$ sowie $[a^{\prime}]_{b}+[a]_{b} + 1 = 0$ gelten?
+    \end{itemize}
+  \end{exercisenoinc}
+  \begin{solutionnoinc} % {Antwort:}
+        \begin{itemize}
+            \item $a_i^{\prime} = (b-1) - a_i$ für $i = 1,..., n-1$ 
+            \item $a_n^{\prime} = 1 - a_n$ 
+            \item Beim (b-1)-Komplement: Symmetrie ist gegeben (und damit gilt Lemma 1) 
+            \item Beim b-Komplement: Shift um 1 bei den negativen Zahlen (und damit gilt Lemma 2) 
+        \end{itemize}
+  \end{solutionnoinc}
+\end{frame}
+% VIELLEICHT ERGÄNZUNG
+\begin{frame}[allowframebreaks]{Aufgabe \thesection}{Darstellung von Festkommazahlen - Dezimalsystem}
+  \if\juergen1{
+  \begin{solutionnoinc}
+    \begin{itemize}
+        \item Damit die Lemmata gelten für beliebige $b$, muss das Komplementieren einer Ziffer $d_i (i = 0, \ldots, n - 1)$ für die Basis $b$ als die Differenzrechnung $(b - 1) - d_i$ definiert werden. 
+        \item Sowohl in Lemma 1 als auch in Lemma 2 kann man dann $10^{i/n}$ durch $b^{i/n}$ ersetzen, wie im folgenden zu sehen ist:
+    \end{itemize}
+  \end{solutionnoinc}
+  }\fi
+  \begin{solutionnoinc}
+    \begin{itemize}
+        \item \alert{1er-Komplement:} \tiny
+        \vspace{-0.5cm}
+        \begin{align*}
+            [a^{\prime}]_{b-1}+[a]_{b-1}&=\sum_{i=0}^{n-1}((b-1) - a_{i})b^{i}-(1-a_{n})(b^{n}-1)+\sum_{i=0}^{n-1}a_{i}b^{i}-a_{n}(b^{n}-1)\\
+            &=\sum_{i=0}^{n-1}((b-1)-a_{i}+a_{i}){b^{i}}-(1-a_{n}+a_{n})(b^{n}-1)\\
+            &=\sum_{i=0}^{n-1}(b-1)\cdot b^{i}-(1)\cdot (b^{n}-1)\\
+            &=(b-1)\cdot\sum_{i=0}^{n-1}b^{i}-(b^{n}-1)\\
+            &=(b-1)\cdot\frac{b^{n}-1}{b-1}-b^{n}+1\\
+            &=0
+        \end{align*}
+    \end{itemize}
+  \end{solutionnoinc}
+  \begin{solution}
+    \begin{itemize}
+        \item \alert{2er-Komplement:} \tiny
+        \vspace{-0.5cm}
+        \begin{align*}
+            [a^{\prime}]_{b}+[a]_{b}+1&=\sum_{i=0}^{n-1}((b-1)-a_{i})b^{i}-(1-a_{n})b^{n}+\sum_{i=0}^{n-1}a_{i}b^{i}-a_{n}b^{n}+1\\
+            &=\sum_{i=0}^{n-1}((b-1)-a_{i}+a_{i}){b^{i}}-(1-a_{n}+a_{n}){b^{n}}+1\\
+            &=\sum_{i=0}^{n-1}(b-1)\cdot b^{i}-(1)\cdot b^{n}+1\\
+            &=(b-1)\cdot\sum_{i=0}^{n-1}b^{i}-b^{n}+1\\
+            &=(b-1)\cdot\frac{b^{n}-1}{b-1}-b^{n}+1\\
+            &=0
+        \end{align*}
+    \end{itemize}
+  \end{solution}
+  \begin{Sidenote}
+    \begin{itemize}
+        \item Man sieht: Das Komplementieren funktioniert unabhängig von 1er- oder 2er-Komplement gleich, da der Unterschied zwischen beiden Darstellungen nur darin liegt, dass man entweder $b^n-1$ (1er-Komplement) oder $b^n$ (2er-Komplement) subtrahiert um die Symmetrie bei zwei 0en (1er-Komplement) oder einer 0 (2er-Komplement) herzustellen und daher zum Ausgleich bei der einen Darstellung nichts dazuaddieren muss (1er-Komplement) oder $1$ dazuaddieren (2er-Komplement) muss um bei der Addition einer Zahl mit ihrem Komplement $0$ zu erhalten. 
+    \end{itemize}
+  \end{Sidenote}
 \end{frame}

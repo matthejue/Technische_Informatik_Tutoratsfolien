@@ -1,0 +1,56 @@
+\frametitle{Appendix}\framesubtitle {Hexadecimal System}
+  \begin{itemize}
+    \item \alert{Example:} $\begin{aligned}[t]
+        \underline{beef}_{16} &= 11 \cdot 16^3 + 14 \cdot 16^2 + 14 \cdot 16^1 + 15 \cdot 16^0 \\
+        &= 11 \cdot 4096 + 14 \cdot 256 + 14 \cdot 16 + 15 \\
+        &= 48879
+      \end{aligned}$
+  \end{itemize}
+
+  \centering
+  \begin{itemize}
+    \item \alert{all Bin and Hex assigned:}
+  \end{itemize}
+  \begin{terminal}
+  0    1    2    3    4    5    6    7    8    9
+  ---- ---- ---- ---- ---- ---- ---- ---- ---- ----
+  0000 0001 0010 0011 0100 0101 0110 0111 1000 1001
+
+  A    B    C    D    E    F
+  ---- ---- ---- ---- ---- ----
+  1010 1011 1100 1101 1110 1111
+  \end{terminal}
+  \framebreak
+  \begin{itemize}
+    \item \alert{Hex $\Rightarrow$ Bin:}
+  \end{itemize}
+  \begin{terminal}
+     D    4    F    6    6    E
+  1101 0100 1111 0110 0110 1110
+  \end{terminal}
+  \begin{itemize}
+    \item \alert{Bin $\Rightarrow$ Hex:}
+  \end{itemize}
+  \begin{terminal}
+  1101 0100 1111 0110 0110 1110
+     D    4    F    6    6    E
+  \end{terminal}
+  % https://tex.stackexchange.com/questions/13380/explicit-frame-break-with-beamer-class
+  \framebreak
+  \begin{itemize}
+    \item \alert{Derivation:}
+    \begin{itemize}
+      \item $\begin{aligned}[t]
+          a4_{16} &= 10 \cdot 16^1 + 4 \cdot 16^0 \\
+                  &= 10 \cdot {(2^4)}^1 + 4 \cdot {(2^4)}^0 \\
+                  &= 1010_2 \cdot 2^4 + 0100_2 \cdot 1 \\
+                  &= (1000_2 \cdot 2^4 + 10_2 \cdot 2^4) + (100_2 \cdot 2^0) \\
+                  &= (1 \cdot 2^7 + 1 \cdot 2^5) + (1 \cdot 2^2) \\
+                  &= 1010\_0100_{2}
+        \end{aligned}$
+      \item \alert{idea:} shifting a number works in hexadecimal system $1a_{16} \cdot 10^2_{16} = 1a00$ decimal system $17 \cdot 10^2 = 1700$ and binary system $11_2 \cdot 10_2^2 = 1100_2$ quite similar.
+      \item but beacuse of $16 = 2^4$ the \alert{hexadecimal} and \alert{binary system} are particulary easy to convert into each other.
+    \end{itemize}
+  \end{itemize}
+  % TODO: wie es verglichen mit z.B. 9er oder 12er System ist
+  % TODO: allgemeines Prinzip, Dezimalsystem ist doch auch nur eine Darstellung, wie man binäre Zahlen schnell zusammenbaut

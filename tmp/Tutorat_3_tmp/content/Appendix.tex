@@ -1,0 +1,87 @@
+ %!Tex Root = ../main.tex
+% ./Packete.tex
+% ./Design.tex
+% ./Deklarationen.tex
+% ./Vorbereitung.tex
+% ./Aufgabe1.tex
+% ./Aufgabe2.tex
+% ./Aufgabe3.tex
+% ./Aufgabe4.tex
+
+\section{Appendix}
+% die eine Aufgabe 3 vom letzten Übungsblatt Beweis nachreichen
+% surjektiv bezüglich Bildmenge ist sowieso klar, deswegen spricht man es nicht aus, aber ja stimmt. Die Sache mit Umerkehfunktion nur bei bijektiv nochmal iwo schön aufschreiben auf Folien
+% Klarstellung Bolesche Algebra, Polynomring was ist neutrales Element usw.
+% Binärsystem Kommazahlen gehen mit 1.01 weiter 2^-1
+% Bittricks, Xor gerade und ungerade usw. dieser RETI-Code, Folien zu Controlling Value und Non-Constrolling Value
+% Aussagenlogik: das |= Symbol Untermenge, Einführung in Logik: vollständige Theorie, Satisfiable, Unsatisfiable, Konjunktive und Disjunktive Normalform schnell Widerspruch nachweisen
+% hinreichend und notwendig
+% Implikation kann auch als if verstanden werden oder Untermenge, all die verschiedenen Weisen, wie man => verstehen kann, wie man bei hinreichend und notwendig sieht und bei |= Zeichen usw. sieht ¬a v b
+% Quantoren, Prädikatenlogik im Bezug auf O-Notation, dieses eine Bild zu Quantoren, dieses ganzen Gesetze zu den Quantoren
+% Geometrische Summenformel vielleicht in den Appendix
+% Festkommazahl und Gleitkommazahl vertiefen
+% 2er Komplement usw. ein paar Worte zum generellen Prinzip, doppelte 0 wegbekommen indem man sie im negativen rauslässt und gleichzeitg dadurch mehr negative Zahlen (man merkt es beim Invertieren, wo man +1 rechnet, weil es ja jetzt mehr negative Zahen gibt und keine 0 mehr, daher 0+1=1, -2^n-1 +1 = -2^n), man könnte es auch als nach unten verschieben des Negativen Zahlenbereichs verglichen zum Einerkomplement bezeichnen, man muss es aber immer von den konkretten Werten her betrachten, die doppelte negative 0 wird übersprungen, die und größtmögliche Zahl abziehen für Symmetrie und daher -2^n-1 (Einerkomplement) bzw. bei Zweierkomplement wo es nur noch eine 0 ist, muss man daher 1 mehr abziehen, weil es durch die Fehlende 0 im negativen mehr negative Zahlen gibt, also gleich -2^n und so: die eine Zahl, die die Negation von sich selbst ist oder so ähnlich, die ganze Sache mit Addition, Subtraktion, Multiplikation usw. in binär, auf diese eine Rechnerarchitektur Aufgabe mit Überlauf usw. eingehen
+% - welchen Zweck Zweierkomplement und so eignetlich hat, warum nicht einfach Betrag. Beim Gleitkommazahl wird Betrag ja immer noch verwendet
+% - Trick zu merken, mann geht erst vom BV zum 1er Komplement und dann zum 2er Komplement, so kann man das schnell ausfüllen. Frage stellen in welcher Reihenfolge Spalten am besten ausfüllen
+% RETI ist eine Register-Memory Architektur und Accumulator Architektur
+% Karnaugh Map
+% es gibt Konstrollsignale und die anderen Signale
+% Herleitung Grenzwerte O-Notation
+
+\begin{frame}[fragile,allowframebreaks]{Appendix}{Hexadecimal System}
+  \begin{itemize}
+    \item \alert{Example:} $\begin{aligned}[t]
+        \underline{beef}_{16} &= 11 \cdot 16^3 + 14 \cdot 16^2 + 14 \cdot 16^1 + 15 \cdot 16^0 \\
+        &= 11 \cdot 4096 + 14 \cdot 256 + 14 \cdot 16 + 15 \\
+        &= 48879
+      \end{aligned}$
+  \end{itemize}
+
+  \centering
+  \begin{itemize}
+    \item \alert{all Bin and Hex assigned:}
+  \end{itemize}
+  \begin{terminal}
+  0    1    2    3    4    5    6    7    8    9
+  ---- ---- ---- ---- ---- ---- ---- ---- ---- ----
+  0000 0001 0010 0011 0100 0101 0110 0111 1000 1001
+
+  A    B    C    D    E    F
+  ---- ---- ---- ---- ---- ----
+  1010 1011 1100 1101 1110 1111
+  \end{terminal}
+  \framebreak
+  \begin{itemize}
+    \item \alert{Hex $\Rightarrow$ Bin:}
+  \end{itemize}
+  \begin{terminal}
+     D    4    F    6    6    E
+  1101 0100 1111 0110 0110 1110
+  \end{terminal}
+  \begin{itemize}
+    \item \alert{Bin $\Rightarrow$ Hex:}
+  \end{itemize}
+  \begin{terminal}
+  1101 0100 1111 0110 0110 1110
+     D    4    F    6    6    E
+  \end{terminal}
+  % https://tex.stackexchange.com/questions/13380/explicit-frame-break-with-beamer-class
+  \framebreak
+  \begin{itemize}
+    \item \alert{Derivation:}
+    \begin{itemize}
+      \item $\begin{aligned}[t]
+          a4_{16} &= 10 \cdot 16^1 + 4 \cdot 16^0 \\
+                  &= 10 \cdot {(2^4)}^1 + 4 \cdot {(2^4)}^0 \\
+                  &= 1010_2 \cdot 2^4 + 0100_2 \cdot 1 \\
+                  &= (1000_2 \cdot 2^4 + 10_2 \cdot 2^4) + (100_2 \cdot 2^0) \\
+                  &= (1 \cdot 2^7 + 1 \cdot 2^5) + (1 \cdot 2^2) \\
+                  &= 1010\_0100_{2}
+        \end{aligned}$
+      \item \alert{idea:} shifting a number works in hexadecimal system $1a_{16} \cdot 10^2_{16} = 1a00$ decimal system $17 \cdot 10^2 = 1700$ and binary system $11_2 \cdot 10_2^2 = 1100_2$ quite similar.
+      \item but beacuse of $16 = 2^4$ the \alert{hexadecimal} and \alert{binary system} are particulary easy to convert into each other.
+    \end{itemize}
+  \end{itemize}
+  % TODO: wie es verglichen mit z.B. 9er oder 12er System ist
+  % TODO: allgemeines Prinzip, Dezimalsystem ist doch auch nur eine Darstellung, wie man binäre Zahlen schnell zusammenbaut
+\end{frame}

@@ -15,22 +15,59 @@
 \begin{frame}[allowframebreaks]{Aufgabe \thesection}{Zahlensysteme und Darstellung negativer Kommazahlen}
   \begin{requirementsnoinc}
     \begin{itemize}
-      \item asdf
+      \item Der Wert von $[d_n,d_{n-1},...,d_0]$ entspricht:
+      \begin{itemize}
+          \item $[d]_{BV} = \sum\limits^{n-1}_{i=0}d_i 2^i \cdot(-1)^{d_n}$
+          \item $[d]_1 = \sum\limits^{n-1}_{i=0}d_i 2^i - (d_n 2^n -1)$
+          \item $[d]_2 = \sum\limits^{n-1}_{i=0}d_i 2^i - d_n 2^n$
+      \end{itemize}
     \end{itemize}
   \end{requirementsnoinc}
   \begin{exercisenoinc}
     \begin{itemize}
-      \item asdf
+      \item Konvertiere folgende Zahlen mit möglichst wenig Bits in B\&V, 1er- und 2er-Komplement Darstellung:
+      \begin{itemize}
+          \item $2342_{10}$
+          \item $-BFDC_{16}$
+          \item $-10_{16}$
+          \item $255_8$
+      \end{itemize}
     \end{itemize}
   \end{exercisenoinc}
+  Mögliche Vorgehensweise
+  \begin{block}{Zuallererst}
+        \begin{itemize}
+            \item berechne Binärzahl (ohne Vorzeichen)
+        \end{itemize}
+        \end{block}
+        \begin{block}{Positives Vorzeichen}
+            \begin{itemize}
+                \item BV: setze eine 0 davor
+                \item 1er-Kompl.: gleiches wie bei BV
+                \item 2er-Kompl.: gleiches wie bei BV
+            \end{itemize}
+        \end{block}
+        \begin{block}{Negatives Vorzeichen}
+            \begin{itemize}
+                \item BV: setze eine 1 davor
+                \item 1er-Kompl.: invertiere die Binärzahl und setze eine 1 davor
+                \item 2er-Kompl.: nimm das 1er-Komplement und addiere 1 dazu
+            \end{itemize}
+        \end{block}
   \begin{solution}
-    \begin{itemize}
-      \item asdf
-    \end{itemize}
+    Aufgabe 1a)\newline\newline
+    $2342_{10} = 100100100110_2 \newline\newline = [0100100100110]_{BV} \newline\newline = [0100100100110]_{1} \newline\newline = [0100100100110]_{2}$
+  \end{solution}
+  \begin{solution}
+    Aufgabe 1b)\newline\newline
+    $–BFCD_{16} = - 1011 1111 1100 1101_2 \newline\newline = [11011 1111 1100 1101]_{BV} \newline\newline = [1 0100 0000 0011 0010]_1 \newline\newline = [1 0100 0000 0011 0011]_2$
+  \end{solution}
+  \begin{solution}
+    Aufgabe 1c)\newline\newline
+    $–10_{16} = - 1 0000_2 \newline\newline = [11 0000]_{BV} \newline\newline = [10 1111]_1 \newline\newline = [11 0000]_2$  
   \end{solution}
   \begin{solutionnoinc}
-    \begin{itemize}
-      \item asdf
-    \end{itemize}
+    Aufgabe 1d)\newline\newline
+    $255_{8} = 10 101 101_2 \newline\newline = [010 101 101]_{BV} \newline\newline = [010 101 101]_{1} \newline\newline = [010 101 101]_{2}$
   \end{solutionnoinc}
 \end{frame}
