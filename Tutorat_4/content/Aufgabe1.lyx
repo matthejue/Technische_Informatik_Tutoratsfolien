@@ -1,0 +1,2744 @@
+#LyX file created by tex2lyx 2.3
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin /home/areo/Documents/Studium/Technische_Informatik_Tutoratsfolien/Tutorat_4/content/
+\textclass beamer
+\options aspectratio=169,hyperref=colorlinks=true,allcolors=PrimaryColor,c
+\use_default_options false
+\begin_modules
+algorithm2e
+tcolorbox
+\end_modules
+\maintain_unincluded_children false
+\language ngerman
+\language_package default
+\inputencoding auto
+\fontencoding T1
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype true
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 2
+\use_package amssymb 0
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 2
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine biblatex
+\cite_engine_type authoryear
+\biblio_style plainnat
+\use_bibtopic false
+\biblatex_bibstyle numeric
+\biblatex_citestyle numeric
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 4
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style german
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+
+\lang ngerman
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%!Tex Root = ../main.tex
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% ./Packete.tex
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% ./Design.tex
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% ./Deklarationen.tex
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% ./Vorbereitung.tex
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% ./Aufgabe2.tex
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% ./Aufgabe3.tex
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% ./Aufgabe4.tex
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% ./Appendix.tex
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\lang ngerman
+Aufgabe 1
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+setcounter{exercise}{1}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+if
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+gabriella
+\end_layout
+
+\end_inset
+
+1
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{frame}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+Aufgabe 1: Festkommazahl als 1-er und 2-er Komplement
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+alert
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+ Kurze Erinnerung:
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ Eigenschaft des 1er-Komplements: 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{itemize}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+Symmetrie: d.h. Komplemente haben den gleichen Betrag 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{itemize}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+par 
+\end_layout
+
+\end_inset
+
+Eigenschaft des 2-er-Komplements: 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{itemize}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+Asymmetreischer Zahlenbereich: Negativer Zahlenbereich wird im Vergelich zum 1-er-Komplement um eine zusÃ¤tzliche negative Zahl erweitert, die doppelte Darstellung der 
+\begin_inset Formula $0$
+\end_inset
+
+ entfÃ¤llt (
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+enquote
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+Shift ins Negative
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+) 
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+Komplemente berechnen sich durch Komplementieren der Bits und es wird ein Bit (aber nicht notwendigerweise der Wert 1!) hinzuaddiert 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{itemize}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{frame}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{frame}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+Aufgabe 1a)
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{block}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+Aufgabenstellung
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ Gegeben sei 
+\begin_inset Formula $a=a_n...a_0a_{-1}...a_{-k}$
+\end_inset
+
+. Gesucht ist der Wert von 
+\begin_inset Formula $a$
+\end_inset
+
+ als 1er-Komplement und als 2er-Komplement mit jeweils 
+\begin_inset Formula $k$
+\end_inset
+
+ Nachkommastellen. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{block}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{block}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+1er-Komplement:
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{itemize}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+GrÃ¶Ãte Darstellbare Zahl: 
+\begin_inset Formula $[01...1,1...1]_1 =: a_{max}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\overset{\text{\tiny Symmetrie}}{ \Rightarrow}$
+\end_inset
+
+ kleinste Darstellbare Zahl 
+\begin_inset Formula $a_{min} = -a_{max}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+gesucht ist x: 
+\begin_inset Formula $a_{max} - x = 0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ x muss der grÃ¶Ãten darstellbaren Zahl entsprechen 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{itemize}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{block}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{frame}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{frame}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+Aufgabe 1a) 1er-Komplement
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ Berechne die grÃ¶Ãte darstellbare Zahl (bzw. x): 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $a_{max} = [01...1,1...1]_1 \newline = \sum\limits_{i=-k}^{n-1}  2^i\newline = \Big(\sum\limits_{i=0}^{n-1} 2^i\Big) + \Big(\sum\limits_{i=-k}^{-1} 2^i\Big)\newline \overset{\text{\tiny geom. Summe}}{=} (2^n-1) + \Big(\sum\limits_{i=-k}^{-1}  2^i \Big) \newline =  (2^n-1) + \Big(\sum\limits_{i=-k}^{0} 2^i - 2^0\Big) \newline =  (2^n-1) + \Big(2^0 + 2^{-1} + ... + 2^{-k+1}+ 2^{-k} - 2^0\Big) \newline =  (2^n-1) + \Big(\frac{1}{2^0} + \frac{1}{2^{1}} + ... + \frac{1}{2^{k-1}}+ \frac{1}{2^{k}} - 2^0\Big)$
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{frame}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{frame}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+Aufgabe 1a) 1er-Komplement
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $ = (2^n-1) + \Big(\sum\limits_{i=0}^{k} \big(\frac{1}{2}\big)^i - 2^0\Big)\newline
+        \overset{\text{\tiny geom. Summe}}{=}  (2^n-1) + \Big(\frac{\big(\frac{1}{2}\big)^{k+1} - 1}{\frac{1}{2} - 1} - 2^0\Big) \newline =  (2^n-1) + \Big(\frac{\big(\frac{1}{2}\big)^{k+1} - 1}{-\frac{1}{2}} - 2^0\Big) \newline =  (2^n-1) + \Big(2 - 2 \cdot\big(\frac{1}{2}\big)^{k+1} - 2^0\Big) \newline =  (2^n-1) + \Big(1 - \big(\frac{1}{2}\big)^{k} \Big)
+        \newline =  2^n - 2^{-k}$
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\Rightarrow [a_n...a_0a_{-1}...a_{-k}]_1 = \sum\limits_{i=-k}^{n-1} a_i \cdot 2^i - a_n \cdot (2^n - 2^{-k})\newline$
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{frame}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{frame}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+Aufgabe 1a) 1er-Komplement
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{block}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+2er-Komplement:
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{itemize}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+GrÃ¶Ãte darstellbare Zahl: 
+\begin_inset Formula $[01...1,1...1]_1 =: a_{max}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\overset{\text{\tiny \enquote{Shift ins Negative}}}{ \Rightarrow}$
+\end_inset
+
+ kleinste Darstellbare Zahl: 
+\begin_inset Formula $a_{min} = -a_{max} - [0...01]_2$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+gesucht ist 
+\begin_inset Formula $y = a_{max} + [0...01]_2$
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{itemize}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{block}
+\end_layout
+
+\end_inset
+
+ Berechne y : 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $a_{max} + [0...01]_2 = a_{max} + 2^{-k} = (2^n - 2^{-k}) + 2^{-k} = 2^n$
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\Rightarrow [a_n...a_0a_{-1}...a_{-k}]_2 = \sum\limits_{i=-k}^{n-1} a_i \cdot 2^i - a_n \cdot 2^n$
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{frame}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+fi
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{frame}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+[
+\end_layout
+
+\end_inset
+
+allowframebreaks, fragile
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+]
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+Aufgabe 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+thesection
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+Nachkommastellen bei den Darstellungen von Festkommazahlen
+\begin_inset VSpace 0.5cm
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{requirementsnoinc}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+resizebox{
+\backslash
+textwidth}{!}{
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Box Frameless
+position "t"
+hor_pos "l"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "26cm"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+
+\begin_layout Plain Layout
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{linenums}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+numberedcodebox
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+[
+\end_layout
+
+\end_inset
+
+minted language=python, minted options=
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+]
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+./figures/valueofrepresentation.py
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{linenums}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{requirementsnoinc}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{requirementsnoinc}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{terminal}
+\end_layout
+
+\end_inset
+
+ |
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+prompt
+\end_layout
+
+\end_inset
+
+| ./valueofrepresentation.py 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+0000->(0.0, 0.0), 0001->(0.25, 0.25), 0010->(0.5, 0.5), 0011->(0.75, 0.75), 0100->(1.0, 1.0), 0101->(1.25, 1.25), 0110->(1.5, 1.5), 0111->(1.75, 1.75), 1000->(-1.75, -2.0), 1001->(-1.5, -1.75), 1010->(-1.25, -1.5), 1011->(-1.0, -1.25), 1100->(-0.75, -1.0), 1101->(-0.5, -0.75), 1110->(-0.25, -0.5), 1111->(0.0, -0.25)
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{terminal}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{requirementsnoinc}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+par 
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{solutionnoinc}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+tiny
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula \begin{align*}
+            0xba &= 0xb \cdot 16^1 + 0xa \cdot 16^0\\
+            &= 0o13 \cdot 16^1 + 0o12 \cdot 16^0\\
+            &= (0o1 \cdot 8^1 + 0o3) \cdot 16^1 + (0o1 \cdot 8^1+  0o2) \cdot 16^0\\
+            &= (0o1 \cdot 8^1 + 0o3) \cdot (8 \cdot 2)^1 + (0o1 \cdot 8^1+  0o2) \cdot (8 \cdot 2)^0\\
+            &= 0o2 \cdot 8^2 + 0o6 \cdot 8^1 + 0o1 \cdot 8^1 \cdot (8 \cdot 2)^0 + 0o2 \cdot (8 \cdot 2)^0\\
+            &= 0o2 \cdot 8^2 + 0o7 \cdot 8^1 + 0o2 \cdot 1 = 0o272 \\
+            0xba &= 0xb \cdot 16^1 + 0xa \cdot 16^0\\
+            &= 0b1011 \cdot (2^4)^1 + 0b1010 \cdot (2^4)^0 = 0b10111010 
+        \end{align*}
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{solutionnoinc}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+par 
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{solutionnoinc}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{itemize}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\displaystyle[a]_{1}=\textstyle{\sum_{i=-k}^{n-1}a_{i}\cdot2^{i}-a_{n}\cdot(2^{n}-2^{-k})}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+Beim 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+alert
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+Einerkomplement
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ wird, da es zwei 
+\begin_inset Formula $0$
+\end_inset
+
+en gibt wegen der Symmetrie die grÃ¶ÃtmÃ¶gliche positive Zahl abgezogen. Diese ist: 
+\begin_inset Formula \begin{align*}
+            \sum_{i=-k}^{n-1}1\cdot2^{i} &= \sum_{i=0}^{n-1}1\cdot2^{i} + \sum_{i=-k}^{-1}1\cdot2^{i} \\
+            &= \sum_{i=0}^{n-1}2^{i} + \sum_{i=0}^{k-1} 2^{i-k}\\
+            &= \sum_{i=0}^{n-1}2^{i} + \sum_{i=0}^{k-1} \frac{2^{i}}{2^k}
+            \end{align*}
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{itemize}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{solutionnoinc}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{solutionnoinc}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula \begin{align*}
+      &= \sum_{i=0}^{n-1}2^{i} +  \frac{\sum_{i=0}^{k-1} 2^{i}}{2^k} \\
+      & = 2^n-1+\frac{2^k-1}{2^k}\\
+      & = 2^n-1+1-\frac{1}{2^k}\\
+      & = 2^n-2^{-k}
+      \end{align*}
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{solutionnoinc}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{frame}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{frame}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+[
+\end_layout
+
+\end_inset
+
+allowframebreaks
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+]
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+Aufgabe 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+thesection
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+Nachkommastellen bei den Darstellungen von Festkommazahlen
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{solution}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{itemize}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\displaystyle [a]_{2}=\textstyle{\sum_{i=-k}^{n-1}a_{i}\cdot2^{i}-a_{n}\cdot2^{n}}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+Beim 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+alert
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+Zweierkomplement
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ wird, da es nur eine 
+\begin_inset Formula $0$
+\end_inset
+
+ gibt wegen dem dadurch resultierenden asymmetrischen Zahlenbereich (
+\begin_inset Formula $-2^{n-1}$
+\end_inset
+
+ ist die grÃ¶Ãte negative Zahl und 
+\begin_inset Formula $2^{n-1}-1$
+\end_inset
+
+ ist die grÃ¶Ãte positive Zahl) die grÃ¶ÃtmÃ¶gliche Zahl grÃ¶Ãer 
+\begin_inset Formula $0$
+\end_inset
+
+ + die kleinstmÃ¶gliche Zahl grÃ¶Ãer 
+\begin_inset Formula $0$
+\end_inset
+
+ (da die zusÃ¤tzliche 
+\begin_inset Formula $0$
+\end_inset
+
+ nicht mehr eine Kodierung braucht und Ã¼bersprungen wird, sodass man direkt zur kleinstmÃ¶glichen Zahl grÃ¶Ãer 
+\begin_inset Formula $0$
+\end_inset
+
+ geht, also 
+\begin_inset Formula $2^{-k}$
+\end_inset
+
+) abgezogen: 
+\begin_inset Formula \begin{align*}
+            \sum_{i=-k}^{n-1}1\cdot2^{i} + 2^{-k} &= \sum_{i=0}^{n-1}1\cdot2^{i} + \sum_{i=-k}^{-1}1\cdot2^{i} + 2^{-k} = 2^n-2^{-k} + 2^{-k} = 2^n
+            \end{align*}
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{itemize}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{solution}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{frame}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{frame}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+Aufgabe 1b
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% 
+\backslash
+begin{block}{Aufgabenstellung:}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%     Stelle die folgenden Zahlen als 2-er-Komplement mit 2 Nachkommastellen und 6 Vorkommastellen (insgesamt 8 Bits) dar.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% 
+\backslash
+end{block}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{solutionnoinc}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{enumerate}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $-1,0_{10} = -32+16+8+4+2+1 = [11111100]_2$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $2,25_{10} = 2+0.25 = [00001001]_2$
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% 
+\backslash
+item $-2,4_{16} = - 2 - 
+\backslash
+frac{1}{4} = [(000010.01)^
+\backslash
+prime]_2 +[000000.01]_2 = [111101.10]_2 + [000000.01]_2 = [111101.11]_2$
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\begin{aligned}[t]
+        -2.4_{16} &= 2 \cdot 16^0 + 4 \cdot 16^{-1} - 16^{1} \\
+        &= 000010_2 \cdot (2^4)^0 + 0100_2 \cdot (2^4)^{-1} - 2^5 \\
+        &= 000010_2 \cdot 2^0 + 01_2 \cdot 2^{-2} - (01111111_2 + 00000001_2)  \\
+        &= 00001001_2 + 01111110_2 = 11110111_2
+        \end{aligned}$
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{itemize}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $-2.4_{16}=-2.25_{10}=-32+16+8+4+1+0.5+0.25_{10}=[111101.11]_2$
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{itemize}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+grÃ¶Ãte darst. Zahl: 
+\begin_inset Formula $31.75 = 16+8+4+2+1+0,5+0,25 = [011111.11]_2$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+grÃ¶Ãte darst. Zahl 
+\begin_inset Formula $ < 1$
+\end_inset
+
+: 
+\begin_inset Formula $0.75 = 0.5 + 0.25 = [000000.11]_2$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+grÃ¶Ãte darst. Zahl 
+\begin_inset Formula $ < 0$
+\end_inset
+
+: 
+\begin_inset Formula $-0.25 = -32 + 16 + 8 + 4 + 2 + 1 + 0.5 + 0.25 = [111111.11]_2$
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{enumerate}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{solutionnoinc}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+par 
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% 
+\backslash
+begin{solutionnoinc}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%     
+\backslash
+begin{enumerate}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%         % 
+\backslash
+item asdf
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%         % 
+\backslash
+item asdf
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%         
+\backslash
+item[3] $
+\backslash
+begin{aligned}[t]
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%         -2.4_{16} &= 2 
+\backslash
+cdot 16^0 + 4 
+\backslash
+cdot 16^{-1} - 16^{1} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%         &= 000010_2 
+\backslash
+cdot (2^4)^0 + 0100_2 
+\backslash
+cdot (2^4)^{-1} - 2^5 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%         &= 000010_2 
+\backslash
+cdot 2^0 + 01_2 
+\backslash
+cdot 2^{-2} - (01111111_2 + 00000001_2)  
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%         &= 00001001_2 + 01111110_2 = 11110111_2
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%         
+\backslash
+end{aligned}$
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%     
+\backslash
+end{enumerate}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% 
+\backslash
+end{solutionnoinc}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{solutionnoinc}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{itemize}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+enquote
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+kleinste Zahl grÃ¶Ãer 
+\begin_inset Formula $0$
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ ist das GegenstÃ¼ck zur 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+enquote
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+grÃ¶Ãten Zahl kleiner 
+\begin_inset Formula $0$
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{itemize}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{solutionnoinc}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{frame}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Flex Script
+status collapsed
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+\begin_layout Plain Layout
+
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "./Library/My Library"
+
+\end_inset
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

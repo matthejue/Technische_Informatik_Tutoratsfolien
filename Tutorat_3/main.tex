@@ -3,12 +3,12 @@
 \input{./content/Deklarationen}
 
 \includeonly{
-  % ./content/Vorbereitung,
+  ./content/Vorbereitung,
   ./content/Aufgabe1,
   ./content/Aufgabe2,
   ./content/Aufgabe3,
   % ./content/Aufgabe4,
-  % ./content/Appendix,
+  ./content/Appendix,
 }
 
 \begin{document}
@@ -24,7 +24,7 @@
     \end{frame}
   \end{withoutheadline}
 
-\setcounter{section}{0}
+\setcounter{section}{-1}
 
 \include{./content/Vorbereitung}
 \include{./content/Aufgabe1}
@@ -33,7 +33,7 @@
 \include{./content/Aufgabe4}
 \include{./content/Appendix}
 
-% \section{Literatur}
+\section{Literatur}
 %
 % \begin{frame}{Bücher}
 %   \printbibliography[type=book,heading=subbibliography,title={Bücher}]
@@ -47,10 +47,10 @@
 %   \printbibliography[type=unpublished,heading=subbibliography,title={Vorlesungen}]
 % \end{frame}
 %
-% \begin{frame}{Online}
-%   \nocite{noauthor_filehandshake_2020}
-%   \printbibliography[type=online,heading=subbibliography,title={Online}]
-% \end{frame}
+\begin{frame}{Online}
+  \nocite{ZahlendarstellungZurBasis}
+  \printbibliography[type=online,heading=subbibliography,title={Online}]
+\end{frame}
 %
 % \begin{frame}{Sonstiges}
 %   % \printbibliography[nottype=book, nottype=article, nottype=online, nottype=unpublished,heading=subbibliography,keyword=wikikeyword,title={Sonstige Quellen}]

@@ -1,0 +1,949 @@
+#LyX file created by tex2lyx 2.3
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin /home/areo/Documents/Studium/Technische_Informatik_Tutoratsfolien/Tutorat_4/
+\textclass beamer
+\begin_preamble
+%!Tex Root = ../main.tex
+% ./Design.tex
+% ./Deklarationen.tex
+% ./Vorbereitung.tex
+% ./Aufgabe1.tex
+% ./Aufgabe2.tex
+% ./Aufgabe3.tex
+% ./Appendix.tex
+
+% https://tex.stackexchange.com/questions/83101/option-clash-for-package-xcolor
+% [table]
+% https://tex.stackexchange.com/questions/14336/latex-beamer-presentation-package-169-aspect-ratio
+% https://tex.stackexchange.com/questions/203045/latex-error-option-clash-for-package-hyperref
+% https://stackoverflow.com/questions/3637129/how-can-i-top-align-the-content-of-a-fragile-frame-in-a-latex-beamer-presentat
+% https://latex-beamer.com/faq/place-content-frame/
+% t to position content at the top: https://tex.stackexchange.com/questions/9889/positioning-content-at-the-top-of-a-beamer-slide-by-default
+
+% ââââââââââââ
+% â Packages â
+% ââââââââââââ
+
+
+
+% \usepackage[margin=1.5cm, headheight=12.5pt]{geometry}
+\usepackage[ngerman]{babel}
+
+
+\usepackage{lipsum}
+
+
+\usepackage{multirow}
+
+
+\usepackage[parfill]{parskip}
+% % https://latexref.xyz/bs-par.html
+ % space between paragraphs
+% \usepackage{setspace}
+
+\usepackage[export]{adjustbox}
+
+
+% as beamer itself already provides these functionalities, there is no need to load hyperref, color, graphicx, graphics
+% \usepackage{graphicx}
+
+% % https://tex.stackexchange.com/questions/48509/insert-list-of-figures-in-the-table-of-contents
+% \usepackage[nottoc]{tocbibind}
+
+% % colorbox stuff
+\usepackage{tcolorbox}
+\usepackage{tikz}
+% \usepackage{pgfplots}
+% \usepackage{pgfgantt}
+
+\usepackage{tikzit}
+\input{graph_theory.tikzstyles}
+
+\usetikzlibrary {arrows.meta,positioning}
+\usetikzlibrary{graphs}
+\tcbuselibrary{skins}
+\tcbuselibrary{breakable}
+\usetikzlibrary{patterns}
+\usetikzlibrary{shadings}
+\usetikzlibrary{mindmap, backgrounds, calc}
+\tcbuselibrary{theorems}
+% \tcbuselibrary{listings}
+% https://tex.stackexchange.com/questions/550052/command-parboxrestore-has-changed
+\tcbuselibrary{minted}
+\tcbset{listing engine=minted}
+\tcbuselibrary{raster}
+
+% % https://tex.stackexchange.com/questions/547950/highlight-labeled-lines-of-code-with-minted
+% % \usepackage{refcount}
+
+% \usepackage{cleveref}
+
+
+
+% \usepackage{pdfpages}
+% https://tex.stackexchange.com/questions/94845/problems-with-toprule-and-midrule-in-a-table
+
+
+\usepackage{tabularray}
+\UseTblrLibrary{diagbox}
+\usepackage{booktabs}% for table rules
+% % \usepackage{tabulary}
+% % https://tex.stackexchange.com/questions/395554/command-rowcolors-from-colortbl-does-not-work-as-expected
+
+\usepackage{nicematrix}
+% \usepackage{tabularx}
+% \usepackage{array}
+% \usepackage{multirow}
+% \usepackage{amssymb}
+
+% https://tex.stackexchange.com/questions/157389/how-to-center-column-values-in-a-table
+% \newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+
+% https://stackoverflow.com/questions/2888817/footnotes-for-tables-in-latex
+% \usepackage{tablefootnote}
+
+% https://tex.stackexchange.com/questions/8625/force-figure-placement-in-text
+% \usepackage{float}
+
+% https://tex.stackexchange.com/questions/219445/line-break-in-texttt
+\usepackage{seqsplit}
+\newcommand{\seqtt}[1]{{\scriptsize\texttt{\seqsplit{#1}}}}
+\newcommand{\smalltt}[1]{{\small\texttt{#1}}}
+\newcommand{\tinytt}[1]{{\tiny\texttt{#1}}}
+\newcommand{\scripttt}[1]{{\scriptsize\texttt{#1}}}
+
+% https://tex.stackexchange.com/questions/358292/creating-a-subcounter-to-a-counter-i-created
+\usepackage{chngcntr}
+
+
+% https://tex.stackexchange.com/questions/18870/defining-an-new-itemize-like-environment-where-itemfoo-passes-foo-to-a-macro
+\usepackage{ifmtarg}
+
+
+
+% https://stackoverflow.com/questions/1061112/eliminate-space-before-beginitemize
+% https://tex.stackexchange.com/questions/31505/trouble-combining-enumitem-and-beamer
+% https://tex.stackexchange.com/questions/325003/given-enumitem-beamer-incompatibility-how-do-i-adjust-the-indent-of-the-enume
+% https://tex.stackexchange.com/questions/455692/beamer-presentation-with-itemize-exceed-text-capacity
+
+% https://tex.stackexchange.com/a/263470
+
+
+% https://tex.stackexchange.com/questions/165178/nameref-hyperref-evaluating-counter-instead-of-section-name
+% \usepackage{nameref}
+
+% https://stackoverflow.com/questions/1078370/subfigs-of-a-figure-on-multiple-pages
+% \usepackage{subfig}
+
+% https://tex.stackexchange.com/questions/186981/is-there-a-subsubsubsection-command
+% https://tex.stackexchange.com/questions/130795/how-can-i-number-sections-below-subsection-in-latex
+% \setcounter{secnumdepth}{5}
+
+% % https://stackoverflow.com/questions/2854299/getting-subsection-to-list-in-table-of-contents-in-latex
+
+
+% https://tex.stackexchange.com/questions/369421/how-to-have-a-figure-going-over-several-pages
+% TODO: set hypcap = true when compiling for the last time
+% https://tex.stackexchange.com/questions/132611/change-color-of-figure-caption-text
+\usepackage[labelfont=color=SecondaryColor, it, textfont=it]{caption}
+\usepackage{subcaption}
+% hypcap=false
+
+% https://tex.stackexchange.com/questions/7210/label-and-caption-without-float
+\DeclareCaptionType{codecaption}[Code][Codeverzeichnis]
+% https://tex.stackexchange.com/questions/449677/spaces-in-newenvironment
+\newenvironment{code}{\bigskip\captionsetup{type=codecaption}}{\medskip}
+
+% https://texblog.net/latex-archive/uncategorized/prevent-floating-image-figure-table/
+% \newcommand\captionof[1]{\def\@captype{#1}\caption}
+% \usepackage{capt-of}
+
+% \usepackage{formal-grammar}
+
+% newfloat package
+% \SetupFloatingEnvironment{floatgrammar}{name=Grammatik}
+
+% \renewcommand{\downplay}[0]{\rowstyle{\color{gray!90!black}}}
+% \newcommand{\removed}[0]{\rowstyle{\color{red}}}
+
+% https://tex.stackexchange.com/questions/26637/how-do-you-get-mathbb1-to-work-characteristic-function-of-a-set
+% \usepackage{bbm}
+% \usepackage{newtxmath}
+
+% https://tex.stackexchange.com/questions/27843/level-of-boldness-changeable
+\usepackage[bold=1]{xfakebold}
+
+
+% \newcommand{\footnoteurl}[1]{\href{#1}{Link}\footnote{\url{#1}.}}
+
+% https://www.namsu.de/Extra/befehle/Cases.html
+
+
+\usepackage{breqn}
+
+
+% https://tex.stackexchange.com/questions/479632/newcommand-combine-optional-star-and-optional-parameter
+% \usepackage{xparse}
+\tcbuselibrary{xparse}
+
+% https://texfaq.org/FAQ-twooptarg
+\usepackage{xargs}
+
+
+% emojis
+\usepackage{tikzsymbols}
+
+
+
+
+% https://tex.stackexchange.com/questions/237974/hide-section-numbering-but-keep-labeling
+% reference titles of sections
+% \usepackage[usetoc]{titleref}
+
+% % https://tex.stackexchange.com/questions/531/what-is-the-best-way-to-use-quotation-mark-glyphs
+\usepackage{csquotes}
+
+
+% https://tex.stackexchange.com/questions/326527/colored-blocks-for-numbered-theorems-in-beamer
+\usepackage{etoolbox}% new package to be loaded
+
+% https://jansoehlke.com/2010/06/strikethrough-in-latex/
+\usepackage[normalem]{ulem}
+% \newcommand{\stkout}[1]{\ifmmode\text{\sout{\ensuremath{#1}}}\else\sout{#1}\fi}
+% \usepackage{cancel}
+% \usepackage{soul}
+
+% get checkmark
+\usepackage{breqn}
+
+
+% change font size
+\usepackage{anyfontsize}
+
+
+\usepackage{etoolbox}
+
+\end_preamble
+\options aspectratio=169,hyperref=colorlinks=true,allcolors=PrimaryColor,c
+\use_default_options false
+\begin_modules
+algorithm2e
+tcolorbox
+\end_modules
+\maintain_unincluded_children false
+\language ngerman
+\language_package default
+\inputencoding auto
+\fontencoding T1
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype true
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 2
+\use_package amssymb 0
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 2
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine biblatex
+\cite_engine_type authoryear
+\biblio_style plainnat
+\use_bibtopic false
+\biblatex_bibstyle numeric
+\biblatex_citestyle numeric
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 4
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style german
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+
+\begin_inset CommandInset include
+LatexCommand input
+preview false
+filename "content/Packete.lyx"
+
+\end_inset
+
+ 
+\begin_inset CommandInset include
+LatexCommand input
+preview false
+filename "content/Design.lyx"
+
+\end_inset
+
+ 
+\begin_inset CommandInset include
+LatexCommand input
+preview false
+filename "content/Deklarationen.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+includeonly
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+ ./content/Vorbereitung, ./content/Aufgabe1, ./content/Aufgabe2, ./content/Aufgabe3, 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% ./content/Aufgabe4,
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+ ./content/Appendix, 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{document}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{withoutheadline}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{withoutfootline}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{frame}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+titlepagesecond
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{frame}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{withoutfootline}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{frame}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+[
+\end_layout
+
+\end_inset
+
+shrink=10
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+]
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+Gliederung
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+[hideallsubsections] 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{frame}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{withoutheadline}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+setcounter{section}{-1}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset include
+LatexCommand include
+preview false
+filename "content/Vorbereitung.lyx"
+
+\end_inset
+
+ 
+\begin_inset CommandInset include
+LatexCommand include
+preview false
+filename "content/Aufgabe1.lyx"
+
+\end_inset
+
+ 
+\begin_inset CommandInset include
+LatexCommand include
+preview false
+filename "content/Aufgabe2.lyx"
+
+\end_inset
+
+ 
+\begin_inset CommandInset include
+LatexCommand include
+preview false
+filename "content/Aufgabe3.lyx"
+
+\end_inset
+
+ 
+\begin_inset CommandInset include
+LatexCommand include
+preview false
+filename "content/Aufgabe4.lyx"
+
+\end_inset
+
+ 
+\begin_inset CommandInset include
+LatexCommand include
+preview false
+filename "content/Appendix.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% 
+\backslash
+section{Literatur}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% 
+\backslash
+begin{frame}{BÃ¼cher}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%   
+\backslash
+printbibliography[type=book,heading=subbibliography,title={BÃ¼cher}]
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% 
+\backslash
+end{frame}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% 
+\backslash
+begin{frame}{Artikel}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%   
+\backslash
+printbibliography[type=article,heading=subbibliography,title={Artikel}]
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% 
+\backslash
+end{frame}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% 
+\backslash
+begin{frame}{Vorlesungen}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%   
+\backslash
+printbibliography[type=unpublished,heading=subbibliography,title={Vorlesungen}]
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% 
+\backslash
+end{frame}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% 
+\backslash
+begin{frame}{Online}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%   
+\backslash
+nocite{noauthor_filehandshake_2020}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%   
+\backslash
+printbibliography[type=online,heading=subbibliography,title={Online}]
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% 
+\backslash
+end{frame}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% 
+\backslash
+begin{frame}{Sonstiges}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%   % 
+\backslash
+printbibliography[nottype=book, nottype=article, nottype=online, nottype=unpublished,heading=subbibliography,keyword=wikikeyword,title={Sonstige Quellen}]
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%   
+\backslash
+printbibliography[nottype=book, nottype=article, nottype=online, nottype=unpublished,heading=subbibliography,title={Sonstige Quellen}]
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% 
+\backslash
+end{frame}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{document}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Note Note
+status open
+\begin_layout Plain Layout
+
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "./Library/My Library"
+
+\end_inset
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
