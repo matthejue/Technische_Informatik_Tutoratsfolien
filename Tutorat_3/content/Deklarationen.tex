@@ -84,6 +84,19 @@ after title={\hspace{0.2cm}\includegraphics[height=3mm]{./figures/lupe.png}}
 
 \numberwithin{equation}{section}
 
+\newtcbox{\mybox}[1][]{enhanced,
+  colback=white,% background color
+  on line,% don't add line breaks
+  sharpish corners,
+  top =0pt,bottom=0pt,left=0pt,right=0pt,
+  boxrule=0pt,
+  frame hidden,
+  borderline north={0.25mm}{0mm}{black},
+  borderline south={0.25mm}{0mm}{black},
+  before upper=\vphantom{Ay},% ensure constant height
+  #1
+}
+
 % ┌───────────────┐
 % │ Beamer Blocks │
 % └───────────────┘
@@ -190,7 +203,6 @@ after title={\hspace{0.2cm}\includegraphics[height=3mm]{./figures/lupe.png}}
 % ┌──────────────────┐
 % │ New Environments │
 % └──────────────────┘
-
 
 \newenvironmentx{transformation}[3][1=0.3, 2=0.2, 3=0.4]{
   \newcommand{\compilesto}{%

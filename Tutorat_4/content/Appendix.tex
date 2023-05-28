@@ -53,7 +53,56 @@
   \end{columns}
 \end{frame}
 
-% Beweis Euklidischer Algorithmus
+\begin{frame}{Appendix}{Transistoren}
+  \begin{itemize}
+    \item Ströme steuern. Man kann den Stromfluss innerhalb einer elektrischen Schaltung abbremsen, sodass überhaupt kein Strom fließt (der Transistor funktioniert als Schalter). Man kann aber den Stromfluss auch stark beschleunigen, wodurch ein viel stärkerer Strom fließt (der Transistor funktioniert als Verstärker).
+    \item im Kern ist ein Transistor entweder ein strom- oder spannungsgesteuerter Widerstand. Feldeffekttransistoren sind spannungsgesteuerte, Bipolartransistoren sind stromgesteuerte Widerstände.
+    \item Unterschiede bei Art der \alert{Lagungsträger}, die zum Stromfluss beiträgt. Bei einem \alert{Bipolartransistor} sind das Elektronen und Löcher. Daher kommt auch der Teil \enquote{Bi} im Namen. Bei einem \alert{Feldeffekttransistor} sind das hingegen entweder Elektronen oder Löcher, also nur eine Art an Ladungsträger.
+    \item Feldeffekttransistoren werden überwiegend überall dort verwendet, wo hohe Ströme , Bipolartransistoren hingegen dort, wo geringe Ströme fließen.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Appendix}{Bipolartransistoren}
+	\begin{figure}
+    \begin{subfigure}{0.4\textwidth}
+      \centering
+      \includegraphics[height=0.5\textheight]{figures/pnp-Transistor}
+      \caption{PNP-Transistor}
+      \label{fig:pnp-transistor}
+    \end{subfigure}
+    \begin{subfigure}{0.4\textwidth}
+      \centering
+      \includegraphics[height=0.5\textheight]{figures/npn-Transistor}
+      \caption{npn-Transistor}
+      \label{fig:npn-transistor}
+    \end{subfigure}
+	\end{figure}
+  \begin{itemize}
+    \item \alert{drei Anschlüsse:} Collector (C), Base (B) und Emitter (E)
+  \end{itemize}
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Appendix}{Feldeffekttransistoren}
+  \begin{figure}
+    % \begin{subfigure}{0.4\textwidth}
+      \centering
+      \includegraphics[height=0.5\textheight]{figures/n-Kanal-Feldeffekttransistor.png}
+      \caption{n-Kanal-Feldeffekttransistor}
+    % \end{subfigure}
+    % \begin{subfigure}{0.4\textwidth}
+    %   \centering
+    %   \includegraphics[height=0.5\textheight]{figures/n-Kanal-Feldeffekttransistor.png}
+    %   \caption{p-Kanal-Feldeffekttransistor}
+    % \end{subfigure}
+  \end{figure}
+  \begin{itemize}
+    \item \alert{drei Anschlüsse:} Drain (D, \enquote{Senke, Abfluss}), Gate (G, \enquote{Tor}) und Source (S, \enquote{Quelle, Zufluss})
+    \item Sperrschicht-Feldeffekttransistor (SFET, engl. JFET)
+    \item Je nachdem wie der Kanal, durch denen die Ladungsträger fließen, dotiert ist, findest man die Bezeichnungen n-Kanal-FFET und p-Kanal-FFET
+  \end{itemize}
+\end{frame}
+
+% % Beweis Euklidischer Algorithmus
 % diese allgemeine mit Wertigkeit usw.
 % Wie N- und P-Kanal-Transistoren funktionieren
 % Polynomring

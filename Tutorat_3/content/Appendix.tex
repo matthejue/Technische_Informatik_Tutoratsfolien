@@ -36,9 +36,9 @@
   \end{itemize}
 \end{frame}
 
-\begin{frame}[allowframebreaks]{Appendix}{Zahlendarstellung zur Basis b - Stellenwertsysteme}
+\begin{frame}[allowframebreaks]{Appendix}{Zahlendarstellung zur Basis b - Stellenwertsysteme\vspace{0.5cm}}
   \begin{itemize}
-    \item \alert{positiver Wert} $\displaystyle \langle d\rangle=\sum_{i=-k}^{n-1}\delta(d_{i})\cdot b^{i}$ einer \alert{Nicht-negativen Festkommazahl}, wobei $d=d_{n-1}\ldots d_0\ldots d_{-k}$ mit $d_i\in Z$
+    \item \alert{positiver Wert} $\displaystyle \langle d\rangle=\sum_{i=-k}^{n-1}\delta(d_{i})\cdot b^{i}$ einer \alert{nicht-negativen Festkommazahl}, wobei $d=d_{n-1}\ldots d_0\ldots d_{-k}$ mit $d_i\in Z$
     \begin{itemize}
       \item Beispiel 3-Bit Festkommazahlen mit $n=1$ und $k=2$:
         \begin{table}
@@ -70,7 +70,7 @@
   \begin{itemize}
     \item Darstellung \alert{negativer Festkommazahlen}, wobei $d=d_{n}d_{n-1}\ldots d_0\ldots d_{-k}$ mit $\forall i<n:d_i\in Z$ und $d_n\in\{0, 1\}$:
     \begin{itemize}
-      \item \alert{möglicherweise negativer Wert} $[d]_{BV} = (-1)^{d_n}\sum_{i=0}^{n-1}\delta(d_i)2^i$ in \alert{Darstellung durch Betrag und Vorzeichen}
+      \item \alert{möglicherweise negativer Wert} $\displaystyle[d]_{BV} = (-1)^{d_n}\sum_{i=0}^{n-1}\delta(d_i)2^i$ in \alert{Darstellung durch Betrag und Vorzeichen}
       \begin{itemize}
         \item Beispiel 3-Bit Festkommazahlen mit Vorzeichenbit, $n=1$ und $k=1$:
           \begin{table}
@@ -79,12 +79,12 @@
                 cells = {c, BoxColor},
                 column{1} = {PrimaryColor,fg=white},
               }
-              $d$                & 10.0 & 10.1 & 11.0 & 11.1 & 00.0 & 00.1 & 01.0 & 01.1 \\
-              $[d]_{BV}$ & 0.0  & -0.5 & -1.0 & -1.5 & 0.0   & 0.5 & 1.0  & 1.5 \\
+              $d$        &  11.1  & 11.0 & 10.1 & 10.0 & 00.0 & 00.1 & 01.0 & 01.1 \\
+              $[d]_{BV}$ & -1.5 & -1.0 & -0.5 & 0.0 & 0.0   & 0.5 & 1.0  & 1.5 \\
             \end{tblr}
           \end{table}
       \end{itemize}
-    \item \alert{möglicherweise negativer Wert} $[d]_{1} = \sum_{i=0}^{n-1}\delta(d_i) 2^i - \delta(d_n)(2^n-2^{-k})$ in \alert{Einerkomplement-Darstellung}
+    \item \alert{möglicherweise negativer Wert} $\displaystyle[d]_{1} = \sum_{i=0}^{n-1}\delta(d_i) 2^i - \delta(d_n)(2^n-2^{-k})$ in \alert{Einerkomplement-Darstellung}
       \begin{itemize}
         \item Beispiel 3-Bit Festkommazahlen mit Vorzeichenbit, $n=1$ und $k=1$:
           \begin{table}
@@ -106,7 +106,7 @@
             \item[2.] die passende Ziffernfolge wie gewohnt erstellen, aber mit vertauschten $1$en und $0$en und das Vorzeichenbit ist eine $1$
           \end{description}
       \end{itemize}
-      \item \alert{möglicherweise negativer Wert} $[d]_{2} = \sum_{i=0}^{n-1}\delta(d_i)2^i - \delta(d_n)2^n$ in \alert{Zweierkomplement-Darstellung}
+      \item \alert{möglicherweise negativer Wert} $\displaystyle[d]_{2} = \sum_{i=0}^{n-1}\delta(d_i)2^i - \delta(d_n)2^n$ in \alert{Zweierkomplement-Darstellung}
       \begin{itemize}
         \item Beispiel 3-Bit Festkommazahlen mit Vorzeichenbit, $n=1$ und $k=1$:
           \begin{table}
@@ -130,56 +130,114 @@
         \item wenn man die kleinste negative Zahl komplementiert: $[10.0]_2' = [01.1]_1 + 1 = [10.0]_2$, dann erhält man erneut die kleinste negative Zahl. Das passt auch ganz gut, da die kleinste negative Zahl im Zweierkomplement keine komplementäre Zahl hat
       \end{itemize}
     \end{itemize}
+  \item Darstellung \alert{negativer Gleitkommazahlen}, wobei $d=\;$\mybox[borderline west={0.25mm}{0mm}{black}]{sign bit}\mybox[borderline east={0.25mm}{0mm}{black}, borderline west={0.25mm}{0mm}{black}]{exponent}\mybox[borderline east={0.25mm}{0mm}{black}]{fraction/mantissa} mit exponent, fraction bits und sign bit aus $\{0, 1\}$:
+  \begin{itemize}
+      \item \alert{varierende Anzahl von Nachkommastellen} im Gegensatz zu Festkommazahlen
+      \item der \alert{Exponent} ist immer als \alert{nicht-negative} Natürliche Zahl zu interpretieren, die \alert{Mantissa} ist immer als \alert{nicht-negativer Bruch} zu interpretieren, also mit $2^{-len(fraction)}$ zu multiplizieren
+      \item der Bias macht den $encoded\_exponent$ immer \alert{positiv}
+      \begin{itemize}
+        \item $encoded\_exponent = real\_exponent + bias$
+        \item $real\_exponent = encoded\_exponent - bias$
+      \end{itemize}
+      \item \alert{Normalisierte Zahlen:} $x = (-1)^S \times (1 + Fraction) \times 2^{Exponent - Bias}$, z.B: $\boxed{\frac{0}{1}\mid 10\mid 1}$
+      \begin{itemize}
+        \item $Bias = 2^{len(exponent)-1} - 1 = 2^{2-1} - 1 = 2 - 1 = 1$, $\boxed{01}$
+      \end{itemize}
+      \item \alert{Denormalisierte Zahlen:} $x = (-1)^S \times (0 + Fraction) \times 2^{-Bias}$, z.B. $\boxed{\frac{0}{1}\mid 00\mid 1}$
+      \begin{itemize}
+        \item $Bias = 2^{len(exponent)-1} - 2 = 2^{2-1} - 2 = 2 - 2 = 0$, $\boxed{00}$
+      \end{itemize}
+      \item \alert{Zero:} $\boxed{\frac{0}{1}\mid 00\mid 0}$
+      \item \alert{Infinity:} $\boxed{\frac{0}{1}\mid 11\mid 0}$
+      \item \alert{NaN:} $\boxed{\frac{0}{1}\mid 11\mid 1}$
+      \item Beispiel 4-Bit Gleitkommazahl mit Vorzeichenbit, $2$ Exponentbits und Mantissabit:
+      {\tiny
+      \begin{table}
+        \raggedright
+        \begin{tblr}{
+            cells = {c, BoxColor},
+            column{1} = {PrimaryColor,fg=white},
+          }
+          $d$      & $1\mid00\mid0$ & $1\mid00\mid1$ & $1\mid01\mid0$  & $1\mid01\mid1$ & $1\mid10\mid0$ & $1\mid10\mid1$ & $1\mid11\mid0$ & $1\mid11\mid1$ \\
+          $[d]_2$  & 0.0  & -0.5 & -1.0 & -1.5 & -2.0  & -3.0 & $\infty$  & NaN \\
+        \end{tblr}
+      \end{table}
+      \begin{table}
+        \raggedright
+        \begin{tblr}{
+            cells = {c, BoxColor},
+            column{1} = {PrimaryColor,fg=white},
+          }
+          $d$      & $0\mid00\mid0$ & $0\mid00\mid1$ & $0\mid01\mid0$ & $0\mid01\mid1$ & $0\mid10\mid0$ & $0\mid10\mid1$ & $0\mid11\mid0$ & $0\mid11\mid1$ \\
+          $[d]_2$  & 0.0  & 0.5 & 1.0 & 1.5 & 2.0  & 3.0 & $\infty$  & NaN \\
+% 0.0, 0.5, 1.0, 1.5, 2.0, 3.0, 4.0, 6.0
+        \end{tblr}
+      \end{table}
+    }
+      \item Beispiel \alert{ohne angepassten Bias} für \alert{Denormalisierte Zahlen} mit 4-Bit Gleitkommazahl mit Vorzeichenbit, $2$ Exponentbits und Mantissabit:
+      {
+        \tiny
+      \begin{table}
+        \raggedright
+        \begin{tblr}{
+            cells = {c, BoxColor},
+            column{1} = {PrimaryColor,fg=white},
+          }
+          $d$      & $1\mid00\mid0$ & $1\mid00\mid1$ & $1\mid01\mid0$  & $1\mid01\mid1$ & $1\mid10\mid0$ & $1\mid10\mid1$ & $1\mid11\mid0$ & $1\mid11\mid1$ \\
+          $[d]_2$  & 0.0  & -0.75& -1.0 & -1.5 & -2.0  & -3.0 & $\infty$  & NaN \\
+        \end{tblr}
+      \end{table}
+      \begin{table}
+        \raggedright
+        \begin{tblr}{
+            cells = {c, BoxColor},
+            column{1} = {PrimaryColor,fg=white},
+          }
+          $d$      & $0\mid00\mid0$ & $0\mid00\mid1$ & $0\mid01\mid0$ & $0\mid01\mid1$ & $0\mid10\mid0$ & $0\mid10\mid1$ & $0\mid11\mid0$ & $0\mid11\mid1$ \\
+          $[d]_2$  & 0.0  & 0.75& 1.0 & 1.5 & 2.0  & 3.0 & $\infty$  & NaN \\
+% 0.5, 0.75, 1.0, 1.5, 2.0, 3.0, 4.0, 6.0
+        \end{tblr}
+      \end{table}
+      }
+    \item es gibt \alert{verschiedene Standards}, wie \alert{Bfloat16} ($1$ sign bit, $8$ exponent bits, $7$ fraction bits), \alert{Single-precision} ($1$ sign bit, $8$ exponent bits, $23$ fraction bits) und \alert{Double-precision} ($1$ sign bit, $11$ exponent bits, $52$ fraction bits), die sich in der \alert{Anzahl der Bits} für \alert{Exponent} und \alert{Mantissa} unterscheiden
+    \item \alert{Runden mit GRS-Bits:}
+    \begin{itemize}
+      \item mit GRS braucht man nur $3$ zusätzliche Bits und braucht so keinen großen und langsamen Addierer mit dem man die Berechnungen erstellt. Ohne GRS müsste man die Berechnungen mit allen Bits machen und am Ende runden
+      \item \alert{Guard und Round bit:} Zwei zusätzliche Bits die bei Berechnungen mit Gleitkommazahlen rechts angehängt werden, um die Rundungsgenauigkeit zu erhöhen
+      \item \alert{Sticky bit:} Zusätzliches Bits rechts der Bits Guard und Round, dass gesetzt wird, wann immer es Bits rechts davon gibt, die nicht $0$ sind
+      \item \alert{Ties to even:} Numbers exactly in the middle between two integer numbers (\enquote{ties}) are rounded towards the even number
+        \vspace{-0.25cm}
+        \begin{align*}
+          0.5 \to 0,\\
+          1.5 \to 2,\\
+          2.5 \to 2
+        \end{align*}
+        \vspace{-0.75cm}
+        \begin{table}
+        \centering
+          \begin{tblr}{
+            cells = {c, BoxColor},
+            row{1} = {PrimaryColor,fg=white},
+          }
+            G & R & S & Ergebnis \\
+              &     & 1/8 & 0.125 \\
+              & 1/4 &     & 0.25  \\
+              & 1/4 & 1/8 & 0.375 \\
+          1/2 &     &     & 0.5   \\
+          1/2 &     & 1/8 & 0.625 \\
+          1/2 & 1/4 &     & 0.75  \\
+          1/2 & 1/4 & 1/8 & 0.875
+          \end{tblr}
+        \end{table}
+    \end{itemize}
+  \end{itemize}
+    \begin{Sidenote}
+      \begin{itemize}
+        \item the Anordnung, dass der \alert{Exponent} immer vor der \alert{Mantissa} steht und der Fakt, dass der kodierte Exponent positiv ist, ist so gewählt, damit man Gleitkommazahlen möglichst einfach vergleichen kann
+        \item \alert{Festkommazahlen} haben eine \alert{kleinere Repräsentationsspanne}, da sie nur eine \alert{fixe Anzahl an Nachkommastellen} haben. Gleitkommazahlen sind \alert{nicht gleichmäßig verteilt}, man hat eine sehr \alert{hohe Dichte kleiner Zahlen} nahe der $0$, neben einem schmallen Bereich nahe der $0$ mit gar keinen Zahlen.
+      \end{itemize}
+    \end{Sidenote}
   \end{itemize}
 \end{frame}
 
-% \begin{frame}{Appendix}{Transistoren}
-%   \begin{itemize}
-%     \item Ströme steuern. Man kann den Stromfluss innerhalb einer elektrischen Schaltung abbremsen, sodass überhaupt kein Strom fließt (der Transistor funktioniert als Schalter). Man kann aber den Stromfluss auch stark beschleunigen, wodurch ein viel stärkerer Strom fließt (der Transistor funktioniert als Verstärker).
-%     \item im Kern ist ein Transistor entweder ein strom- oder spannungsgesteuerter Widerstand. Feldeffekttransistoren sind spannungsgesteuerte, Bipolartransistoren sind stromgesteuerte Widerstände.
-%     \item Unterschiede bei Art der \alert{Lagungsträger}, die zum Stromfluss beiträgt. Bei einem \alert{Bipolartransistor} sind das Elektronen und Löcher. Daher kommt auch der Teil \enquote{Bi} im Namen. Bei einem \alert{Feldeffekttransistor} sind das hingegen entweder Elektronen oder Löcher, also nur eine Art an Ladungsträger.
-%     \item Feldeffekttransistoren werden überwiegend überall dort verwendet, wo hohe Ströme , Bipolartransistoren hingegen dort, wo geringe Ströme fließen.
-%   \end{itemize}
-% \end{frame}
-%
-% \begin{frame}[allowframebreaks]{Appendix}{Bipolartransistoren}
-% 	\begin{figure}
-%     \begin{subfigure}{0.4\textwidth}
-%       \centering
-%       \includegraphics[height=0.5\textheight]{figures/pnp-Transistor}
-%       \caption{PNP-Transistor}
-%       \label{fig:pnp-transistor}
-%     \end{subfigure}
-%     \begin{subfigure}{0.4\textwidth}
-%       \centering
-%       \includegraphics[height=0.5\textheight]{figures/npn-Transistor}
-%       \caption{npn-Transistor}
-%       \label{fig:npn-transistor}
-%     \end{subfigure}
-% 	\end{figure}	
-%   \begin{itemize}
-%     \item \alert{drei Anschlüsse:} Collector (C), Base (B) und Emitter (E) 
-%   \end{itemize}
-% \end{frame}
-%
-% \begin{frame}[allowframebreaks]{Appendix}{Feldeffekttransistoren}
-%   \begin{figure}
-%     % \begin{subfigure}{0.4\textwidth}
-%       \centering
-%       \includegraphics[height=0.5\textheight]{figures/n-Kanal-Feldeffekttransistor.png}
-%       \caption{n-Kanal-Feldeffekttransistor}
-%     % \end{subfigure}
-%     % \begin{subfigure}{0.4\textwidth}
-%     %   \centering
-%     %   \includegraphics[height=0.5\textheight]{figures/n-Kanal-Feldeffekttransistor.png}
-%     %   \caption{p-Kanal-Feldeffekttransistor}
-%     % \end{subfigure}
-%   \end{figure}
-%   \begin{itemize}
-%     \item \alert{drei Anschlüsse:} Drain (D, \enquote{Senke, Abfluss}), Gate (G, \enquote{Tor}) und Source (S, \enquote{Quelle, Zufluss})
-%     \item Sperrschicht-Feldeffekttransistor (SFET, engl. JFET)
-%     \item Je nachdem wie der Kanal, durch denen die Ladungsträger fließen, dotiert ist, findest man die Bezeichnungen n-Kanal-FFET und p-Kanal-FFET
-%   \end{itemize}
-% \end{frame}
-%
-% sowohl um wegen keine zweiten 0 die 0 zu überspringen und direkt zu größten negativen Zahl zu springen, aber kann man es sehen, weil jetzt der kleinste Wert $-2^n$ ist und der größte Wert $2^n-1$
+% - sowohl um wegen keine zweiten 0 die 0 zu überspringen und direkt zu größten negativen Zahl zu springen, aber kann man es sehen, weil jetzt der kleinste Wert $-2^n$ ist und der größte Wert $2^n-1$
