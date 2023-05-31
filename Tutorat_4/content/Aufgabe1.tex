@@ -86,20 +86,6 @@
     \end{requirementsnoinc}
 
     \begin{solutionnoinc}
-        \tiny
-        \begin{align*}
-            0xba &= 0xb \cdot 16^1 + 0xa \cdot 16^0\\
-            &= 0o13 \cdot 16^1 + 0o12 \cdot 16^0\\
-            &= (0o1 \cdot 8^1 + 0o3) \cdot 16^1 + (0o1 \cdot 8^1+  0o2) \cdot 16^0\\
-            &= (0o1 \cdot 8^1 + 0o3) \cdot (8 \cdot 2)^1 + (0o1 \cdot 8^1+  0o2) \cdot (8 \cdot 2)^0\\
-            &= 0o2 \cdot 8^2 + 0o6 \cdot 8^1 + 0o1 \cdot 8^1 \cdot (8 \cdot 2)^0 + 0o2 \cdot (8 \cdot 2)^0\\
-            &= 0o2 \cdot 8^2 + 0o7 \cdot 8^1 + 0o2 \cdot 1 = 0o272 \\
-            0xba &= 0xb \cdot 16^1 + 0xa \cdot 16^0\\
-            &= 0b1011 \cdot (2^4)^1 + 0b1010 \cdot (2^4)^0 = 0b10111010 
-        \end{align*}
-    \end{solutionnoinc}
-
-    \begin{solutionnoinc}
         \begin{itemize}
             \item $\displaystyle[a]_{1}=\textstyle{\sum_{i=-k}^{n-1}a_{i}\cdot2^{i}-a_{n}\cdot(2^{n}-2^{-k})}$
             \item Beim \alert{Einerkomplement} wird, da es zwei $0$en gibt wegen der Symmetrie die größtmögliche positive Zahl abgezogen. Diese ist: 
@@ -139,21 +125,20 @@
 
   \begin{solutionnoinc}
 \begin{enumerate}
-  \item $-1,0_{10} = -32+16+8+4+2+1 = [11111100]_2$
+  \item $-1,0_{10} = -32+16+8+4+2+1 = -0.25 - 0.75 - 0.25 = [11111100]_2$
   \item $2,25_{10} = 2+0.25 = [00001001]_2$
         % \item $-2,4_{16} = - 2 - \frac{1}{4} = [(000010.01)^\prime]_2 +[000000.01]_2 = [111101.10]_2 + [000000.01]_2 = [111101.11]_2$
         \item $\begin{aligned}[t]
-        -2.4_{16} &= 2 \cdot 16^0 + 4 \cdot 16^{-1} - 16^{1} \\
-        &= 000010_2 \cdot (2^4)^0 + 0100_2 \cdot (2^4)^{-1} - 2^5 \\
-        &= 000010_2 \cdot 2^0 + 01_2 \cdot 2^{-2} - (01111111_2 + 00000001_2)  \\
-        &= 00001001_2 + 01111110_2 = 11110111_2
+        -2.4_{16} &= -(2 \cdot 16^0 + 4 \cdot 16^{-1}) \\
+                  &= -([000010]_2 \cdot (2^4)^0 + [0100]_2 \cdot (2^4)^{-1}) = -([0000100100]_2 \cdot 2^{-4}) \\
+                  &= -([00001001]_2 \cdot 2^{-2}) = -[000010.01]_2 = [111101.11]_2
         \end{aligned}$
         \begin{itemize}
-          \item $-2.4_{16}=-2.25_{10}=-32+16+8+4+1+0.5+0.25_{10}=[111101.11]_2$
+          \item $-2.4_{16}= -(2 \cdot 16^{0} + \frac{4}{16}) = -2.25_{10}=-32+16+8+4+1+0.5+0.25_{10} = -0.25 - 2 =[111101.11]_2$
         \end{itemize}
         \item größte darst. Zahl: $31.75 = 16+8+4+2+1+0,5+0,25 = [011111.11]_2$
         \item größte darst. Zahl $ < 1$: $0.75 = 0.5 + 0.25 = [000000.11]_2$
-        \item größte darst. Zahl $ < 0$: $-0.25 = -32 + 16 + 8 + 4 + 2 + 1 + 0.5 + 0.25 = [111111.11]_2$
+        \item größte darst. Zahl $ < 0$: $-0.25 = -32 + 16 + 8 + 4 + 2 + 1 + 0.5 + 0.25 = -0.25 =  [111111.11]_2$
     \end{enumerate}
   \end{solutionnoinc}
 
@@ -170,9 +155,10 @@
     %     \end{enumerate}
     % \end{solutionnoinc}
 
-    \begin{solutionnoinc}
+    \begin{Sidenote}
         \begin{itemize}
-            \item \enquote{kleinste Zahl größer $0$} ist das Gegenstück zur \enquote{größten Zahl kleiner $0$}
+            % \item \enquote{kleinste Zahl größer $0$} ist das Gegenstück zur \enquote{größten Zahl kleiner $0$}
+          \item $8$ Bits $d_5 d_4 d_3 d_2 d_1 d_0 d_{-1} d_{-2}$, wobei $d_5$ sign bit ist, daher $2^5 = 32$
         \end{itemize}
-    \end{solutionnoinc}
+    \end{Sidenote}
 \end{frame}
