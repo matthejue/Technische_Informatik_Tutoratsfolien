@@ -1,6 +1,0 @@
-\begin{BVerbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
-\PYG{esc}{\prompt} ./value\PYGZus{}of\PYGZus{}representation.py
-\PYGZob{}0000\PYGZhy{}\PYGZgt{}(0.0, 0.0), 0001\PYGZhy{}\PYGZgt{}(0.25, 0.25), 0010\PYGZhy{}\PYGZgt{}(0.5, 0.5), 0011\PYGZhy{}\PYGZgt{}(0.75, 0.75), 0100\PYGZhy{}\PYGZgt{}(1.0, 1.0), 0101\PYGZhy{}\PYGZgt{}(1.25, 1.25),
-0110\PYGZhy{}\PYGZgt{}(1.5, 1.5), 0111\PYGZhy{}\PYGZgt{}(1.75, 1.75),  1000\PYGZhy{}\PYGZgt{}(\PYGZhy{}1.75, \PYGZhy{}2.0), 1001\PYGZhy{}\PYGZgt{}(\PYGZhy{}1.5, \PYGZhy{}1.75), 1010\PYGZhy{}\PYGZgt{}(\PYGZhy{}1.25, \PYGZhy{}1.5),
-1011\PYGZhy{}\PYGZgt{}(\PYGZhy{}1.0, \PYGZhy{}1.25), 1100\PYGZhy{}\PYGZgt{}(\PYGZhy{}0.75, \PYGZhy{}1.0), 1101\PYGZhy{}\PYGZgt{}(\PYGZhy{}0.5, \PYGZhy{}0.75), 1110\PYGZhy{}\PYGZgt{}(\PYGZhy{}0.25, \PYGZhy{}0.5), 1111\PYGZhy{}\PYGZgt{}(0.0, \PYGZhy{}0.25)\PYGZcb{}
-\end{BVerbatim}
