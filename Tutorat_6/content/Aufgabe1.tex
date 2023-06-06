@@ -1,0 +1,56 @@
+%!Tex Root = ../main.tex
+% ./Packete.tex
+% ./Design.tex
+% ./Deklarationen.tex
+% ./Vorbereitung.tex
+% ./Aufgabe2.tex
+% ./Aufgabe3.tex
+% ./Aufgabe4.tex
+% ./Appendix.tex
+
+\section{Aufgabe 1}
+
+\setcounter{exercise}{1}
+
+\begin{frame}[allowframebreaks]{Aufgabe \thesection}{Eindeutigkeit des Komplements, Boolesche Algebra}
+  \begin{solutionnoinc}
+    \begin{itemize}
+      \item Existenz und Eindeutigkeit neutraler Elemente bereits in Vorlesung gezeigt $\rightarrow$ Es kann $1 = x + \neg x$ verwendet werden
+      \item \alert{Annahme 1:} $x + y = 1$
+      \item \alert{Annahme 2:} $x · y = 0$
+      \item \alert{Analoges Korollar zur Vorlesung:} $1 = x + \neg x$
+    \end{itemize}
+  \end{solutionnoinc}
+  \begin{solution}
+    \begin{align*}
+      y&=y\cdot1&{({\text{neutrales~Element)}}}\\
+      &{=y\cdot(x+\neg x)}&{(\text{Korollar})}\\
+      &{=(y\cdot x)+(y\cdot \neg x)}&{(\text{Distributivität})}\\
+      &{=(x\cdot y)+(y\cdot \neg x)}&{(\text{Kommutativität})}\\
+      &{=0+(y\cdot \neg x)}&{(\text{Annahme 2})}\\
+      &{=(x\cdot\neg x)+(y\cdot\neg x)}&{(\text{Korollar})}\\
+      &{=\neg x\cdot (x+ y)}&{(\text{Kommutativität + Distributivität})}\\
+      &{=\neg x\cdot 1}&{(\text{Annahme 1})}\\
+      &=\neg x &(\text{neutrales~Element})
+    \end{align*}
+  \end{solution}
+  \begin{solutionnoinc}
+    \resizebox{\textwidth}{!}{
+      \begin{minipage}[t]{8cm}
+        \begin{align*}
+            {{(x\cdot y)+(\neg x\cdot z)}} &{{=(x\cdot y)+((x\cdot y)\cdot z)+((\neg x\cdot z)+((\neg x\cdot z)\cdot y)}}&{{(\text{Absorption})}}\\
+                                        &{{=(x\cdot y)+(\neg x\cdot z)+((x\cdot y)\cdot z)+((\neg x\cdot z)\cdot y)}}&{{(\text{Kommutativität})}}\\
+                                        &{{=(x\cdot y)+(\neg x\cdot z)+(x \cdot (y\cdot z))+(\neg x\cdot(z\cdot y))}}&{{(\text{Assoziativität})}}\\
+                                        &{{=(x\cdot y)+(\neg x\cdot z)+(x \cdot (y\cdot z))+(\neg x\cdot(y\cdot z))}}&{{(\text{Kommutativität})}}\\
+                                        &{{=(x\cdot y)+(\neg x\cdot z)+((x+ \neg x)\cdot(y\cdot z))}}&{{(\text{Kommutativität}+\text{Distributivität})}}\\
+                                        &{{=(x\cdot y)+(\neg x\cdot z)+(y\cdot z)}}&{{(\text{Kommutativität}+\text{Komplement})}}
+        \end{align*}
+      \end{minipage}
+    }
+  \end{solutionnoinc}
+  \begin{Sidenote}
+    \begin{itemize}
+      \item Der zweite Teil geht analog durch Verweisen auf das Dualitätsprinzip oder durchrechnen mit genau derselben Axiomanwendung in genau derselben Reihenfolge
+    \end{itemize}
+  \end{Sidenote}
+\end{frame}

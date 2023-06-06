@@ -1,0 +1,36 @@
+# Zukünftige Folien
+Kodierungen, UTF8, Linux Luatex fontspec, font-manager
+Beweis O-Notation machen
+Die Sache mit Assoziativ, Zweierkomplement assoziativitäŧ
+Modelle
+Verschiedene Arten Implikation anzusehen
+Wie man DNF und KNF sehr einfach aus KI
+
+# Auf Folien tuen
+Einerkomplement und Zweierkomplement zyklisch im Gegensatz zu BV, Zyklische weiterer Vorteil von Zweriomplemeen und Einerkomplement
+Euklidischer Algorithmus wichtig für RSA
+
+# Dieses Tutroat
+Wie man negative Zweierkomplementzahl direkt erhält, Folien aus TI in Ordner tuen
+Die Sache mit Bildmenge surjektiv
+Beim Zweierkomplement-2^{n-1}, weil nach Potenzgesetzen
+Fehler in Folien aktualisiert, letztes Tutorat
+Geometrische Summenformel ist 1111 2^n-1
+Wie Kurzschluss, Flussrichtung bei Cmos
+In welcher Reihenfolge am sinnvollsten bearbeiten
+Keine Sorge wegen wenigen Punkten, Punktzahl varriert pro Blatt
+Wie Musterlösung aussieht
+Wie Wertigkeit allgemein funktioniert
+p-Kanal mit 0 Eselbrücke, wenn 0 anliegt
+weil links eine 1 rauskommen muss damit es mit der +1 zusammen 2 ergibt, um die 2^1=2 auszugleichen Oder besseres Beispiel für b=10 und n = 1: 3*10^0 - 0*10^1 + 1 + 6*10^0 - 1*10^1 = 3 + 6 + 1 - 10 = 0
+
+# 2er Komplement Extra
+6 ist 0110 und 7 ist 0111 als Bias
+Zyklische weiterer Vorteil von Zweriomplemeen und Einerkomplement
+mit weiterer Nachkommastellen mehr Lücken augefüllt, aber imm gleicher Abstand zur lsb Stelle
+
+# 5tes
+Man kann es bei kommutativen Schaltungen einfacher machen
+Fragen wofür IN wichtig ist?
+Wann weiß man, dass man fertig ist
+man kann mergen sobald überall gleiche Eingänge und Ausgänge
