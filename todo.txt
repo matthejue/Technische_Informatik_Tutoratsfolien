@@ -1,17 +1,14 @@
 # Zukünftige Folien
 Kodierungen, UTF8, Linux Luatex fontspec, font-manager
 Beweis O-Notation machen
-Die Sache mit Assoziativ, Zweierkomplement assoziativitäŧ
+Die Sache mit Assoziativ, Zweierkomplement assoziativität
 Modelle
 Verschiedene Arten Implikation anzusehen
 Wie man DNF und KNF sehr einfach aus KI
 Folgen und Reihen?
 
-# Auf Folien tuen
-Einerkomplement und Zweierkomplement zyklisch im Gegensatz zu BV, Zyklische weiterer Vorteil von Zweriomplemeen und Einerkomplement
-Euklidischer Algorithmus wichtig für RSA
-
 # Dieses Tutroat
+Euklidischer Algorithmus wichtig für RSA
 Wie man negative Zweierkomplementzahl direkt erhält, Folien aus TI in Ordner tuen
 Die Sache mit Bildmenge surjektiv
 Beim Zweierkomplement-2^{n-1}, weil nach Potenzgesetzen
@@ -29,6 +26,7 @@ weil links eine 1 rauskommen muss damit es mit der +1 zusammen 2 ergibt, um die 
 6 ist 0110 und 7 ist 0111 als Bias
 Zyklische weiterer Vorteil von Zweriomplemeen und Einerkomplement
 mit weiterer Nachkommastellen mehr Lücken augefüllt, aber imm gleicher Abstand zur lsb Stelle
+Einerkomplement und Zweierkomplement zyklisch im Gegensatz zu BV, Zyklische weiterer Vorteil von Zweriomplemeen und Einerkomplement
 
 # 5tes
 Man kann es bei kommutativen Schaltungen einfacher machen
