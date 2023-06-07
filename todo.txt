@@ -8,21 +8,21 @@ Wie man DNF und KNF sehr einfach aus KI
 Folgen und Reihen?
 
 # Dieses Tutroat
-Euklidischer Algorithmus wichtig für RSA
-Wie man negative Zweierkomplementzahl direkt erhält, Folien aus TI in Ordner tuen
 Die Sache mit Bildmenge surjektiv
-Beim Zweierkomplement-2^{n-1}, weil nach Potenzgesetzen
 Fehler in Folien aktualisiert, letztes Tutorat
+Wie Musterlösung aussieht
+Beim Zweierkomplement-2^{n-1}, weil nach Potenzgesetzen
+In welcher Reihenfolge am sinnvollsten bearbeiten
 Geometrische Summenformel ist 1111 2^n-1
 Wie Kurzschluss, Flussrichtung bei Cmos
-In welcher Reihenfolge am sinnvollsten bearbeiten
 Keine Sorge wegen wenigen Punkten, Punktzahl varriert pro Blatt
-Wie Musterlösung aussieht
 Wie Wertigkeit allgemein funktioniert
 p-Kanal mit 0 Eselbrücke, wenn 0 anliegt
 weil links eine 1 rauskommen muss damit es mit der +1 zusammen 2 ergibt, um die 2^1=2 auszugleichen Oder besseres Beispiel für b=10 und n = 1: 3*10^0 - 0*10^1 + 1 + 6*10^0 - 1*10^1 = 3 + 6 + 1 - 10 = 0
+Euklidischer Algorithmus wichtig für RSA
 
 # 2er Komplement Extra
+Wie man negative Zweierkomplementzahl direkt erhält, Folien aus TI in Ordner tuen
 6 ist 0110 und 7 ist 0111 als Bias
 Zyklische weiterer Vorteil von Zweriomplemeen und Einerkomplement
 mit weiterer Nachkommastellen mehr Lücken augefüllt, aber imm gleicher Abstand zur lsb Stelle
