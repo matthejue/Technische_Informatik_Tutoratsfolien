@@ -128,9 +128,18 @@
             \item[1.] mit der größtmöglichen positven Zahl + kleinmöglichen positven Zahl ungleich $0$ anfangen $-(2^n)$ und überlegen, welche $2$er Potenzen (Stellenwerte) man draufaddieren muss, um die gewünschte Zahl zu erhalten und an den entsprechenden Bits, die diesen $2$er Potenzen entsprechen $1$en setzen
             \item[2.] die passende Ziffernfolge wie gewohnt erstellen, aber die kleinstmögliche positve Zahl ungleich $0$ wird als Startwert genommen und die $1$en und $0$en sind vertauscht, sowie das Vorzeichenbit ist eine $1$
           \end{description}
-        \item wenn man die kleinste negative Zahl komplementiert: $[10.0]_2' = [01.1]_1 + 1 = [10.0]_2$, dann erhält man erneut die kleinste negative Zahl. Das passt auch ganz gut, da die kleinste negative Zahl im Zweierkomplement keine komplementäre positive Zahl hat
+        \item wenn man die kleinste negative Zahl komplementiert: $[10.0]_2' = [01.1]_1 + 0.5 = [10.0]_2$, dann erhält man erneut die kleinste negative Zahl. Das passt auch ganz gut, da die kleinste negative Zahl im Zweierkomplement keine komplementäre positive Zahl hat. Folglich auch hier: $[a]_2 + [a']_2 + 2^{-k} = [1.00]_2 + [0.11]_2 + 0.5 = -2 + 1.5 + 0.5 = 0$ für $a$ kleinste Zweierkomplement-Zahl
       \end{itemize}
     \end{itemize}
+  \begin{Sidenote}
+    \begin{itemize}
+      \item ein weiterer Vorteil ist, dass die Einerkomplement- und Zweierkomplement-Darstellung \alert{zyklisch} sind:
+        \begin{align*}
+          [01.1]_2 + 0.5 &= [10.0]_2 &\text{(nach } 1.5 \text{ geht es mit } {-}2 \text{ weiter)}\\
+          [01.1]_1 + 0.5 &= [10.0]_1 &\text{(nach } 1.5 \text{ geht es mit } {-}1.5 \text{ weiter)}\\
+        \end{align*}
+    \end{itemize}
+  \end{Sidenote}
   % \item Darstellung \alert{negativer Gleitkommazahlen}, wobei $d=\;$\partition[equal height group = fp, borderline west={0.25mm}{0mm}{black}]{sign bit}\partition[equal height group = fp, borderline east={0.25mm}{0mm}{black}, borderline west={0.25mm}{0mm}{black}]{exponent}\partition[equal height group = fp, borderline east={0.25mm}{0mm}{black}]{fraction/mantissa} mit exponent, fraction bits und sign bit aus $\{0, 1\}$:
   \item Darstellung \alert{negativer Gleitkommazahlen}, wobei $\underbrace{d_n}_{sign} \underbrace{d_{n-1} \ldots d_0}_{exponent} \underbrace{d_{-1}\ldots d_{-k}}_{fraction / mantissa}$ mit exponent, fraction bits und sign bit aus $\{0, 1\}$:
   \begin{itemize}
