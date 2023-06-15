@@ -9,6 +9,7 @@ Folgen und Reihen?
 
 # Dieses Tutroat
 Tutorat wegen Feiertag ausfallen
+Gabriella und Krister helfen mit
 Die Sache mit Bildmenge surjektiv
 Fehler in Folien aktualisiert, letztes Tutorat
 Wie Musterlösung aussieht
@@ -23,14 +24,26 @@ weil links eine 1 rauskommen muss damit es mit der +1 zusammen 2 ergibt, um die 
 Euklidischer Algorithmus wichtig für RSA
 
 # 2er Komplement Extra
+Trick wie man mit 0en direkt negaitve 2er Komplzahl hinschreiben kann
+wie Zweierkomplement anschaulich an Folien genau funktioniert, mit inverieren -2^n und so
 Wie man negative Zweierkomplementzahl direkt erhält, Folien aus TI in Ordner tuen
 6 ist 0110 und 7 ist 0111 als Bias
 Zyklische weiterer Vorteil von Zweriomplemeen und Einerkomplement
 mit weiterer Nachkommastellen mehr Lücken augefüllt, aber imm gleicher Abstand zur lsb Stelle
 Einerkomplement und Zweierkomplement zyklisch im Gegensatz zu BV, Zyklische weiterer Vorteil von Zweriomplemeen und Einerkomplement
+Bei Festkommazahlenn immer gleiche Zahlenabstände im Gegensatz zu Gleitkomma. Wenn man eine weitere Nachkommastelle hinzufügt, dann werden in der Mitte der Zwischenräume neue Zahlen hinzufügt, 0.25 wegen 1/2^2
+
+wie man direkt mit 0en negative Zweierkomplementzahl bekommt
+Beispiel zeigen, wo man eine negative Zahl negiert im 2er Komplement
+
+Idee von Zweierkomplement nochmal verdeutlichen so wie Scholl es erklärt
 
 # 5tes
 Man kann es bei kommutativen Schaltungen einfacher machen
 Fragen wofür IN wichtig ist?
 Wann weiß man, dass man fertig ist
 man kann mergen sobald überall gleiche Eingänge und Ausgänge
+
+# 6tes
+Ausversehen Boolesche Algebra falsch erklärt
+Volladdierer

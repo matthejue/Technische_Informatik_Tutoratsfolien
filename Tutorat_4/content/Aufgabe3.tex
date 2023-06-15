@@ -66,7 +66,7 @@ $a$  & 1 & 0  & 0  & 0
 \end{solutionnoinc}
 \begin{solutionnoinc}
 \begin{itemize}
-    \item \alert{Vereinfachter Boolescher Ausdruck ($1$en):} $\overline{b}\overline{c}+\overline{a}\overline{c}$
+    \item \alert{Vereinfachter Boolescher Ausdruck ($1$en):} $\overline{b}\overline{c}+\overline{a}\overline{c} = \overline{c}\cdot (\overline{a} + \overline{b})$
 \end{itemize}
 \begin{table}
 \tiny
@@ -89,7 +89,7 @@ $a$ & $b$ & $c$ & $\overline{b}\overline{c}+\overline{a}\overline{c}$ \\
 \end{solutionnoinc}
 \begin{solutionnoinc}
 \begin{itemize}
-    \item \alert{KNF:} $(a+b+\overline{c}) \cdot (a+\overline{b}+\overline{c}) \cdot (\overline{a}+b+\overline{c})\cdot (\overline{a}+\overline{b}+c)\cdot(\overline{a}+\overline{b}+\overline{c})$
+	\item \alert{DNF:} $(\overline{a}\cdot \overline{b}\cdot c) + (\overline{a}\cdot b\cdot c) + (a\cdot \overline{b}\cdot c) + (a\cdot b\cdot \overline{c}) + (a\cdot b\cdot c)$
 \end{itemize}
 \alert{Karnaugh Map:} \begin{table}
 \tiny

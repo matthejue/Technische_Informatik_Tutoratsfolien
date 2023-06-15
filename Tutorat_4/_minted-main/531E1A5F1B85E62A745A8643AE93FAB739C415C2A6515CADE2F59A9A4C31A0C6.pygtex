@@ -1,0 +1,22 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYGZsh{} INITIALISATION
+LOADI ACC 24
+STORE ACC 40
+LOADI ACC 16
+STORE ACC 41
+\PYGZsh{} PROGRAM
+LOAD ACC 40
+SUB ACC 41
+JUMP== 10
+JUMP\PYGZgt{} 5
+LOAD ACC 41
+SUB ACC 40
+STORE ACC 41
+JUMP 4
+LOAD ACC 40
+SUB ACC 41
+STORE ACC 40
+JUMP \PYGZhy{}11
+LOAD ACC 40
+STORE ACC 42
+\end{Verbatim}

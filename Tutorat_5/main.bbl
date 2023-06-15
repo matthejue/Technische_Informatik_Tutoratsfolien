@@ -1,0 +1,78 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{MethodComplements2023}{online}{}
+      \list{organization}{1}{%
+        {Wikipedia}%
+      }
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In mathematics and computing, the method of complements is a technique to encode a symmetric range of positive and negative integers in a way that they can use the same algorithm (hardware) for addition throughout the whole range. For a given number of places half of the possible representations of numbers encode the positive numbers, the other half represents their respective additive inverses. The pairs of mutually additive inverse numbers are called complements. Thus subtraction of any number is implemented by adding its complement. Changing the sign of any number is encoded by generating its complement, which can be done by a very simple and efficient algorithm. This method was commonly used in mechanical calculators and is still used in modern computers. The generalized concept of the radix complement (as described below) is also valuable in number theory, such as in Midy's theorem. The nines' complement of a number given in decimal representation is formed by replacing each digit with nine minus that digit. To subtract a decimal number y (the subtrahend) from another number x (the minuend) two methods may be used: In the first method the nines' complement of x is added to y. Then the nines' complement of the result obtained is formed to produce the desired result. In the second method the nines' complement of y is added to x and one is added to the sum. The leftmost digit '1' of the result is then discarded. Discarding the leftmost '1' is especially convenient on calculators or computers that use a fixed number of digits: there is nowhere for it to go so it is simply lost during the calculation. The nines' complement plus one is known as the ten's complement. The method of complements can be extended to other number bases (radices); in particular, it is used on most digital computers to perform subtraction, represent negative numbers in base 2 or binary arithmetic and test underflow and overflow in calculation.}
+      \field{annotation}{Page Version ID: 1147184194}
+      \field{day}{29}
+      \field{hour}{10}
+      \field{langid}{english}
+      \field{minute}{6}
+      \field{month}{3}
+      \field{second}{7}
+      \field{timezone}{Z}
+      \field{title}{Method of Complements}
+      \field{urlday}{8}
+      \field{urlmonth}{6}
+      \field{urlyear}{2023}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /home/areo/Zotero/storage/NZ4U8KFU/Method_of_complements.html
+      \endverb
+      \verb{urlraw}
+      \verb https://en.wikipedia.org/w/index.php?title=Method_of_complements&oldid=1147184194
+      \endverb
+      \verb{url}
+      \verb https://en.wikipedia.org/w/index.php?title=Method_of_complements&oldid=1147184194
+      \endverb
+    \endentry
+    \entry{OnlineRechnerNumerischeKomplemente}{online}{}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{labeltitlesource}{title}
+      \field{title}{Online-{{Rechner}}: {{Numerische Komplemente}}}
+      \field{urlday}{8}
+      \field{urlmonth}{6}
+      \field{urlyear}{2023}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /home/areo/Zotero/storage/FQM2SGC7/8574.html
+      \endverb
+      \verb{urlraw}
+      \verb https://de.planetcalc.com/8574/
+      \endverb
+      \verb{url}
+      \verb https://de.planetcalc.com/8574/
+      \endverb
+    \endentry
+  \enddatalist
+  \missing{noauthor_filehandshake_2020}
+\endrefsection
+\endinput
+

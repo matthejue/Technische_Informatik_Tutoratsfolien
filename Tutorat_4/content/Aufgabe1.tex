@@ -87,7 +87,7 @@
 
     \begin{solutionnoinc}
         \begin{itemize}
-            \item $\displaystyle[a]_{1}=\textstyle{\sum_{i=-k}^{n-1}a_{i}\cdot2^{i}-a_{n}\cdot(2^{n}-2^{-k})}$
+            \item $\displaystyle[a]_{1}=\sum_{i=-k}^{n-1}a_{i}\cdot2^{i}-a_{n}\cdot(2^{n}-2^{-k})$
             \item Beim \alert{Einerkomplement} wird, da es zwei $0$en gibt wegen der Symmetrie die größtmögliche positive Zahl abgezogen. Diese ist: 
             \begin{align*}
             \sum_{i=-k}^{n-1}1\cdot2^{i} &= \sum_{i=0}^{n-1}1\cdot2^{i} + \sum_{i=-k}^{-1}1\cdot2^{i} \\
@@ -109,7 +109,7 @@
 \begin{frame}[allowframebreaks]{Aufgabe \thesection}{Nachkommastellen bei den Darstellungen von Festkommazahlen}
     \begin{solution}
         \begin{itemize}
-            \item $\displaystyle [a]_{2}=\textstyle{\sum_{i=-k}^{n-1}a_{i}\cdot2^{i}-a_{n}\cdot2^{n}}$
+            \item $\displaystyle [a]_{2}=\sum_{i=-k}^{n-1}a_{i}\cdot2^{i}-a_{n}\cdot2^{n}$
             \item Beim \alert{Zweierkomplement} wird, da es nur eine $0$ gibt wegen dem dadurch resultierenden asymmetrischen Zahlenbereich ($-2^{n-1}$ ist die größte negative Zahl und $2^{n-1}-1$ ist die größte positive Zahl) die größtmögliche Zahl größer $0$ + die kleinstmögliche Zahl größer $0$ (da die zusätzliche $0$ nicht mehr eine Kodierung braucht und übersprungen wird, sodass man direkt zur kleinstmöglichen Zahl größer $0$ geht, also $2^{-k}$) abgezogen:
             \begin{align*}
             \sum_{i=-k}^{n-1}1\cdot2^{i} + 2^{-k} &= \sum_{i=0}^{n-1}1\cdot2^{i} + \sum_{i=-k}^{-1}1\cdot2^{i} + 2^{-k} = 2^n-2^{-k} + 2^{-k} = 2^n
@@ -125,13 +125,13 @@
 
   \begin{solutionnoinc}
 \begin{enumerate}
-  \item $-1,0_{10} = -32+16+8+4+2+1 = -0.25 - 0.75 - 0.25 = [11111100]_2$
-  \item $2,25_{10} = 2+0.25 = [00001001]_2$
+  \item $-1,0_{10} = -32+16+8+4+2+1 = -0.25 - 0.5 - 0.25 = [111111.00]_2$
+  \item $2,25_{10} = 2+0.25 = [000010.01]_2$
         % \item $-2,4_{16} = - 2 - \frac{1}{4} = [(000010.01)^\prime]_2 +[000000.01]_2 = [111101.10]_2 + [000000.01]_2 = [111101.11]_2$
         \item $\begin{aligned}[t]
         -2.4_{16} &= -(2 \cdot 16^0 + 4 \cdot 16^{-1}) \\
-                  &= -([000010]_2 \cdot (2^4)^0 + [0100]_2 \cdot (2^4)^{-1}) = -([0000100100]_2 \cdot 2^{-4}) \\
-                  &= -([00001001]_2 \cdot 2^{-2}) = -[000010.01]_2 = [111101.11]_2
+		  &= -([0010]_2 \cdot (2^4)^0 + [0100]_2 \cdot (2^4)^{-1}) = -([00100100]_2 \cdot 2^{-4}) = -([0010.0100]_2 \cdot 2^{2}) \\
+		  &= -[000010.01]_2 = [111101.10]_2 + 2^{-2} = [111101.10]_2 + [000000.01]_2 = [111101.11]_2
         \end{aligned}$
         \begin{itemize}
           \item $-2.4_{16}= -(2 \cdot 16^{0} + \frac{4}{16}) = -2.25_{10}=-32+16+8+4+1+0.5+0.25_{10} = -0.25 - 2 =[111101.11]_2$
@@ -158,7 +158,7 @@
     \begin{Sidenote}
         \begin{itemize}
             % \item \enquote{kleinste Zahl größer $0$} ist das Gegenstück zur \enquote{größten Zahl kleiner $0$}
-          \item $8$ Bits $d_5 d_4 d_3 d_2 d_1 d_0 d_{-1} d_{-2}$, wobei $d_5$ sign bit ist, daher $2^5 = 32$
+		\item $8$ Bits $d_5 d_4 d_3 d_2 d_1 d_0 d_{-1} d_{-2}$, wobei $d_5$ sign bit ist, daher $2^5 - 2^{-2} + 2^{-2} = 2^5 = 32$ (größte positive Zahl mit 5 Vorkommastellenbits + kleinster Zahlenabstand mit 2 Nachkommastellenbits)
         \end{itemize}
     \end{Sidenote}
 \end{frame}

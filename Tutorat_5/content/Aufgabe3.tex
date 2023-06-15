@@ -12,3 +12,27 @@
 
 \setcounter{exercise}{1}
 
+\begin{frame}[allowframebreaks]{Aufgabe \thesection}{Boolesche Algebra}
+  \begin{solutionnoinc}
+    \tiny
+    \begin{table}
+      \centering
+      \begin{tblr}{
+        cells = {white, c},
+        row{1} = {PrimaryColor,fg=white},
+        vline{3} = {-}{},
+        vline{5} = {-}{},
+        vline{8} = {-}{},
+      }
+      x & y & $\lnot x$ & $\lnot y$ & $\lnot x \lor \lnot y$ & $x \land y$ & $\lnot (x \land y)$ & $\lnot x \land \lnot y$ & $x \lor y$ & $\lnot (x \lor y)$ \\\hline
+      0 & 0 & 1 & 1 & 1 & 0 & 1 &                                                                  1 & 0 & 1  \\
+      0 & 1 & 1 & 0 & 1 & 0 & 1 &                                                                  0 & 1 & 0  \\
+      1 & 0 & 0 & 1 & 1 & 0 & 1 &                                                                  0 & 1 & 0 \\
+      1 & 1 & 0 & 0 & 0 & 1 & 0 &                                                                  0 & 1 & 0 
+      \end{tblr}
+    \end{table}
+  \end{solutionnoinc}
+% die beste all-in-one-Lösung für Tabellen ist: https://packages.oth-regensburg.de/ctan/macros/latex/contrib/tabularray/tabularray.pdf (als Empfehlung)
+% merci
+% in diesem Dokument bei Aufgabe 1 ist nen Beispiel wie man Tabularray verwendet, falls du es verwenden willst. Wenn man einmal zu Tabularray wechselt sind alle Sorgen, die man sonst mit Tabellen hat vergessen.
+\end{frame}

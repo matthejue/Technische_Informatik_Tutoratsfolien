@@ -60,7 +60,7 @@
         \item Euklidischer Algorithmus am Beispiel $a=12$ und $b=16$:
           \begin{align*}
             \textcolor{PrimaryColor}{12} &= \textcolor{SecondaryColor}{16}\cdot \textcolor{gray}{0} + \textcolor{PrimaryColorDimmed}{12}\\
-            \textcolor{SecondaryColor}{16} &= \textcolor{PrimaryColorDimmed}{12}\cdot \textcolor{gray}{1} + \boxed{4}\\
+		  \textcolor{SecondaryColor}{16} &= \textcolor{PrimaryColorDimmed}{12}\cdot \textcolor{gray}{1} + \boxed{4}\\
             \textcolor{PrimaryColorDimmed}{12} &= \boxed{4}\cdot \textcolor{gray}{3} + 0\\
           \end{align*}
           dann gilt: $4 = ggt(12, 16)$.
@@ -81,7 +81,7 @@
     \end{solutionnoinc}
     \begin{solutionnoinc}
         \begin{itemize}
-          \item Modulo ist $q$ Mal die eine Zahl von der anderen abziehen: $a = b \cdot q + r$. Für den GGT muss das Modulo nehmen wie aus der Funktion $gcd$ bekannt fortgeführt werden. Bei genauer Betrachtung lässt sich das gesamte Vorgehen auf folgende Fälle beschränken:
+		\item Modulo ist $q$ Mal die eine Zahl von der anderen abziehen: $a \operatorname{mod} b = a - q \cdot b$. Für den GGT muss das Modulo nehmen wie aus der Funktion $gcd$ bekannt fortgeführt werden. Bei genauer Betrachtung lässt sich das gesamte Vorgehen auf folgende Fälle beschränken:
             \begin{equation*}
               \begin{dcases*}
                 b = b-a & if $a<b$\,, \\[0.1cm]
@@ -90,7 +90,7 @@
               \end{dcases*}
             \end{equation*}
             bis: $a = b$
-          \item damit am Ende der Rest $0$ sein kann, muss es am Ende der Fall sein, dass $x - y$ gerechnet wird und $x=y$ ist, da nur so $0$ als Rest rauskommen kann
+          \item damit am Ende der Rest $0$ sein kann, muss es am Ende der Fall sein, dass $a=b$, da nur so $0$ als Rest rauskommen kann, wenn man dann $a - b$ bzw. $b - a$ rechnet
         \end{itemize}
     \end{solutionnoinc}
     \begin{solutionnoinc}
@@ -99,8 +99,8 @@
             \begin{align*}
               \textcolor{PrimaryColor}{20} &= \textcolor{PrimaryColor}{32} - \textcolor{SecondaryColor}{12}\\
               \textcolor{PrimaryColor}{8} &= \textcolor{PrimaryColor}{20} - \textcolor{SecondaryColor}{12}\\
-              \textcolor{PrimaryColor}{4} &= \textcolor{SecondaryColor}{12} - \textcolor{PrimaryColor}{8}\\
-              \boxed{\textcolor{PrimaryColor}{4}} &= \textcolor{SecondaryColor}{8} - \boxed{\textcolor{PrimaryColor}{4}}\\
+              \textcolor{SecondaryColor}{4} &= \textcolor{SecondaryColor}{12} - \textcolor{PrimaryColor}{8}\\
+              \boxed{\textcolor{PrimaryColor}{4}} &= \textcolor{PrimaryColor}{8} - \boxed{\textcolor{SecondaryColor}{4}}\\
             \end{align*}
         \end{itemize}
     \end{solutionnoinc}

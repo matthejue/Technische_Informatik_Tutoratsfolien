@@ -1,0 +1,17 @@
+[0] Config.pm:307> INFO - This is Biber 2.19
+[0] Config.pm:310> INFO - Logfile is 'main.blg'
+[45] biber:340> INFO - === So Jun 11, 2023, 16:16:40
+[54] Biber.pm:419> INFO - Reading 'main.bcf'
+[96] Biber.pm:979> INFO - Found 3 citekeys in bib section 0
+[104] Biber.pm:4419> INFO - Processing section 0
+[111] Biber.pm:4610> INFO - Looking for bibtex file './Library/My Library.bib' for section 0
+[111] bibtex.pm:1713> INFO - LaTeX decoding ...
+[115] bibtex.pm:1519> INFO - Found BibTeX data source './Library/My Library.bib'
+[136] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[136] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[136] Biber.pm:4239> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'de-DE'
+[136] Biber.pm:4245> INFO - No sort tailoring available for locale 'de-DE'
+[139] bbl.pm:660> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[140] bbl.pm:763> INFO - Output to main.bbl
+[140] Biber.pm:131> WARN - I didn't find a database entry for 'noauthor_filehandshake_2020' (section 0)
+[140] Biber.pm:133> INFO - WARNINGS: 1

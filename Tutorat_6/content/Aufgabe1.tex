@@ -17,13 +17,14 @@
     \begin{itemize}
       \item Existenz und Eindeutigkeit neutraler Elemente bereits in Vorlesung gezeigt $\rightarrow$ Es kann $1 = x + \neg x$ verwendet werden
       \item \alert{Annahme 1:} $x + y = 1$
-      \item \alert{Annahme 2:} $x · y = 0$
+      \item \alert{Annahme 2:} $x \cdot y = 0$
       \item \alert{Analoges Korollar zur Vorlesung:} $1 = x + \neg x$
     \end{itemize}
   \end{solutionnoinc}
-  \begin{solution}
+  \begin{solutionnoinc}
+    \tiny
     \begin{align*}
-      y&=y\cdot1&{({\text{neutrales~Element)}}}\\
+      y&=y\cdot1&{({\text{Neutrales~Element)}}}\\
       &{=y\cdot(x+\neg x)}&{(\text{Korollar})}\\
       &{=(y\cdot x)+(y\cdot \neg x)}&{(\text{Distributivität})}\\
       &{=(x\cdot y)+(y\cdot \neg x)}&{(\text{Kommutativität})}\\
@@ -31,9 +32,24 @@
       &{=(x\cdot\neg x)+(y\cdot\neg x)}&{(\text{Korollar})}\\
       &{=\neg x\cdot (x+ y)}&{(\text{Kommutativität + Distributivität})}\\
       &{=\neg x\cdot 1}&{(\text{Annahme 1})}\\
-      &=\neg x &(\text{neutrales~Element})
+      &=\neg x &(\text{Neutrales~Element})
     \end{align*}
-  \end{solution}
+  \end{solutionnoinc}
+  \begin{solutionnoinc}
+    \tiny
+    \begin{align*}
+      y  &= y + 0 & \text{(Neutrales Element)}\\ 
+      &= y + (x \cdot \neg x)          & \text{(Komplement)}\\
+      &= (y + x) \cdot (y + \neg x)      & \text{(Distributivität)}\\
+      &= (x + y) \cdot (y + \neg x)      & \text{(Kommutativit)}\\
+      &= 1 \cdot (y + \neg x)            & \text{(Annahme 1: } x + y = 1 \text{)}\\
+      &= (x + \neg x) \cdot (y + \neg x) & \text{(Neutrales Element der Konjunktion)}\\
+      &= (\neg x + x) \cdot (\neg x + y) & \text{(Assoziativität)}\\
+      &= \neg x + (x \cdot y)            & \text{(Distributivität)}\\
+      &= \neg x + 0                      & \text{(Annahme 2: } x \cdot y = 0 \text{)} \\
+      &= \neg x                          & \text{(Neutrale Element der Disjunktion)}
+    \end{align*}
+  \end{solutionnoinc}
   \begin{solutionnoinc}
     \resizebox{\textwidth}{!}{
       \begin{minipage}[t]{8cm}
