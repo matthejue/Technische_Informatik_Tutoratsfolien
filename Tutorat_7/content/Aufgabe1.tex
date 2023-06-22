@@ -1,0 +1,63 @@
+%!Tex Root = ../main.tex
+% ./Packete.tex
+% ./Design.tex
+% ./Deklarationen.tex
+% ./Vorbereitung.tex
+% ./Aufgabe2.tex
+% ./Aufgabe3.tex
+% ./Aufgabe4.tex
+% ./Appendix.tex
+
+\section{Aufgabe 1}
+
+\setcounter{exercise}{1}
+
+\begin{frame}[allowframebreaks]{Aufgabe \thesection}{Implikanten und Primimplikanten}
+  \begin{exercisenoinc}
+    \ctikzfig{1empty}
+  \end{exercisenoinc}
+  \begin{exercisenoinc}
+    \ctikzfig{1fun}
+  \end{exercisenoinc}
+  \begin{solution}
+      \begin{itemize}
+        \item Die konstante 1-Funktion ist kein Implikant, es gibt Belegungen $a \in \mathbb{B}^3$ für die $f(a)=0$
+      \end{itemize}
+      \resizebox{\textwidth}{!}{
+        \begin{minipage}[t]{18cm}
+          \ctikzfig{1a}
+        \end{minipage}
+      }
+    \end{solution}
+    \begin{solution}
+      \begin{itemize}
+        \item $a$ ist kein Implikant, also auch kein Primimplikant. Es gilt nicht, dass $\psi(a)\leq f$, denn $\psi(a) (1,0,1)=1\neq f(1,0,1)$
+      \end{itemize}
+      \resizebox{\textwidth}{!}{
+        \begin{minipage}[t]{18cm}
+          \ctikzfig{1b}
+        \end{minipage}
+      }
+  \end{solution}
+  \begin{solution}
+      \begin{itemize}
+          \item $a\cdot \overline{b}\cdot \overline{c}$ ist ein Implikant von $f$ , denn $\psi(a\cdot \overline{b}\cdot \overline{c}) \leq f$
+          $a\cdot \overline{b}\cdot \overline{c}$ ist aber kein Primimplikant, denn es existiert ein \enquote{größerer} Implikant $a\cdot \overline{c}$ $(\psi(a\cdot \overline{b}\cdot \overline{c}) < \psi(a\cdot \overline{c}))$
+      \end{itemize}
+      \resizebox{\textwidth}{!}{
+        \begin{minipage}[t]{18cm}
+          \ctikzfig{1c}
+        \end{minipage}
+      }
+  \end{solution}
+  \begin{solution}
+      \begin{itemize}
+          \item $b\cdot c$ ist ein Primimplikant (und damit natürlich auch ein Implikant). $b\cdot c$ ist maximal, denn es kann kein Literal gestrichen werden, so dass wieder ein Implikant entsteht (weder $b$ noch $c$ sind Implikanten von $f$)
+      \end{itemize}
+      \resizebox{\textwidth}{!}{
+        \begin{minipage}[t]{18cm}
+          \ctikzfig{1d}
+        \end{minipage}
+      }
+  \end{solution}
+\end{frame}

@@ -1,0 +1,76 @@
+%!Tex Root = ../main.tex
+% ./Packete.tex
+% ./Design.tex
+% ./Deklarationen.tex
+% ./Vorbereitung.tex
+% ./Aufgabe1.tex
+% ./Aufgabe3.tex
+% ./Aufgabe4.tex
+% ./Appendix.tex
+
+\section{Aufgabe 2}
+
+\setcounter{exercise}{1}
+
+\begin{frame}[allowframebreaks, t]{Aufgabe \thesection}{ON-Menge und Literale}
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      \begin{itemize}
+        \item \alert{Behauptung:} $m \leq m' \Rightarrow L(m') \subseteq L(m)$
+        \begin{itemize}
+          \item sei $L: BE(X_n) \rightarrow \mathcal{P}(\{\overline{s} \mid s\in X_n\}\cup X_n)$
+        \end{itemize}
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      \begin{figure}[H]
+        \resizebox{\textwidth}{!}{
+          \begin{minipage}[t]{16cm}
+            \ctikzfig{2_hypercubes}
+          \end{minipage}
+        }
+        \caption{Veranschaulichung anhand eines Beispiels}
+      \end{figure}
+    \end{column}
+  \end{columns}
+    \begin{columns}
+      \begin{column}[t]{0.5\textwidth}
+        \resizebox{\textwidth}{!}{
+          \begin{minipage}[t]{8cm}
+            \begin{itemize}
+              \item \alert{Beweis durch Kontraposition:}
+              \begin{itemize}
+                \item $\mathrm{Z\kern-.3em\raise-0.5ex\hbox{Z}}$: $L(m') \not\subseteq L(m) \Rightarrow ON(m) \not\subseteq ON(m')$
+                \item \alert{es gilt:} $L(m) \subset L(m')$, wobei $m$ ein Monom ist und $m' = mx_i^{\omega_i}$
+                \item man betrachte $(\omega_1,\ldots, \omega_i, \ldots \omega_n)\in ON(m)$
+                \item da $x_i^{\omega_i}$ nicht in $m$ vorkommt, gilt auch $(\omega_1,\ldots, \overline{\omega_i}, \ldots, \omega_n)\in ON(m)$
+                \item aber $(\omega_1,\ldots, \overline{\omega_i}, \ldots, \omega_n)\not\in ON(m')$
+                \item \alert{daraus folgt:} $ON(m) \not\subseteq ON(m')$
+                \item daher gilt die Behauptung $\square$
+              \end{itemize}
+            \end{itemize}
+          \end{minipage}
+        }
+      \end{column}
+      \begin{column}[t]{0.5\textwidth}
+        \resizebox{\textwidth}{!}{
+          \begin{minipage}[t]{8cm}
+            \begin{itemize}
+              \item \alert{Beweis durch Widerspruch:}
+              \begin{itemize}
+                \item \alert{Annahme:} $ON(m) \subseteq ON(m') \Rightarrow L(m') \subseteq L(m)$ gilt nicht, also $ON(m) \subseteq ON(m') \wedge L(m) \subset L(m')$
+                \item \alert{es gilt:} $L(m) \subset L(m')$, wobei $m$ ein Monom ist und $m' = mx_i^{\omega_i}$
+                \item man betrachte $(\omega_1,\ldots, \omega_i, \ldots \omega_n)\in ON(m)$
+                \item da $x_i^{\omega_i}$ nicht in $m$ vorkommt, gilt auch $(\omega_1,\ldots, \overline{\omega_i}, \ldots, \omega_n)\in ON(m)$
+                \item aber $(\omega_1,\ldots, \overline{\omega_i}, \ldots, \omega_n)\not\in ON(m')$
+                \item \alert{daraus folgt:} $ON(m') \subset ON(m)$
+                \item \alert{Widerspruch}, denn $ON(m) \subset ON(m')$!
+                \item die Annahme gilt nicht, also gilt die Behauptung $\square$
+              \end{itemize}
+            \end{itemize}
+          \end{minipage}
+        }
+      \end{column}
+    \end{columns}
+    \newpage
+\end{frame} 
