@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.16.0 (TeX Live 2023/Arch Linux)  (format=lualatex 2023.4.28)  29 JUN 2023 16:07
+This is LuaHBTeX, Version 1.16.0 (TeX Live 2023/Arch Linux)  (format=lualatex 2023.4.28)  29 JUN 2023 19:40
  system commands enabled.
  file:line:error style messages enabled.
 **main.tex
@@ -2467,10 +2467,6 @@ File: ./figures/note.png Graphic file (type png)
 <use ./figures/note.png>
 Package luatex.def Info: ./figures/note.png  used on input line 161.
 (luatex.def)             Requested size: 8.27663pt x 8.53581pt.
-
-
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 161.
-
 File: ./figures/background.png Graphic file (type png)
 <use ./figures/background.png>
 Package luatex.def Info: ./figures/background.png  used on input line 161.
@@ -2644,7 +2640,7 @@ File: ./figures/note.png Graphic file (type png)
 <use ./figures/note.png>
 Package luatex.def Info: ./figures/note.png  used on input line 119.
 (luatex.def)             Requested size: 8.27663pt x 8.53581pt.
-<./figures/tree.png, id=498, 474.27188pt x 335.75438pt>
+<./figures/tree.png, id=499, 474.27188pt x 335.75438pt>
 File: ./figures/tree.png Graphic file (type png)
 <use ./figures/tree.png>
 Package luatex.def Info: ./figures/tree.png  used on input line 119.
@@ -2861,7 +2857,7 @@ Overfull \hbox (2.11804pt too wide) has occurred while \output is active
 > Step: execute table commands.
 > Step: calculate cell and line sizes.
 > Step: build the whole table.
-<./figures/hypercube.png, id=635, 618.81187pt x 453.19313pt>
+<./figures/hypercube.png, id=636, 618.81187pt x 453.19313pt>
 File: ./figures/hypercube.png Graphic file (type png)
 <use ./figures/hypercube.png>
 Package luatex.def Info: ./figures/hypercube.png  used on input line 128.
@@ -2961,15 +2957,15 @@ Here is how much of LuaTeX's memory you used:
  244330,4101490 words of node,token memory allocated
  30338 words of node memory still in use:
    522 hlist, 16 vlist, 38 rule, 41 disc, 17 local_par, 33 math, 808 glue, 60 kern, 104 penalty, 5 margin_kern, 562 glyph, 3398 attribute, 106 glue_spec, 1701 attribute_list, 6 write, 930 pdf_literal, 4 pdf_start_link, 4 pdf_end_link, 4 pdf_action, 114 pdf_colorstack, 2 pdf_setmatrix, 2 pdf_save, 2 pdf_restore nodes
-   avail lists: 1:14,2:19791,3:1891,4:1224,5:409,6:361,7:9430,8:71,9:8332,10:19,11:300,12:1
+   avail lists: 1:14,2:19791,3:1891,4:1224,5:409,6:361,7:9430,8:71,9:8332,10:21,11:300,12:1
  79645 multiletter control sequences out of 65536+600000
  63 fonts using 4208191 bytes
  133i,19n,118p,1000b,2457s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsso10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsso8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsso9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on main.pdf (34 pages, 509354 bytes).
+{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsso10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsso8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsso9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
+Output written on main.pdf (34 pages, 516996 bytes).
 
-PDF statistics: 744 PDF objects out of 1000 (max. 8388607)
- 525 compressed objects within 6 object streams
+PDF statistics: 748 PDF objects out of 1000 (max. 8388607)
+ 528 compressed objects within 6 object streams
  73 named destinations out of 1000 (max. 131072)
  1448 words of extra memory for PDF output out of 10000 (max. 100000000)
 

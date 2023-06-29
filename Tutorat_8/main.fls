@@ -1081,4 +1081,5 @@ INPUT /usr/share/texmf-dist/fonts/type1/public/lm/lmsso10.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/lm/lmsso8.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/lm/lmsso9.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb
+INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb
