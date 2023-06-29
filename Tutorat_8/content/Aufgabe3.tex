@@ -32,7 +32,7 @@
         \end{tblr}
         \end{table}
         \begin{itemize}
-          \item $Prim(xor_3) = \empty$
+          \item $Prim(xor_3) = \emptyset$
           \item Es gibt keine Kombinationsmöglichkeiten der Minterme aus $L_0$. Daher sind alle $L_1$-Mengen leer und die Primmenge im nächsten Schritt enthält alle vier Minterme. Der Grund ist, dass sich alle Minterme in (mindestens) zwei Literalen unterscheiden, d.h. alle Minterme sind Primimplikanten.
         \end{itemize}
     \end{itemize}
@@ -61,7 +61,7 @@
   \end{solution}
   \begin{solution}
     \begin{itemize}
-      \item $\displaystyle \bigvee_{\mathclap{\substack{(b_1,\ldots,b_n)\in \mathbb{B}^n\\ mit \sum^n_{i=1} ungerade}}} (x_1^{b_1}\wedge \ldots \wedge x_n^{b_n}), \mathrm{wobei}\;x_{i}^{0}:=x_{i}^{\prime}\;\mathrm{und}\;x_{i}^{1}:=x_{i}$
+      \item $\displaystyle \bigvee_{\mathclap{\substack{(b_1,\ldots,b_n)\in \mathbb{B}^n\\ mit \sum^n_{i=1} b_i ungerade}}} (x_1^{b_1}\wedge \ldots \wedge x_n^{b_n}), \mathrm{wobei}\;x_{i}^{0}:=x_{i}^{\prime}\;\mathrm{und}\;x_{i}^{1}:=x_{i}$
       \item Der angegebene Ausdruck ist die Disjunktion aller Minterme für $xor_n$. In Aufgabenteil a) haben wir schon gesehen, dass alle Minterme wesentlich sind um $xor_n$ darzustellen, da weder durch Quine-McCluskey noch Primimplikantentafel Reduktionen erreicht werden können. Deswegen beschreibt auch hier die Disjunktion der Minterme das Minimalpolynom. Es sind $2^{n-1}$ Primimplikanten, je mit Länge $n$.
     \end{itemize}
   \end{solution}
@@ -78,10 +78,10 @@
           Dann ist $\displaystyle\sum_{j=1}^{i} x_j$ gerade, $\displaystyle\sum_{j=i+1}^{n} x_j$ gerade $\displaystyle\Rightarrow \sum_{j=1}^{n} x_j$ gerade $\Rightarrow g(0, 0) = 0 = xor_2(0, 0)$ 
         \item Fall $b_1 = 1$, $b_2 = 0$:\\[-0.05cm]
           Dann ist $\displaystyle\sum_{j=1}^{i} x_j$ ungerade, $\displaystyle\sum_{j=i+1}^{n} x_j$ gerade $\displaystyle\Rightarrow \sum_{j=1}^{n} x_j$ ungerade $\Rightarrow g(1, 0) = 1 = xor_2(1, 0)$ 
-        \item Fall $b_0 = 1$, $b_2 = 1$:\\[-0.05cm]
+        \item Fall $b_1 = 0$, $b_2 = 1$:\\[-0.05cm]
           Dann ist $\displaystyle\sum_{j=1}^{i} x_j$ gerade, $\displaystyle\sum_{j=i+1}^{n} x_j$ ungerade $\displaystyle\Rightarrow \sum_{j=1}^{n} x_j$ ungerade $\Rightarrow g(0, 1) = 1 = xor_2(0, 1)$ 
-        \item Fall $b_0 = 1$, $b_2 = 1$:\\[-0.05cm]
-          Dann ist $\displaystyle\sum_{j=1}^{i} x_j$ ungerade, $\displaystyle\sum_{j=i+1}^{n} x_j$ ungerade $\displaystyle\Rightarrow \sum_{j=1}^{n} x_j$ gerade $\Rightarrow g(1, 1) = 1 = xor_2(1, 1)$ 
+        \item Fall $b_1 = 1$, $b_2 = 1$:\\[-0.05cm]
+          Dann ist $\displaystyle\sum_{j=1}^{i} x_j$ ungerade, $\displaystyle\sum_{j=i+1}^{n} x_j$ ungerade $\displaystyle\Rightarrow \sum_{j=1}^{n} x_j$ gerade $\Rightarrow g(1, 1) = 0 = xor_2(1, 1)$ 
       \end{enumerate}
     \end{itemize}
   \end{solutionnoinc}
