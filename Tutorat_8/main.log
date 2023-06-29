@@ -2121,4 +2121,855 @@ Overfull \vbox (15.34453pt too high) has occurred while \output is active []
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}<./figures/background.png>] (./main.toc)
 File: ./figures/background.png Graphic file (type png)
 <use ./figures/background.png>
-Package luatex.def Info: ./fi
+Package luatex.def Info: ./figures/background.png  used on input line 24.
+(luatex.def)             Requested size: 42.68025pt x 256.08633pt.
+
+Overfull \vbox (15.34453pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (2.11804pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[2
+
+]
+\openout2 = ./content/Aufgabe1.aux
+ (./content/Aufgabe1.tex
+File: ./figures/background.png Graphic file (type png)
+<use ./figures/background.png>
+Package luatex.def Info: ./figures/background.png  used on input line 11.
+(luatex.def)             Requested size: 42.68025pt x 256.08633pt.
+
+Overfull \vbox (15.34453pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (2.11804pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[3
+
+
+
+]
+<./figures/anote.png, id=84, 210.24pt x 216.81pt>
+File: ./figures/anote.png Graphic file (type png)
+<use ./figures/anote.png>
+Package luatex.def Info: ./figures/anote.png  used on input line 45.
+(luatex.def)             Requested size: 8.27663pt x 8.53581pt.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `cmss' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+ (/usr/share/texmf-dist/tex/latex/microtype/mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+) (/usr/share/texmf-dist/tex/latex/microtype/mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <5> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 45.
+<./figures/note.png, id=99, 210.24pt x 216.81pt>
+File: ./figures/note.png Graphic file (type png)
+<use ./figures/note.png>
+Package luatex.def Info: ./figures/note.png  used on input line 45.
+(luatex.def)             Requested size: 8.27663pt x 8.53581pt.
+> Step: init table outer spec.
+> Step: parse table options.
+> Step: split table.
+> Step: init table inner spec.
+> Step: parse table inner spec.
+> Step: execute table commands.
+> Step: calculate cell and line sizes.
+> Step: build the whole table.
+File: ./figures/background.png Graphic file (type png)
+<use ./figures/background.png>
+Package luatex.def Info: ./figures/background.png  used on input line 45.
+(luatex.def)             Requested size: 42.68025pt x 256.08633pt.
+
+Overfull \vbox (15.34453pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (2.11804pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[4
+
+<./figures/anote.png><./figures/note.png>]
+File: ./figures/note.png Graphic file (type png)
+<use ./figures/note.png>
+Package luatex.def Info: ./figures/note.png  used on input line 134.
+(luatex.def)             Requested size: 8.27663pt x 8.53581pt.
+> Step: init table outer spec.
+> Step: parse table options.
+> Step: split table.
+> Step: init table inner spec.
+> Step: parse table inner spec.
+> Step: execute table commands.
+> Step: calculate cell and line sizes.
+> Step: build the whole table.
+File: ./figures/note.png Graphic file (type png)
+<use ./figures/note.png>
+Package luatex.def Info: ./figures/note.png  used on input line 134.
+(luatex.def)             Requested size: 8.27663pt x 8.53581pt.
+> Step: init table outer spec.
+> Step: parse table options.
+> Step: split table.
+> Step: init table inner spec.
+> Step: parse table inner spec.
+> Step: execute table commands.
+> Step: calculate cell and line sizes.
+> Step: build the whole table.
+File: ./figures/note.png Graphic file (type png)
+<use ./figures/note.png>
+Package luatex.def Info: ./figures/note.png  used on input line 134.
+(luatex.def)             Requested size: 8.27663pt x 8.53581pt.
+> Step: init table outer spec.
+> Step: parse table options.
+> Step: split table.
+> Step: init table inner spec.
+> Step: parse table inner spec.
+> Step: execute table commands.
+> Step: calculate cell and line sizes.
+> Step: build the whole table.
+File: ./figures/background.png Graphic file (type png)
+<use ./figures/background.png>
+Package luatex.def Info: ./figures/background.png  used on input line 134.
+(luatex.def)             Requested size: 42.68025pt x 256.08633pt.
+
+Overfull \vbox (15.34453pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (2.11804pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[5
+
+]
+File: ./figures/background.png Graphic file (type png)
+<use ./figures/background.png>
+Package luatex.def Info: ./figures/background.png  used on input line 134.
+(luatex.def)             Requested size: 42.68025pt x 256.08633pt.
+
+Overfull \vbox (15.34453pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (2.11804pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[6
+
+
+]
+File: ./figures/background.png Graphic file (type png)
+<use ./figures/background.png>
+Package luatex.def Info: ./figures/background.png  used on input line 134.
+(luatex.def)             Requested size: 42.68025pt x 256.08633pt.
+
+Overfull \vbox (15.34453pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (2.11804pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[7
+
+
+]
+File: ./figures/note.png Graphic file (type png)
+<use ./figures/note.png>
+Package luatex.def Info: ./figures/note.png  used on input line 250.
+(luatex.def)             Requested size: 8.27663pt x 8.53581pt.
+> Step: init table outer spec.
+> Step: parse table options.
+> Step: split table.
+> Step: init table inner spec.
+> Step: parse table inner spec.
+> Step: execute table commands.
+> Step: calculate cell and line sizes.
+> Step: build the whole table.
+File: ./figures/note.png Graphic file (type png)
+<use ./figures/note.png>
+Package luatex.def Info: ./figures/note.png  used on input line 250.
+(luatex.def)             Requested size: 8.27663pt x 8.53581pt.
+> Step: init table outer spec.
+> Step: parse table options.
+> Step: split table.
+> Step: init table inner spec.
+> Step: parse table inner spec.
+> Step: execute table commands.
+> Step: calculate cell and line sizes.
+> Step: build the whole table.
+File: ./figures/note.png Graphic file (type png)
+<use ./figures/note.png>
+Package luatex.def Info: ./figures/note.png  used on input line 250.
+(luatex.def)             Requested size: 8.27663pt x 8.53581pt.
+> Step: init table outer spec.
+> Step: parse table options.
+> Step: split table.
+> Step: init table inner spec.
+> Step: parse table inner spec.
+> Step: execute table commands.
+> Step: calculate cell and line sizes.
+> Step: build the whole table.
+File: ./figures/note.png Graphic file (type png)
+<use ./figures/note.png>
+Package luatex.def Info: ./figures/note.png  used on input line 250.
+(luatex.def)             Requested size: 8.27663pt x 8.53581pt.
+> Step: init table outer spec.
+> Step: parse table options.
+> Step: split table.
+> Step: init table inner spec.
+> Step: parse table inner spec.
+> Step: execute table commands.
+> Step: calculate cell and line sizes.
+> Step: build the whole table.
+File: ./figures/background.png Graphic file (type png)
+<use ./figures/background.png>
+Package luatex.def Info: ./figures/background.png  used on input line 250.
+(luatex.def)             Requested size: 42.68025pt x 256.08633pt.
+
+Overfull \vbox (15.34453pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (2.11804pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[8
+
+]
+File: ./figures/background.png Graphic file (type png)
+<use ./figures/background.png>
+Package luatex.def Info: ./figures/background.png  used on input line 250.
+(luatex.def)             Requested size: 42.68025pt x 256.08633pt.
+
+Overfull \vbox (15.34453pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (2.11804pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[9
+
+
+]
+File: ./figures/background.png Graphic file (type png)
+<use ./figures/background.png>
+Package luatex.def Info: ./figures/background.png  used on input line 250.
+(luatex.def)             Requested size: 42.68025pt x 256.08633pt.
+
+Overfull \vbox (15.34453pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (2.11804pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[10
+
+
+]
+File: ./figures/background.png Graphic file (type png)
+<use ./figures/background.png>
+Package luatex.def Info: ./figures/background.png  used on input line 250.
+(luatex.def)             Requested size: 42.68025pt x 256.08633pt.
+
+Overfull \vbox (15.34453pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (2.11804pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[11
+
+
+])
+\openout2 = ./content/Aufgabe2.aux
+ (./content/Aufgabe2.tex
+File: ./figures/background.png Graphic file (type png)
+<use ./figures/background.png>
+Package luatex.def Info: ./figures/background.png  used on input line 11.
+(luatex.def)             Requested size: 42.68025pt x 256.08633pt.
+
+Overfull \vbox (15.34453pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (2.11804pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[12
+
+
+
+
+]
+File: ./figures/anote.png Graphic file (type png)
+<use ./figures/anote.png>
+Package luatex.def Info: ./figures/anote.png  used on input line 161.
+(luatex.def)             Requested size: 8.27663pt x 8.53581pt.
+File: ./figures/anote.png Graphic file (type png)
+<use ./figures/anote.png>
+Package luatex.def Info: ./figures/anote.png  used on input line 161.
+(luatex.def)             Requested size: 8.27663pt x 8.53581pt.
+> Step: init table outer spec.
+> Step: parse table options.
+> Step: split table.
+> Step: init table inner spec.
+> Step: parse table inner spec.
+> Step: execute table commands.
+> Step: calculate cell and line sizes.
+> Step: build the whole table.
+File: ./figures/note.png Graphic file (type png)
+<use ./figures/note.png>
+Package luatex.def Info: ./figures/note.png  used on input line 161.
+(luatex.def)             Requested size: 8.27663pt x 8.53581pt.
+> Step: init table outer spec.
+> Step: parse table options.
+> Step: split table.
+> Step: init table inner spec.
+> Step: parse table inner spec.
+> Step: execute table commands.
+> Step: calculate cell and line sizes.
+> Step: build the whole table.
+File: ./figures/note.png Graphic file (type png)
+<use ./figures/note.png>
+Package luatex.def Info: ./figures/note.png  used on input line 161.
+(luatex.def)             Requested size: 8.27663pt x 8.53581pt.
+> Step: init table outer spec.
+> Step: parse table options.
+> Step: split table.
+> Step: init table inner spec.
+> Step: parse table inner spec.
+> Step: execute table commands.
+> Step: calculate cell and line sizes.
+> Step: build the whole table.
+File: ./figures/note.png Graphic file (type png)
+<use ./figures/note.png>
+Package luatex.def Info: ./figures/note.png  used on input line 161.
+(luatex.def)             Requested size: 8.27663pt x 8.53581pt.
+> Step: init table outer spec.
+> Step: parse table options.
+> Step: split table.
+> Step: init table inner spec.
+> Step: parse table inner spec.
+> Step: execute table commands.
+> Step: calculate cell and line sizes.
+> Step: build the whole table.
+File: ./figures/note.png Graphic file (type png)
+<use ./figures/note.png>
+Package luatex.def Info: ./figures/note.png  used on input line 161.
+(luatex.def)             Requested size: 8.27663pt x 8.53581pt.
+
+
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 161.
+
+File: ./figures/background.png Graphic file (type png)
+<use ./figures/background.png>
+Package luatex.def Info: ./figures/background.png  used on input line 161.
+(luatex.def)             Requested size: 42.68025pt x 256.08633pt.
+
+Overfull \vbox (15.34453pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (2.11804pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[13
+
+]
+File: ./figures/background.png Graphic file (type png)
+<use ./figures/background.png>
+Package luatex.def Info: ./figures/background.png  used on input line 161.
+(luatex.def)             Requested size: 42.68025pt x 256.08633pt.
+
+Overfull \vbox (15.34453pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (2.11804pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[14
+
+
+]
+File: ./figures/background.png Graphic file (type png)
+<use ./figures/background.png>
+Package luatex.def Info: ./figures/background.png  used on input line 161.
+(luatex.def)             Requested size: 42.68025pt x 256.08633pt.
+
+Overfull \vbox (15.34453pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (2.11804pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[15
+
+
+]
+File: ./figures/background.png Graphic file (type png)
+<use ./figures/background.png>
+Package luatex.def Info: ./figures/background.png  used on input line 161.
+(luatex.def)             Requested size: 42.68025pt x 256.08633pt.
+
+Overfull \vbox (15.34453pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (2.11804pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[16
+
+
+]
+File: ./figures/background.png Graphic file (type png)
+<use ./figures/background.png>
+Package luatex.def Info: ./figures/background.png  used on input line 161.
+(luatex.def)             Requested size: 42.68025pt x 256.08633pt.
+
+Overfull \vbox (15.34453pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (2.11804pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[17
+
+
+]
+File: ./figures/background.png Graphic file (type png)
+<use ./figures/background.png>
+Package luatex.def Info: ./figures/background.png  used on input line 161.
+(luatex.def)             Requested size: 42.68025pt x 256.08633pt.
+
+Overfull \vbox (15.34453pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (2.11804pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[18
+
+
+])
+\openout2 = ./content/Aufgabe3.aux
+ (./content/Aufgabe3.tex
+File: ./figures/background.png Graphic file (type png)
+<use ./figures/background.png>
+Package luatex.def Info: ./figures/background.png  used on input line 11.
+(luatex.def)             Requested size: 42.68025pt x 256.08633pt.
+
+Overfull \vbox (15.34453pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (2.11804pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[19
+
+
+
+
+]
+File: ./figures/note.png Graphic file (type png)
+<use ./figures/note.png>
+Package luatex.def Info: ./figures/note.png  used on input line 119.
+(luatex.def)             Requested size: 8.27663pt x 8.53581pt.
+> Step: init table outer spec.
+> Step: parse table options.
+> Step: split table.
+> Step: init table inner spec.
+> Step: parse table inner spec.
+> Step: execute table commands.
+> Step: calculate cell and line sizes.
+> Step: build the whole table.
+File: ./figures/note.png Graphic file (type png)
+<use ./figures/note.png>
+Package luatex.def Info: ./figures/note.png  used on input line 119.
+(luatex.def)             Requested size: 8.27663pt x 8.53581pt.
+> Step: init table outer spec.
+> Step: parse table options.
+> Step: split table.
+> Step: init table inner spec.
+> Step: parse table inner spec.
+> Step: execute table commands.
+> Step: calculate cell and line sizes.
+> Step: build the whole table.
+File: ./figures/note.png Graphic file (type png)
+<use ./figures/note.png>
+Package luatex.def Info: ./figures/note.png  used on input line 119.
+(luatex.def)             Requested size: 8.27663pt x 8.53581pt.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 119.
+ (/usr/share/texmf-dist/tex/latex/lm/t1lmr.fd
+File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+) (/usr/share/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
+)
+File: ./figures/anote.png Graphic file (type png)
+<use ./figures/anote.png>
+Package luatex.def Info: ./figures/anote.png  used on input line 119.
+(luatex.def)             Requested size: 8.27663pt x 8.53581pt.
+File: ./figures/note.png Graphic file (type png)
+<use ./figures/note.png>
+Package luatex.def Info: ./figures/note.png  used on input line 119.
+(luatex.def)             Requested size: 8.27663pt x 8.53581pt.
+File: ./figures/note.png Graphic file (type png)
+<use ./figures/note.png>
+Package luatex.def Info: ./figures/note.png  used on input line 119.
+(luatex.def)             Requested size: 8.27663pt x 8.53581pt.
+> Step: init table outer spec.
+> Step: parse table options.
+> Step: split table.
+> Step: init table inner spec.
+> Step: parse table inner spec.
+> Step: execute table commands.
+> Step: calculate cell and line sizes.
+> Step: build the whole table.
+File: ./figures/note.png Graphic file (type png)
+<use ./figures/note.png>
+Package luatex.def Info: ./figures/note.png  used on input line 119.
+(luatex.def)             Requested size: 8.27663pt x 8.53581pt.
+<./figures/tree.png, id=498, 474.27188pt x 335.75438pt>
+File: ./figures/tree.png Graphic file (type png)
+<use ./figures/tree.png>
+Package luatex.def Info: ./figures/tree.png  used on input line 119.
+(luatex.def)             Requested size: 195.33247pt x 138.28009pt.
+File: ./figures/note.png Graphic file (type png)
+<use ./figures/note.png>
+Package luatex.def Info: ./figures/note.png  used on input line 119.
+(luatex.def)             Requested size: 8.27663pt x 8.53581pt.
+File: ./figures/background.png Graphic file (type png)
+<use ./figures/background.png>
+Package luatex.def Info: ./figures/background.png  used on input line 119.
+(luatex.def)             Requested size: 42.68025pt x 256.08633pt.
+
+Overfull \vbox (15.34453pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (2.11804pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[20
+
+]
+File: ./figures/background.png Graphic file (type png)
+<use ./figures/background.png>
+Package luatex.def Info: ./figures/background.png  used on input line 119.
+(luatex.def)             Requested size: 42.68025pt x 256.08633pt.
+
+Overfull \vbox (15.34453pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (2.11804pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[21
+
+
+]
+File: ./figures/background.png Graphic file (type png)
+<use ./figures/background.png>
+Package luatex.def Info: ./figures/background.png  used on input line 119.
+(luatex.def)             Requested size: 42.68025pt x 256.08633pt.
+
+Overfull \vbox (15.34453pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (2.11804pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[22
+
+
+]
+File: ./figures/background.png Graphic file (type png)
+<use ./figures/background.png>
+Package luatex.def Info: ./figures/background.png  used on input line 119.
+(luatex.def)             Requested size: 42.68025pt x 256.08633pt.
+
+Overfull \vbox (15.34453pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (2.11804pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[23
+
+
+]
+File: ./figures/background.png Graphic file (type png)
+<use ./figures/background.png>
+Package luatex.def Info: ./figures/background.png  used on input line 119.
+(luatex.def)             Requested size: 42.68025pt x 256.08633pt.
+
+Overfull \vbox (15.34453pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (2.11804pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[24
+
+
+]
+File: ./figures/background.png Graphic file (type png)
+<use ./figures/background.png>
+Package luatex.def Info: ./figures/background.png  used on input line 119.
+(luatex.def)             Requested size: 42.68025pt x 256.08633pt.
+
+Overfull \vbox (15.34453pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (2.11804pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[25
+
+
+<./figures/tree.png>]
+File: ./figures/background.png Graphic file (type png)
+<use ./figures/background.png>
+Package luatex.def Info: ./figures/background.png  used on input line 119.
+(luatex.def)             Requested size: 42.68025pt x 256.08633pt.
+
+Overfull \vbox (15.34453pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (2.11804pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[26
+
+
+])
+\openout2 = ./content/Appendix.aux
+ (./content/Appendix.tex
+File: ./figures/background.png Graphic file (type png)
+<use ./figures/background.png>
+Package luatex.def Info: ./figures/background.png  used on input line 11.
+(luatex.def)             Requested size: 42.68025pt x 256.08633pt.
+
+Overfull \vbox (15.34453pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (2.11804pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[27
+
+
+
+
+]
+File: ./figures/background.png Graphic file (type png)
+<use ./figures/background.png>
+Package luatex.def Info: ./figures/background.png  used on input line 19.
+(luatex.def)             Requested size: 42.68025pt x 256.08633pt.
+
+Overfull \vbox (15.34453pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (2.11804pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[28
+
+]
+> Step: init table outer spec.
+> Step: parse table options.
+> Step: split table.
+> Step: init table inner spec.
+> Step: parse table inner spec.
+> Step: execute table commands.
+> Step: calculate cell and line sizes.
+> Step: build the whole table.
+> Step: init table outer spec.
+> Step: parse table options.
+> Step: split table.
+> Step: init table inner spec.
+> Step: parse table inner spec.
+> Step: execute table commands.
+> Step: calculate cell and line sizes.
+> Step: build the whole table.
+File: ./figures/background.png Graphic file (type png)
+<use ./figures/background.png>
+Package luatex.def Info: ./figures/background.png  used on input line 64.
+(luatex.def)             Requested size: 42.68025pt x 256.08633pt.
+
+Overfull \vbox (15.34453pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (2.11804pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[29
+
+]
+File: ./figures/background.png Graphic file (type png)
+<use ./figures/background.png>
+Package luatex.def Info: ./figures/background.png  used on input line 70.
+(luatex.def)             Requested size: 42.68025pt x 256.08633pt.
+
+Overfull \vbox (15.34453pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (2.11804pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[30
+
+]
+> Step: init table outer spec.
+> Step: parse table options.
+> Step: split table.
+> Step: init table inner spec.
+> Step: parse table inner spec.
+> Step: execute table commands.
+> Step: calculate cell and line sizes.
+> Step: build the whole table.
+> Step: init table outer spec.
+> Step: parse table options.
+> Step: split table.
+> Step: init table inner spec.
+> Step: parse table inner spec.
+> Step: execute table commands.
+> Step: calculate cell and line sizes.
+> Step: build the whole table.
+<./figures/hypercube.png, id=635, 618.81187pt x 453.19313pt>
+File: ./figures/hypercube.png Graphic file (type png)
+<use ./figures/hypercube.png>
+Package luatex.def Info: ./figures/hypercube.png  used on input line 128.
+(luatex.def)             Requested size: 209.78894pt x 153.64644pt.
+
+Overfull \hbox (30.0pt too wide) in paragraph at lines 128--128
+[][]  
+ []
+
+File: ./figures/background.png Graphic file (type png)
+<use ./figures/background.png>
+Package luatex.def Info: ./figures/background.png  used on input line 128.
+(luatex.def)             Requested size: 42.68025pt x 256.08633pt.
+
+Overfull \vbox (15.34453pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (2.11804pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[31
+
+]
+File: ./figures/background.png Graphic file (type png)
+<use ./figures/background.png>
+Package luatex.def Info: ./figures/background.png  used on input line 128.
+(luatex.def)             Requested size: 42.68025pt x 256.08633pt.
+
+Overfull \vbox (15.34453pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (2.11804pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[32
+
+
+]
+File: ./figures/background.png Graphic file (type png)
+<use ./figures/background.png>
+Package luatex.def Info: ./figures/background.png  used on input line 128.
+(luatex.def)             Requested size: 42.68025pt x 256.08633pt.
+
+Overfull \vbox (15.34453pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (2.11804pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[33
+
+
+<./figures/hypercube.png>] (./figures/binary_tree.tikz)
+Overfull \hbox (6.97939pt too wide) in paragraph at lines 54--160
+ [] 
+ []
+
+File: ./figures/background.png Graphic file (type png)
+<use ./figures/background.png>
+Package luatex.def Info: ./figures/background.png  used on input line 160.
+(luatex.def)             Requested size: 42.68025pt x 256.08633pt.
+
+Overfull \vbox (15.34453pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (2.11804pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[34
+
+])
+\tf@nav=\write9
+
+\openout9 = main.nav
+\tf@toc=\write10
+
+\openout10 = main.toc
+\tf@snm=\write11
+
+\openout11 = main.snm
+ (./main.aux
+No file ./content/Vorbereitung.aux.
+(./content/Aufgabe1.aux) (./content/Aufgabe2.aux) (./content/Aufgabe3.aux) (./content/Appendix.aux))
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: B9A8F7BDAFDAC070B432EAAE4A301D60;356.
+Package logreq Info: Writing requests to 'main.run.xml'.
+
+\openout1 = main.run.xml
+)
+
+Here is how much of LuaTeX's memory you used:
+ 62493 strings out of 478285
+ 244330,4101490 words of node,token memory allocated
+ 30338 words of node memory still in use:
+   522 hlist, 16 vlist, 38 rule, 41 disc, 17 local_par, 33 math, 808 glue, 60 kern, 104 penalty, 5 margin_kern, 562 glyph, 3398 attribute, 106 glue_spec, 1701 attribute_list, 6 write, 930 pdf_literal, 4 pdf_start_link, 4 pdf_end_link, 4 pdf_action, 114 pdf_colorstack, 2 pdf_setmatrix, 2 pdf_save, 2 pdf_restore nodes
+   avail lists: 1:14,2:19791,3:1891,4:1224,5:409,6:361,7:9430,8:71,9:8332,10:19,11:300,12:1
+ 79645 multiletter control sequences out of 65536+600000
+ 63 fonts using 4208191 bytes
+ 133i,19n,118p,1000b,2457s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsso10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsso8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsso9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
+Output written on main.pdf (34 pages, 509354 bytes).
+
+PDF statistics: 744 PDF objects out of 1000 (max. 8388607)
+ 525 compressed objects within 6 object streams
+ 73 named destinations out of 1000 (max. 131072)
+ 1448 words of extra memory for PDF output out of 10000 (max. 100000000)
+
