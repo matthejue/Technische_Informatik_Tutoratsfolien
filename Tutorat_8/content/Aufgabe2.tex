@@ -13,4 +13,149 @@
 \setcounter{exercise}{1}
 
 \begin{frame}[allowframebreaks]{Aufgabe \thesection}{Methode von Petrick}
-\end{frame} 
+  \begin{requirementsnoinc}
+    \begin{itemize}
+      \item \alert{Absorption:} $A+AB=A$
+      \item \alert{Korollar:} $AA=A$
+    \end{itemize}
+  \end{requirementsnoinc}
+  \begin{exercisenoinc}
+    \begin{table}
+      \centering
+      \begin{tblr}{
+          vlines, hlines,
+          cells={c, white},
+          row{1} = {PrimaryColor, fg=white},
+          column{1} = {PrimaryColor, fg=white},
+        }
+                 & a & b & c & d & e & f \\
+      A & & 1 & & 1 & & \\  
+      B & 1 & & 1 & 1 & & \\
+      C & & & 1 & 1 & & 1 \\
+      D & & 1 & & & 1 & \\
+      E & & & 1 & 1 & 1 & \\
+      F & 1 & 1 & & & & 1
+      \end{tblr}
+    \end{table}
+
+  \begin{itemize}
+    \item \alert{Minterme:} $\{a,b,c,d,e,f\}$
+    \item \alert{Primimplikanten:} $\{A,B,C,D,E,F\}$
+  \end{itemize}
+\end{exercisenoinc}
+
+% \begin{solutionnoinc}
+%   \begin{table}
+%     \centering
+%     \begin{tblr}{
+%         vlines, hlines,
+%         cells={c, white},
+%         row{1} = {PrimaryColor, fg=white},
+%         column{1} = {PrimaryColor, fg=white},
+%       }
+%
+%                  & a & b & c & d & e & f \\
+%     A & & 1 & & 1 & & \\
+%     B & 1 & & 1 & 1 & & \\
+%     C & & & 1 & 1 & & 1 \\
+%     D & & 1 & & & 1 & \\
+%     E & & & 1 & 1 & 1 & \\
+%     F & 1 & 1 & & & & 1
+%     \end{tblr}
+%   \end{table}
+%   \begin{itemize}
+%     % \item keine wesentlichen Primimplikanten $\Rightarrow$ wir können die erste Reduktionsregel nicht anwenden
+%     % \item Minterm d dominiert Minterm c $\Rightarrow$ zweite Regel: Lösche Spalte d
+%   \end{itemize}
+% \end{solutionnoinc}
+
+\begin{solutionnoinc}
+  \begin{table}
+    \centering
+    \begin{tblr}{
+        vlines, hlines,
+        cells={c, white},
+        row{1} = {PrimaryColor, fg=white},
+        column{1} = {PrimaryColor, fg=white},
+      }
+                 & a & b & c & e & f \\
+    A & & 1 & & & \\ 
+    B & 1 & & 1 & & \\
+    C & & & 1 & & 1 \\
+    D & & 1 & & 1 & \\
+    E & & & 1 & 1 & \\
+    F & 1 & 1 & & & 1
+    \end{tblr}
+  \end{table}
+  \begin{itemize}
+    \item \alert{Regel 2:} d dominiert c $\Rightarrow$ Lösche d.
+    % \item keine wesentlichen Primimplikanten $\Rightarrow$ wir können die erste Reduktionsregel nicht anwenden
+    % \item wir können auch die zweite Regel nicht anwenden
+    % \item Die Primimplikanten D und F dominieren den Primimplikanten A $\Rightarrow$ dritte Regel: Lösche Zeile A
+  \end{itemize}  
+\end{solutionnoinc}
+
+\begin{solutionnoinc}
+  \begin{table}
+    \centering
+    \begin{tblr}{
+        vlines, hlines,
+        cells={c, white},
+        row{1} = {PrimaryColor, fg=white},
+        column{1} = {PrimaryColor, fg=white},
+      }
+                 & a & b & c & e & f \\
+    B & 1 & & 1 & & \\
+    C & & & 1 & & 1 \\
+    D & & 1 & & 1 & \\
+    E & & & 1 & 1 & \\
+    F & 1 & 1 & & & 1
+    \end{tblr}
+  \end{table}
+  \begin{itemize}
+    \item \alert{Regel 3:} D (oder F) dominiert A $\Rightarrow$ Lösche A
+    % \item keine wesentlichen Primimplikanten $\Rightarrow$ erste Reduktionsregel nicht anwendbar
+    % \item zweite Regel nicht anwendbar
+    % \item dritte Regel nicht anwendbar
+    % \item $\Rightarrow$ zyklisches Überdeckungsproblem
+    % \item $\Rightarrow$ Methode von Petrick
+  \end{itemize} 
+\end{solutionnoinc}
+
+\begin{solutionnoinc}
+    \begin{table}
+      \centering
+      \begin{tblr}{
+          vlines, hlines,
+          cells={c, white},
+          row{1} = {PrimaryColor, fg=white},
+          column{1} = {PrimaryColor, fg=white},
+        }
+                  & a & b & c & e & f \\
+      B & 1 & & 1 & & \\
+      C & & & 1 & & 1 \\
+      D & & 1 & & 1 & \\
+      E & & & 1 & 1 & \\
+      F & 1 & 1 & & & 1
+      \end{tblr}
+    \end{table}
+  \begin{itemize}
+    \item Keine weitere Reduktionsregel mehr anwendbar $\Rightarrow$ Petrick
+  \end{itemize} 
+\end{solutionnoinc}
+\begin{solutionnoinc}
+  \begin{itemize}
+    \item \alert{Petrick:} $\tiny\begin{aligned}[t]
+        &\underbrace{(B+F)}_{\text{überdecken a}}\underbrace{(D+F)}_{\text{überdecken b}}\underbrace{(B+C+E)}_{\text{usw.}}(D+E)(C+F)\\
+        &=(BD + BF + FD + F) \cdot (BD + BE + CD + CE + ED + E) \cdot (C + F)\\
+        &=(BD + BF + FD + F) \cdot (BDC + BEC + CD + CE + EDC + BDF + BEF + CDF + CEF + EDF + EF)\\
+        &=(BD + BF + FD + F) \cdot (CD + CE + BDF + EF)\\
+        &=BDC + BDCE + BDF + BDEF + BFCD + BFCE + BFD + BFE + FDC + FDCE + FDB + FDE + FCD + FCE + FBD + FE\\
+        &=BDC + BDF + BFD + FDC + FBD + \underline{FE}\\
+        % &=\underline{EF} + DEF + CEF + BDF + BCD + CDF + BEF + CDEF + BDEF + BCEF + BCDF + BCDE + BCDEF
+      \end{aligned}$
+    \item Produkt mit den wenigsten Termen auswählen. Wenn es zwei solche Produkte gibt, dann wählt man die Terme mit den wenigsten Literalen
+    \item Minimalpolynom $f_{min} = F + E$
+  \end{itemize}
+\end{solutionnoinc}
+\end{frame}

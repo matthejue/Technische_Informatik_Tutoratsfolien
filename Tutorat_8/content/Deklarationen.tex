@@ -187,6 +187,47 @@ after title={\hspace{0.2cm}\includegraphics[height=3mm]{./figures/lupe.png}}
 % https://www.matheboard.de/archive/155832/thread.html
 \newcommand{\zz}{\mathrm{Z\kern-.3em\raise-0.5ex\hbox{Z}}:\;}
 
+\tikzstyle{every picture}+=[remember picture]
+\tikzstyle{na} = [shape=rectangle,inner sep=0pt]
+
+\newcommand{\StrikeBeginR}[1]{%
+    \tikz[baseline=(beginr.base)]\node[na](beginr){#1};
+}
+
+\newcommand{\StrikeEndR}[1]{%
+    \tikz[baseline=(endr.base)]\node[na](endr){#1};
+    \begin{tikzpicture}[overlay]
+          \draw (beginr.west) -- (endr.east);
+    \end{tikzpicture}
+}
+
+\newcommand{\StrikeBeginC}[2]{%
+  \tikz[baseline=(beginc{#2}.base)]\node[na](beginc{#2}){#1};
+}
+
+\newcommand{\StrikeEndC}[2]{%
+  \tikz[baseline=(endc{#2}.base)]\node[na](endc{#2}){#1};
+    \begin{tikzpicture}[overlay]
+          \draw (beginc{#2}.north) -- (endc{#2}.south);
+    \end{tikzpicture}
+}
+
+\newcommand{\StrikeBeginB}[1]{%
+    \tikz[baseline=(beginb.base)]\node[na](beginb){#1};
+}
+
+\newcommand{\StrikeMiddleB}[1]{%
+    \tikz[baseline=(middleb.base)]\node[na](middleb){#1};
+}
+
+\newcommand{\StrikeEndB}[1]{%
+    \tikz[baseline=(endb.base)]\node[na](endb){#1};
+    \begin{tikzpicture}[overlay]
+      \draw (beginb.west) -- (middleb.east);
+      \draw (middleb.north) -- (endb.south);
+    \end{tikzpicture}
+}
+
 % ┌──────────────────┐
 % │ New Environments │
 % └──────────────────┘

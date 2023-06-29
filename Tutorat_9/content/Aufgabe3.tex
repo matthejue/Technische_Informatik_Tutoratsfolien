@@ -1,0 +1,42 @@
+%!Tex Root = ../main.tex
+% ./Packete.tex
+% ./Design.tex
+% ./Deklarationen.tex
+% ./Vorbereitung.tex
+% ./Aufgabe1.tex
+% ./Aufgabe2.tex
+% ./Aufgabe4.tex
+% ./Appendix.tex
+
+\section{Aufgabe 3}
+
+\setcounter{exercise}{1}
+
+\begin{frame}[allowframebreaks]{Aufgabe \thesection}{Signextension}
+  \begin{solutionnoinc}
+    \begin{enumerate}
+      \item \alert{Zurückführung auf Sign Extension um $1$ Bit:}\\
+        \tiny 
+        \alert{Lemma:} Sei $a\in\mathbb{B}^n, a = a_{n-1}\ldots a_0$. Dann gilt $[a]_2 = [a_{n-1}a]_2$.\\
+        Beweis:\\
+        $\displaystyle[a_{n-1}a]_{2}=-a_{n-1}\cdot2^{n}+\sum_{i=0}^{n-i}a_{i}\cdot2^{i}=-a_{n-1}\cdot2^{n}+\left(a_{n-1}\cdot2^{n-1}+\sum_{i=0}^{n-2}a_{i}\cdot2^{i}\right)=-a_{n-1}\cdot2^{n-1}+\sum_{i=0}^{n-2}a_{i}\cdot2^{i}=\left[a\right]_2$\\
+        Damit: $[y]_{2}=[y_{n-1}^{1}y]_{2}=[y_{n-1}^{2}y_{n-1}^{1}y]_{2}=\cdot\cdot\cdot=[y_{n-1}^{k}\ldots y_{n-1}^{1}y]_{2}=[\mathrm{sext_{k}}(y)]_{2}.$
+    \end{enumerate}
+  \end{solutionnoinc}
+  \begin{solution}
+    \begin{enumerate}
+      \item[2.] \alert{Direkter Beweis:}
+        \tiny
+        Sei $y\in\mathbb{B}^n, y=y_{n-1}\ldots y_0$
+
+        $\begin{aligned}
+          {\left[\operatorname{sext}_{\mathrm{k}}(y)\right]_2=[\underbrace{y_{n-1} \ldots y_{n-1}}_{k-m a l}y]_2 } & =\sum_{i=0}^{n-2} y_i \cdot 2^i+\sum_{i=n-1}^{n+k-2} y_{n-1} \cdot 2^i-y_{n-1} \cdot 2^{n+k-1} \\
+                                                                                                                   & =\sum_{i=0}^{n-2} y_i \cdot 2^i+y_{n-1} \cdot\left(\sum_{i=0}^{n+k-2} 2^i-\sum_{i=0}^{n-2} 2^i\right)-y_{n-1} \cdot 2^{n+k-1} \\
+                                                                                                                   & =\sum_{i=0}^{n-2} y_i \cdot 2^i+y_{n-1} \cdot\left(\frac{2^{n+k-1}-1}{2-1}-\frac{2^{n-1}-1}{2-1}\right)-y_{n-1} \cdot 2^{n+k-1} \\
+                                                                                                                   & =\sum_{i=0}^{n-2} y_i \cdot 2^i+y_{n-1} \cdot 2^{n+k-1}-y_{n-1} \cdot 2^{n-1}-y_{n-1} \cdot 2^{n+k-1} \\
+                                                                                                                   & =\sum_{i=0}^{n-2} y_i \cdot 2^i-y_{n-1} \cdot 2^{n-1} \\
+                                                                                                                   & =[y]_2
+        \end{aligned}$
+    \end{enumerate}
+  \end{solution}
+\end{frame}

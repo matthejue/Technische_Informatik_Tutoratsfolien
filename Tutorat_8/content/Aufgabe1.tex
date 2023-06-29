@@ -13,5 +13,238 @@
 \setcounter{exercise}{1}
 
 \begin{frame}[allowframebreaks]{Aufgabe \thesection}{Primimplikantentafel}
-  
+  \begin{exercisenoinc}
+    \begin{itemize}
+      \item \alert{On-Menge:} $ON(f) = \{0000, 0001, 0100, 0101, 0110, 0111, 1000, 1010, 1100, 1110, 1111\}$ 
+      \item \alert{Primimplikanten:} $Prim(f) = \{ --00, -1-0, -11-, 1--0, 0-0-, 01--\}$
+    \end{itemize}
+  \end{exercisenoinc}
+
+  \begin{solutionnoinc}
+    \tiny 
+    \begin{table}
+      \centering
+      \begin{tblr}{
+          vlines, hlines,
+          cells={c, white},
+          row{1} = {PrimaryColor, fg=white},
+          column{1} = {PrimaryColor, fg=white},
+        }
+              & 0000 & 0001 & 0100 & 0101 & 0110 & 0111 & 1000 & 1010 & 1100 & 1110 & 1111 \\
+              --00 & 1 & & 1 & & & & 1 & & 1 & & \\
+              -1-0 & & & 1 & & 1 & & & & 1 & 1 & \\
+              -11- & & & & & 1 & 1 & & & & 1 & 1 \\
+              1--0 & & & & & & & 1 & 1 & 1 & 1 & \\
+              0-0- & 1 & 1 & 1 & 1 & & & & & & & \\
+              01-- & & & 1 & 1 & 1 & 1 & & & & &
+      \end{tblr}
+    \end{table}
+      %\normal
+      % \newline \newline \newline
+  \end{solutionnoinc}     
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Aufgabe \thesection}{Primimplikantentafel - Anwenden der Reduktionsregeln in richtiger Reihenfolge}
+  \begin{solutionnoinc}
+    \tiny 
+      \begin{table}
+      \centering
+        \begin{tblr}{
+            vlines, hlines,
+            cells={c, white},
+            row{4} = {SecondaryColorDimmed},
+            row{5} = {SecondaryColorDimmed},
+            row{6} = {SecondaryColorDimmed},
+            row{1} = {PrimaryColor, fg=white},
+            column{1} = {PrimaryColor, fg=white},
+        }
+                   & 0001 & 0110 & 0111 & 1000 & 1010 & 1100 & 1110 & 1111\\
+            --00   &                     &      &      & 1                   &      & 1    &      &     \\
+            -1-0   &                     & 1    &      &                     &      & 1    & 1    &     \\
+            -11-   &                     & 1    & 1    &                     &      &      & 1    & 1   \\
+            1--0   &                     &      &      & 1                   & 1    & 1    & 1    &     \\
+            0-0-   & 1                   &      &      &                     &      &      &      &     \\ 
+            01--   &        &     &     &        &      &      &      & 
+        \end{tblr}
+      \end{table}
+      % \normal
+      % \newline \newline \newline
+      
+      % $\Rightarrow $ 1--0 ist wesentlich, da Minterm 1010 von keinem anderen Primimplikanten überdeckt wird:
+  \end{solutionnoinc}     
+
+  \begin{solutionnoinc}
+    \tiny 
+      \begin{table}
+      \centering
+        \begin{tblr}{
+            vlines, hlines,
+            cells={c, white},
+            row{4} = {SecondaryColorDimmed},
+            row{5} = {SecondaryColorDimmed},
+            row{6} = {SecondaryColorDimmed},
+            row{1} = {PrimaryColor, fg=white},
+            column{1} = {PrimaryColor, fg=white},
+        }
+                   & \StrikeBeginC{0001}{first} & \StrikeBeginC{0110}{six} & \StrikeBeginC{0111}{seven} & \StrikeBeginC{1000}{second} & \StrikeBeginC{1010}{third} & \StrikeBeginC{1100}{four} & \StrikeBeginC{1110}{five} & \StrikeBeginC{1111}{eight}\\
+            --00   &                     &      &      & 1                   &      & 1    &      &     \\
+            -1-0   &                     & 1    &      &                     &      & 1    & 1    &     \\
+            -11-   &                     & 1    & 1    &                     &      &      & 1    & 1   \\
+            1--0   &                     &      &      & 1                   & 1    & 1    & 1    &     \\
+            0-0-   & 1                   &      &      &                     &      &      &      &     \\ 
+            01--   & \StrikeEndC{}{first}       & \StrikeEndC{1}{six}    & \StrikeEndC{1}{seven}    & \StrikeEndC{}{second}       & \StrikeEndC{}{third}     &  \StrikeEndC{}{four}    & \StrikeEndC{}{five}     & \StrikeEndC{}{eight}
+        \end{tblr}
+      \end{table}
+      % \normal
+      % \newline \newline \newline
+      
+      % $\Rightarrow $ 1--0 ist wesentlich, da Minterm 1010 von keinem anderen Primimplikanten überdeckt wird:
+      \begin{itemize}
+        \item \alert{1. Regel:} 0-0-, 1--0 und -11- sind wesentlich
+      \end{itemize} 
+  \end{solutionnoinc}     
+  \begin{solutionnoinc}
+    \tiny 
+    \begin{table}
+      \centering
+      \begin{tblr}{
+          vlines, hlines,
+          cells={c, white},
+          row{1} = {PrimaryColor, fg=white},
+          column{1} = {PrimaryColor, fg=white},
+        }
+      --00  & $\emptyset$ \\
+        -1-0  & \\
+        -11-  &  \\
+        1--0  &  \\
+        0-0-  & \\
+        01-- & 
+      \end{tblr}
+    \end{table}
+      % \normal
+      % \newline \newline \newline
+      
+      % $\Rightarrow $ 1--0 ist wesentlich, da Minterm 1010 von keinem anderen Primimplikanten überdeckt wird:
+      \begin{itemize}
+        \item \alert{1. Regel:} 0-0-, 1--0 und -11- sind wesentlich
+        \item Leere Tabelle, kein Petrick notwendig
+        \item $f_{min} = \bar x_1 \bar x_3 + x_1 \bar x_4 + x_2x_3$
+      \end{itemize}
+  \end{solutionnoinc}     
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Aufgabe \thesection}{Primimplikantentafel - Anwenden der Reduktionsregeln in falscher Reihenfolge}
+  \begin{solutionnoinc}
+    \tiny 
+      \begin{table}
+      \centering
+        \begin{tblr}{
+            vlines, hlines,
+            cells={c, white},
+            row{1} = {PrimaryColor, fg=white},
+            column{1} = {PrimaryColor, fg=white},
+        }
+            & 0001 & 0110 & 0111 & 1000 & 1010 & 1100 & 1110 & 1111\\
+            --00   &  & & & 1 & & 1 & & \\
+            -1-0   &  & 1 & & & & 1 & 1 & \\
+            -11-   &  & 1 & 1 & & & & 1 & 1 \\
+            1--0   &  & & & 1 & 1 & 1 & 1 & \\
+            0-0-   & 1 &  & & & & & & \\ 
+            01--   &  & 1 & 1 & & & & & \\
+        \end{tblr}
+      \end{table}
+      % \normal
+      % \newline \newline \newline
+      
+      % $\Rightarrow $ 1--0 ist wesentlich, da Minterm 1010 von keinem anderen Primimplikanten überdeckt wird:
+      \begin{itemize}
+        \item \alert{2. Regel:} 0000, 0100, 0101 dominieren 0001 $\Rightarrow$ Lösche 0000, 0100 und 0101
+      \end{itemize} 
+  \end{solutionnoinc}     
+
+  \begin{solutionnoinc}
+    \tiny 
+      \begin{table}
+      \centering
+        \begin{tblr}{
+            vlines, hlines,
+            cells={c, white},
+            row{1} = {PrimaryColor, fg=white},
+            column{1} = {PrimaryColor, fg=white},
+        }
+                   & 0001 & 1000 & 1010 & 1100 & 1111\\
+            --00   &      & 1    &      & 1    &     \\
+            -1-0   &      &      &      & 1    &     \\
+            -11-   &      &      &      &      & 1   \\
+            1--0   &      & 1    & 1    & 1    &     \\
+            0-0-   & 1    &      &      &      &     \\ 
+            01--   &      &      &      &      &     \\
+        \end{tblr}
+      \end{table}
+      % \normal
+      % \newline \newline \newline
+      
+      % $\Rightarrow $ 1--0 ist wesentlich, da Minterm 1010 von keinem anderen Primimplikanten überdeckt wird:
+      \begin{itemize}
+        \item \alert{2. Regel:} 0110, 0111 und 1110 dominieren 1111 $\Rightarrow$ Lösche 0110, 0111 und 1110
+          % \item lösche Spalte $1010$ mit erster Reduktionsregel
+          % \item streiche auch alle anderen Minterme, die von 1--0 überdeckt werden ($\Rightarrow$ Spalten 1000, 1100, 1110)
+      \end{itemize} 
+  \end{solutionnoinc}     
+
+  \begin{solutionnoinc}
+    \tiny 
+    \begin{table}
+      \centering
+      \begin{tblr}{
+          vlines, hlines,
+          cells={c, white},
+          row{1} = {PrimaryColor, fg=white},
+          column{1} = {PrimaryColor, fg=white},
+        }
+            & 0001 & 1010 & 1111 \\
+      --00  &      &      &      \\
+      -1-0  &      &      &      \\
+      -11-  &      &      & 1    \\
+      1--0  &      & 1    &      \\
+      0-0-  & 1    &      &      \\
+      01--  &      &      &
+    \end{tblr}
+      \end{table}
+      % \normal
+      % \newline \newline \newline
+      
+      % $\Rightarrow $ -11- ist wesentlich, da Minterm 1111 von keinem anderen Primimplikanten überdeckt wird:
+      \begin{itemize}
+        \item \alert{2. Regel:} 1000 und 1100 dominieren 1010 $\Rightarrow$ Lösche 1000 und 1100
+      \end{itemize} 
+  \end{solutionnoinc}     
+
+  \begin{solutionnoinc}
+    \tiny 
+    \begin{table}
+      \centering
+      \begin{tblr}{
+          vlines, hlines,
+          cells={c, white},
+          row{1} = {PrimaryColor, fg=white},
+          column{1} = {PrimaryColor, fg=white},
+        }
+      --00  & $\emptyset$ \\
+        -1-0  & \\
+        -11-  &  \\
+        1--0  &  \\
+        0-0-  & \\
+        01-- & 
+      \end{tblr}
+    \end{table}
+      % \normal
+      % \newline \newline \newline
+      
+      \begin{itemize}
+        \item \alert{1. Regel:} 0-0-, 1--0 und -11- sind wesentlich
+        \item Leere Tabelle, kein Petrick notwendig
+        \item $f_{min} = \bar x_1 \bar x_3 + x_1 \bar x_4 + x_2x_3$
+      \end{itemize}
+  \end{solutionnoinc}     
 \end{frame}
