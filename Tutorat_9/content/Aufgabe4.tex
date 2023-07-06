@@ -13,4 +13,34 @@
 \setcounter{exercise}{1}
 
 \begin{frame}[allowframebreaks]{Aufgabe \thesection}{Addition von Zweierkomplementzahlen}
+\begin{solution}
+    \begin{tabular}{rrcrl}
+        &100000&&=&-32\\
+        +&011111&&=&31\\
+        (Ü)&0000000\\
+        \hline
+        &111111&&=&-1
+        
+    \end{tabular}
+\end{solution}
+\begin{solution}
+    \begin{tabular}{rrcrl}
+        &100000&&=&-32\\
+        +&100000&&=&-32\\
+        (Ü)&\textcolor{red}{1}000000\\
+        \hline
+        &(\textcolor{red}{1})000000&&=&0
+    \end{tabular}\\
+    $\Rightarrow$ Überlauf
+\end{solution}
+\begin{solution}
+    \begin{tabular}{rrcrl}
+        &010001&&=&17\\
+        +&011011&&=&27\\
+        (Ü)&0100110\\
+        \hline
+        &(\textcolor{red}{0})\textcolor{orange}{1}01100&&=&-20
+    \end{tabular}\\
+    $\Rightarrow$ Überlauf
+\end{solution}
 \end{frame}

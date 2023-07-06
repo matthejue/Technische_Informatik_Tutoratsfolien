@@ -12,5 +12,68 @@
 
 \setcounter{exercise}{1}
 
-\begin{frame}[allowframebreaks]{Aufgabe \thesection}{n-Bit Inkrementer $INC_n$}
+\begin{frame}{Aufgabe \thesection}{n-Bit Inkrementer $INC_n$}
+  \begin{solutionnoinc}
+    \includegraphics[height=0.6\paperheight, center]{figures/incrementer.png}
+  \end{solutionnoinc}
 \end{frame} 
+
+\begin{frame}{Aufgabe \thesection}{n-Bit Inkrementer $INC_n$}
+  \begin{solution}
+    \centering
+    \input{./content/ex2_8}
+  \end{solution}
+\end{frame} 
+
+\begin{frame}{Aufgabe \thesection}{n-Bit Inkrementer $INC_n$}
+  \begin{solution}
+    \begin{itemize}
+      \setlength{\itemsep}{0cm}
+      \setlength{\parsep}{0cm}
+      \setlength{\parskip}{0.2cm}
+      \item \alert{Tiefe:}
+      \begin{itemize}
+        \item \alert{$k=0$:} $1$ 
+        \item \alert{$k=1$:} $1 + 3\cdot 1 = 4$ 
+        \item \alert{$k=2$:} $1 + 3\cdot 2 = 7$ 
+        \item \alert{$k=3$:} $1 + 3\cdot 3 = 10$ 
+        \item \alert{allgemein:} 
+        \begin{itemize}
+          \item $\mathrm{depth}(\mathrm{CSA-INC}_{\frac{n}{2^k} }) = \mathrm{depth}(\mathrm{CSA-INC}_{1}) = \mathrm{depth}(\mathrm{HA}) = 1$
+          \item $\mathrm{depth}(\mathrm{CSA-INC}_{n}) = \mathrm{depth}(\mathrm{CSA-INC}_{\frac{n}{2^1}}) + \mathrm{depth}(\mathrm{MUX_{\frac{n}{2}+1}}) = \mathrm{depth}(\mathrm{CSA-INC}_{\frac{n}{2^1}}) + 3 = \mathrm{depth}(\mathrm{CSA-INC}_{\frac{n}{2^2}}) + 3 + 3 = \mathrm{depth}(\mathrm{CSA-INC}_{\frac{n}{2^k}}) + 3 \cdot k = 3\cdot k + 1= 3\cdot log(n) + 1$
+        \end{itemize}
+      \end{itemize}
+    \end{itemize}
+  \end{solution}
+  % \framebreak
+\end{frame}
+
+\begin{frame}{Aufgabe \thesection}{n-Bit Inkrementer $INC_n$}
+  \begin{solution}
+    \begin{itemize}
+      \setlength{\itemsep}{0cm}
+      \setlength{\parsep}{0cm}
+      \setlength{\parskip}{0.2cm}
+      \item \alert{Kosten:}
+      \begin{itemize}
+        \item \alert{$k=0$:} $2$ 
+        \item \alert{$k=1$:} $2 \cdot 2 + (3\cdot1+2)\cdot 1 = 9$ 
+        \item \alert{$k=2$:} $2 \cdot 4 + (3\cdot1+2)\cdot 2 + (3\cdot2+2)\cdot 1 = 26$ 
+        \item \alert{$k=3$:} $2 \cdot 8 + (3\cdot1+2)\cdot 4 + (3\cdot2+2)\cdot 2 + (3\cdot4+2)\cdot 1 = 66$ 
+        \item \alert{allgemein:}
+        \begin{itemize}
+          \item $\mathrm{cost}(\mathrm{CSA-INC}_{\frac{n}{2^k} }) = \mathrm{cost}(\mathrm{CSA-INC}_{1}) = \mathrm{cost}(\mathrm{HA}) = 2$
+          \item $\displaystyle\mathrm{cost}(\mathrm{CSA-INC}_{n}) 
+            = 2\cdot\mathrm{cost}(\mathrm{CSA-INC}_{\frac{n}{2^1}}) + \mathrm{cost}(\mathrm{MUX}_{\frac{n}{2^1}+1}) 
+            = 2\cdot\mathrm{cost}(\mathrm{CSA-INC}_{\frac{n}{2^1}}) + (3 \cdot 2^{k-1} + 2) \cdot 1
+            = 2 \cdot 2 \cdot\mathrm{cost}(\mathrm{CSA-INC}_{\frac{n}{2^2}}) + (3 \cdot 2^{k-2} + 2) \cdot 2 + (3 \cdot 2^{k-1} + 2) \cdot 1
+            = 2^k \cdot\mathrm{cost}(\mathrm{CSA-INC}_{\frac{n}{2^k}}) + (3 \cdot 2^{0} + 2) \cdot 2^{k-1} + (3 \cdot 2^{1} + 2) \cdot 2^{k-2} + \ldots + (3 \cdot 2^{k-2} + 2) \cdot 2^1 + (3 \cdot 2^{k-1} + 2) \cdot 2^0 
+            %= n \cdot 2 + (3 \cdot 2^{0} + 2) \cdot \frac{n}{2} + (3 \cdot 2^{1} + 2) \cdot \frac{n}{2^2} + \ldots + (3 \cdot \frac{n}{2} + 2) \cdot \frac{n}{2^k}
+            = n \cdot 2 + \sum_{i=0}^{k-1} (3 \cdot 2^{k-i-1} + 2) \cdot 2^i
+            = n \cdot 2 + \sum_{i=0}^{log(n)-1} (3 \cdot 2^{log(n)-i-1} + 2) \cdot 2^i = 4n + 3n \cdot \frac{log(n)}{2} - 2$
+            % 2n + 2n + 3n \cdot \frac{log(n)}{2} - 2 
+        \end{itemize}
+      \end{itemize}
+    \end{itemize}
+  \end{solution}
+\end{frame}
