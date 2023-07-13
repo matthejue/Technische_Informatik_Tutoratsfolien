@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/Arch Linux)  (format=lualatex 2023.7.11)  12 JUL 2023 04:34
+This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/Arch Linux)  (format=lualatex 2023.7.11)  12 JUL 2023 13:16
  system commands enabled.
  file:line:error style messages enabled.
 **main.tex
@@ -2357,23 +2357,16 @@ Overfull \hbox (2.11804pt too wide) has occurred while \output is active
 ]
 File: ./figures/note.png Graphic file (type png)
 <use ./figures/note.png>
-Package luatex.def Info: ./figures/note.png  used on input line 49.
+Package luatex.def Info: ./figures/note.png  used on input line 39.
 (luatex.def)             Requested size: 8.27663pt x 8.53581pt.
-File: ./figures/note.png Graphic file (type png)
-<use ./figures/note.png>
-Package luatex.def Info: ./figures/note.png  used on input line 49.
-(luatex.def)             Requested size: 8.27663pt x 8.53581pt.
-File: ./figures/note.png Graphic file (type png)
-<use ./figures/note.png>
-Package luatex.def Info: ./figures/note.png  used on input line 49.
-(luatex.def)             Requested size: 8.27663pt x 8.53581pt.
-File: ./figures/note.png Graphic file (type png)
-<use ./figures/note.png>
-Package luatex.def Info: ./figures/note.png  used on input line 49.
-(luatex.def)             Requested size: 8.27663pt x 8.53581pt.
+<./figures/nor_rs_flip_flop_000.png, id=299, 391.4625pt x 170.6375pt>
+File: ./figures/nor_rs_flip_flop_000.png Graphic file (type png)
+<use ./figures/nor_rs_flip_flop_000.png>
+Package luatex.def Info: ./figures/nor_rs_flip_flop_000.png  used on input line 39.
+(luatex.def)             Requested size: 195.33247pt x 85.14668pt.
 File: ./figures/background.png Graphic file (type png)
 <use ./figures/background.png>
-Package luatex.def Info: ./figures/background.png  used on input line 49.
+Package luatex.def Info: ./figures/background.png  used on input line 39.
 (luatex.def)             Requested size: 42.68025pt x 256.08633pt.
 
 Overfull \vbox (15.34453pt too high) has occurred while \output is active []
@@ -2385,10 +2378,19 @@ Overfull \hbox (2.11804pt too wide) has occurred while \output is active
 
 [13
 
-]
+<./figures/nor_rs_flip_flop_000.png>]
+File: ./figures/note.png Graphic file (type png)
+<use ./figures/note.png>
+Package luatex.def Info: ./figures/note.png  used on input line 39.
+(luatex.def)             Requested size: 8.27663pt x 8.53581pt.
+<./figures/nor_rs_flip_flop_001.png, id=324, 391.4625pt x 170.6375pt>
+File: ./figures/nor_rs_flip_flop_001.png Graphic file (type png)
+<use ./figures/nor_rs_flip_flop_001.png>
+Package luatex.def Info: ./figures/nor_rs_flip_flop_001.png  used on input line 39.
+(luatex.def)             Requested size: 195.33247pt x 85.14668pt.
 File: ./figures/background.png Graphic file (type png)
 <use ./figures/background.png>
-Package luatex.def Info: ./figures/background.png  used on input line 49.
+Package luatex.def Info: ./figures/background.png  used on input line 39.
 (luatex.def)             Requested size: 42.68025pt x 256.08633pt.
 
 Overfull \vbox (15.34453pt too high) has occurred while \output is active []
@@ -2400,6 +2402,104 @@ Overfull \hbox (2.11804pt too wide) has occurred while \output is active
 
 [14
 
+<./figures/nor_rs_flip_flop_001.png>]
+File: ./figures/note.png Graphic file (type png)
+<use ./figures/note.png>
+Package luatex.def Info: ./figures/note.png  used on input line 39.
+(luatex.def)             Requested size: 8.27663pt x 8.53581pt.
+<./figures/nor_rs_flip_flop_011.png, id=349, 391.4625pt x 170.6375pt>
+File: ./figures/nor_rs_flip_flop_011.png Graphic file (type png)
+<use ./figures/nor_rs_flip_flop_011.png>
+Package luatex.def Info: ./figures/nor_rs_flip_flop_011.png  used on input line 39.
+(luatex.def)             Requested size: 195.33247pt x 85.14668pt.
+File: ./figures/background.png Graphic file (type png)
+<use ./figures/background.png>
+Package luatex.def Info: ./figures/background.png  used on input line 39.
+(luatex.def)             Requested size: 42.68025pt x 256.08633pt.
+
+Overfull \vbox (15.34453pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (2.11804pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[15
+
+<./figures/nor_rs_flip_flop_011.png>]
+File: ./figures/note.png Graphic file (type png)
+<use ./figures/note.png>
+Package luatex.def Info: ./figures/note.png  used on input line 39.
+(luatex.def)             Requested size: 8.27663pt x 8.53581pt.
+<./figures/nor_rs_flip_flop_100.png, id=370, 391.4625pt x 170.6375pt>
+File: ./figures/nor_rs_flip_flop_100.png Graphic file (type png)
+<use ./figures/nor_rs_flip_flop_100.png>
+Package luatex.def Info: ./figures/nor_rs_flip_flop_100.png  used on input line 39.
+(luatex.def)             Requested size: 195.33247pt x 85.14668pt.
+File: ./figures/background.png Graphic file (type png)
+<use ./figures/background.png>
+Package luatex.def Info: ./figures/background.png  used on input line 39.
+(luatex.def)             Requested size: 42.68025pt x 256.08633pt.
+
+Overfull \vbox (15.34453pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (2.11804pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[16
+
+<./figures/nor_rs_flip_flop_100.png>]
+File: ./figures/note.png Graphic file (type png)
+<use ./figures/note.png>
+Package luatex.def Info: ./figures/note.png  used on input line 39.
+(luatex.def)             Requested size: 8.27663pt x 8.53581pt.
+<./figures/nor_rs_flip_flop_110.png, id=391, 391.4625pt x 170.6375pt>
+File: ./figures/nor_rs_flip_flop_110.png Graphic file (type png)
+<use ./figures/nor_rs_flip_flop_110.png>
+Package luatex.def Info: ./figures/nor_rs_flip_flop_110.png  used on input line 39.
+(luatex.def)             Requested size: 195.33247pt x 85.14668pt.
+File: ./figures/background.png Graphic file (type png)
+<use ./figures/background.png>
+Package luatex.def Info: ./figures/background.png  used on input line 39.
+(luatex.def)             Requested size: 42.68025pt x 256.08633pt.
+
+Overfull \vbox (15.34453pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (2.11804pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[17
+
+<./figures/nor_rs_flip_flop_110.png>]
+File: ./figures/note.png Graphic file (type png)
+<use ./figures/note.png>
+Package luatex.def Info: ./figures/note.png  used on input line 63.
+(luatex.def)             Requested size: 8.27663pt x 8.53581pt.
+File: ./figures/note.png Graphic file (type png)
+<use ./figures/note.png>
+Package luatex.def Info: ./figures/note.png  used on input line 63.
+(luatex.def)             Requested size: 8.27663pt x 8.53581pt.
+File: ./figures/note.png Graphic file (type png)
+<use ./figures/note.png>
+Package luatex.def Info: ./figures/note.png  used on input line 63.
+(luatex.def)             Requested size: 8.27663pt x 8.53581pt.
+File: ./figures/background.png Graphic file (type png)
+<use ./figures/background.png>
+Package luatex.def Info: ./figures/background.png  used on input line 63.
+(luatex.def)             Requested size: 42.68025pt x 256.08633pt.
+
+Overfull \vbox (15.34453pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (2.11804pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[18
 
 ])
 \openout2 = ./content/Aufgabe4.aux
@@ -2416,7 +2516,7 @@ Overfull \hbox (2.11804pt too wide) has occurred while \output is active
 [][] 
  []
 
-[15
+[19
 
 
 
@@ -2426,12 +2526,12 @@ File: ./figures/note.png Graphic file (type png)
 <use ./figures/note.png>
 Package luatex.def Info: ./figures/note.png  used on input line 26.
 (luatex.def)             Requested size: 8.27663pt x 8.53581pt.
-<./figures/comparison001.png, id=381, 772.8875pt x 632.3625pt>
+<./figures/comparison001.png, id=472, 772.8875pt x 632.3625pt>
 File: ./figures/comparison001.png Graphic file (type png)
 <use ./figures/comparison001.png>
 Package luatex.def Info: ./figures/comparison001.png  used on input line 26.
 (luatex.def)             Requested size: 156.48528pt x 128.0374pt.
-<./figures/timing_diagram_1.png, id=382, 679.03688pt x 574.39594pt>
+<./figures/timing_diagram_1.png, id=473, 679.03688pt x 574.39594pt>
 File: ./figures/timing_diagram_1.png Graphic file (type png)
 <use ./figures/timing_diagram_1.png>
 Package luatex.def Info: ./figures/timing_diagram_1.png  used on input line 26.
@@ -2448,19 +2548,19 @@ Overfull \hbox (2.11804pt too wide) has occurred while \output is active
 [][] 
  []
 
-[16
+[20
 
 <./figures/comparison001.png><./figures/timing_diagram_1.png>]
 File: ./figures/note.png Graphic file (type png)
 <use ./figures/note.png>
 Package luatex.def Info: ./figures/note.png  used on input line 38.
 (luatex.def)             Requested size: 8.27663pt x 8.53581pt.
-<./figures/comparison100.png, id=406, 772.8875pt x 632.3625pt>
+<./figures/comparison100.png, id=498, 772.8875pt x 632.3625pt>
 File: ./figures/comparison100.png Graphic file (type png)
 <use ./figures/comparison100.png>
 Package luatex.def Info: ./figures/comparison100.png  used on input line 38.
 (luatex.def)             Requested size: 156.48528pt x 128.0374pt.
-<./figures/timing_diagram_2.png, id=407, 679.03688pt x 574.39594pt>
+<./figures/timing_diagram_2.png, id=499, 679.03688pt x 574.39594pt>
 File: ./figures/timing_diagram_2.png Graphic file (type png)
 <use ./figures/timing_diagram_2.png>
 Package luatex.def Info: ./figures/timing_diagram_2.png  used on input line 38.
@@ -2477,19 +2577,19 @@ Overfull \hbox (2.11804pt too wide) has occurred while \output is active
 [][] 
  []
 
-[17
+[21
 
 <./figures/comparison100.png><./figures/timing_diagram_2.png>]
 File: ./figures/note.png Graphic file (type png)
 <use ./figures/note.png>
 Package luatex.def Info: ./figures/note.png  used on input line 50.
 (luatex.def)             Requested size: 8.27663pt x 8.53581pt.
-<./figures/comparison000.png, id=428, 772.8875pt x 632.3625pt>
+<./figures/comparison000.png, id=521, 772.8875pt x 632.3625pt>
 File: ./figures/comparison000.png Graphic file (type png)
 <use ./figures/comparison000.png>
 Package luatex.def Info: ./figures/comparison000.png  used on input line 50.
 (luatex.def)             Requested size: 156.48528pt x 128.0374pt.
-<./figures/timing_diagram_3.png, id=429, 679.03688pt x 574.39594pt>
+<./figures/timing_diagram_3.png, id=522, 679.03688pt x 574.39594pt>
 File: ./figures/timing_diagram_3.png Graphic file (type png)
 <use ./figures/timing_diagram_3.png>
 Package luatex.def Info: ./figures/timing_diagram_3.png  used on input line 50.
@@ -2506,19 +2606,19 @@ Overfull \hbox (2.11804pt too wide) has occurred while \output is active
 [][] 
  []
 
-[18
+[22
 
 <./figures/comparison000.png><./figures/timing_diagram_3.png>]
 File: ./figures/note.png Graphic file (type png)
 <use ./figures/note.png>
 Package luatex.def Info: ./figures/note.png  used on input line 62.
 (luatex.def)             Requested size: 8.27663pt x 8.53581pt.
-<./figures/comparison010.png, id=450, 772.8875pt x 632.3625pt>
+<./figures/comparison010.png, id=543, 772.8875pt x 632.3625pt>
 File: ./figures/comparison010.png Graphic file (type png)
 <use ./figures/comparison010.png>
 Package luatex.def Info: ./figures/comparison010.png  used on input line 62.
 (luatex.def)             Requested size: 156.48528pt x 128.0374pt.
-<./figures/timing_diagram_4.png, id=451, 679.03688pt x 574.39594pt>
+<./figures/timing_diagram_4.png, id=544, 679.03688pt x 574.39594pt>
 File: ./figures/timing_diagram_4.png Graphic file (type png)
 <use ./figures/timing_diagram_4.png>
 Package luatex.def Info: ./figures/timing_diagram_4.png  used on input line 62.
@@ -2535,19 +2635,19 @@ Overfull \hbox (2.11804pt too wide) has occurred while \output is active
 [][] 
  []
 
-[19
+[23
 
 <./figures/comparison010.png><./figures/timing_diagram_4.png>]
 File: ./figures/note.png Graphic file (type png)
 <use ./figures/note.png>
 Package luatex.def Info: ./figures/note.png  used on input line 74.
 (luatex.def)             Requested size: 8.27663pt x 8.53581pt.
-<./figures/comparison111.png, id=472, 772.8875pt x 632.3625pt>
+<./figures/comparison111.png, id=565, 772.8875pt x 632.3625pt>
 File: ./figures/comparison111.png Graphic file (type png)
 <use ./figures/comparison111.png>
 Package luatex.def Info: ./figures/comparison111.png  used on input line 74.
 (luatex.def)             Requested size: 156.48528pt x 128.0374pt.
-<./figures/timing_diagram_5.png, id=473, 679.03688pt x 574.39594pt>
+<./figures/timing_diagram_5.png, id=566, 679.03688pt x 574.39594pt>
 File: ./figures/timing_diagram_5.png Graphic file (type png)
 <use ./figures/timing_diagram_5.png>
 Package luatex.def Info: ./figures/timing_diagram_5.png  used on input line 74.
@@ -2564,19 +2664,19 @@ Overfull \hbox (2.11804pt too wide) has occurred while \output is active
 [][] 
  []
 
-[20
+[24
 
 <./figures/comparison111.png><./figures/timing_diagram_5.png>]
 File: ./figures/note.png Graphic file (type png)
 <use ./figures/note.png>
 Package luatex.def Info: ./figures/note.png  used on input line 86.
 (luatex.def)             Requested size: 8.27663pt x 8.53581pt.
-<./figures/comparison011.png, id=495, 772.8875pt x 632.3625pt>
+<./figures/comparison011.png, id=587, 772.8875pt x 632.3625pt>
 File: ./figures/comparison011.png Graphic file (type png)
 <use ./figures/comparison011.png>
 Package luatex.def Info: ./figures/comparison011.png  used on input line 86.
 (luatex.def)             Requested size: 156.48528pt x 128.0374pt.
-<./figures/timing_diagram_6.png, id=496, 679.03688pt x 574.39594pt>
+<./figures/timing_diagram_6.png, id=588, 679.03688pt x 574.39594pt>
 File: ./figures/timing_diagram_6.png Graphic file (type png)
 <use ./figures/timing_diagram_6.png>
 Package luatex.def Info: ./figures/timing_diagram_6.png  used on input line 86.
@@ -2593,7 +2693,7 @@ Overfull \hbox (2.11804pt too wide) has occurred while \output is active
 [][] 
  []
 
-[21
+[25
 
 <./figures/comparison011.png><./figures/timing_diagram_6.png>])
 \openout2 = ./content/Appendix.aux
@@ -2610,13 +2710,13 @@ Overfull \hbox (2.11804pt too wide) has occurred while \output is active
 [][] 
  []
 
-[22
+[26
 
 
 
 
 ]
-<./figures/011.png, id=528, 772.8875pt x 632.3625pt>
+<./figures/011.png, id=619, 772.8875pt x 632.3625pt>
 File: ./figures/011.png Graphic file (type png)
 <use ./figures/011.png>
 Package luatex.def Info: ./figures/011.png  used on input line 28.
@@ -2633,10 +2733,10 @@ Overfull \hbox (2.11804pt too wide) has occurred while \output is active
 [][] 
  []
 
-[23
+[27
 
 <./figures/011.png>]
-<./figures/111.png, id=540, 772.8875pt x 632.3625pt>
+<./figures/111.png, id=632, 772.8875pt x 632.3625pt>
 File: ./figures/111.png Graphic file (type png)
 <use ./figures/111.png>
 Package luatex.def Info: ./figures/111.png  used on input line 45.
@@ -2653,10 +2753,10 @@ Overfull \hbox (2.11804pt too wide) has occurred while \output is active
 [][] 
  []
 
-[24
+[28
 
 <./figures/111.png>]
-<./figures/001.png, id=552, 772.8875pt x 632.3625pt>
+<./figures/001.png, id=644, 772.8875pt x 632.3625pt>
 File: ./figures/001.png Graphic file (type png)
 <use ./figures/001.png>
 Package luatex.def Info: ./figures/001.png  used on input line 59.
@@ -2673,10 +2773,10 @@ Overfull \hbox (2.11804pt too wide) has occurred while \output is active
 [][] 
  []
 
-[25
+[29
 
 <./figures/001.png>]
-<./figures/100.png, id=564, 772.8875pt x 632.3625pt>
+<./figures/100.png, id=656, 772.8875pt x 632.3625pt>
 File: ./figures/100.png Graphic file (type png)
 <use ./figures/100.png>
 Package luatex.def Info: ./figures/100.png  used on input line 77.
@@ -2693,10 +2793,10 @@ Overfull \hbox (2.11804pt too wide) has occurred while \output is active
 [][] 
  []
 
-[26
+[30
 
 <./figures/100.png>]
-<./figures/11X.png, id=576, 772.8875pt x 632.3625pt>
+<./figures/11X.png, id=668, 772.8875pt x 632.3625pt>
 File: ./figures/11X.png Graphic file (type png)
 <use ./figures/11X.png>
 Package luatex.def Info: ./figures/11X.png  used on input line 97.
@@ -2713,7 +2813,7 @@ Overfull \hbox (2.11804pt too wide) has occurred while \output is active
 [][] 
  []
 
-[27
+[31
 
 <./figures/11X.png>]
 File: ./figures/11X.png Graphic file (type png)
@@ -2732,10 +2832,10 @@ Overfull \hbox (2.11804pt too wide) has occurred while \output is active
 [][] 
  []
 
-[28
+[32
 
 ]
-<./figures/01X.png, id=599, 772.8875pt x 632.3625pt>
+<./figures/01X.png, id=692, 772.8875pt x 632.3625pt>
 File: ./figures/01X.png Graphic file (type png)
 <use ./figures/01X.png>
 Package luatex.def Info: ./figures/01X.png  used on input line 117.
@@ -2752,10 +2852,10 @@ Overfull \hbox (2.11804pt too wide) has occurred while \output is active
 [][] 
  []
 
-[29
+[33
 
 <./figures/01X.png>]
-<./figures/00X.png, id=612, 772.8875pt x 632.3625pt>
+<./figures/00X.png, id=704, 772.8875pt x 632.3625pt>
 File: ./figures/00X.png Graphic file (type png)
 <use ./figures/00X.png>
 Package luatex.def Info: ./figures/00X.png  used on input line 129.
@@ -2772,7 +2872,7 @@ Overfull \hbox (2.11804pt too wide) has occurred while \output is active
 [][] 
  []
 
-[30
+[34
 
 <./figures/00X.png>])
 \tf@nav=\write9
@@ -2795,19 +2895,19 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 61384 strings out of 478285
+ 61513 strings out of 478285
  125086,2848258 words of node,token memory allocated
- 11756 words of node memory still in use:
-   206 hlist, 12 vlist, 33 rule, 40 disc, 9 local_par, 6 math, 246 glue, 27 kern, 24 penalty, 1 margin_kern, 297 glyph, 1050 attribute, 109 glue_spec, 527 attribute_list, 6 write, 249 pdf_literal, 5 pdf_start_link, 5 pdf_end_link, 5 pdf_action, 80 pdf_colorstack, 1 pdf_setmatrix, 1 pdf_save, 1 pdf_restore nodes
-   avail lists: 1:12,2:1580,3:761,4:453,5:228,6:68,7:3049,8:59,9:577,10:17,11:229,12:1
- 78460 multiletter control sequences out of 65536+600000
+ 13792 words of node memory still in use:
+   264 hlist, 12 vlist, 43 rule, 40 disc, 9 local_par, 6 math, 292 glue, 27 kern, 24 penalty, 1 margin_kern, 297 glyph, 1322 attribute, 109 glue_spec, 663 attribute_list, 6 write, 339 pdf_literal, 5 pdf_start_link, 5 pdf_end_link, 5 pdf_action, 84 pdf_colorstack, 1 pdf_setmatrix, 1 pdf_save, 1 pdf_restore nodes
+   avail lists: 1:12,2:1272,3:587,4:404,5:217,6:68,7:3049,8:59,9:497,10:17,11:229,12:1
+ 78503 multiletter control sequences out of 65536+600000
  60 fonts using 3960407 bytes
  133i,17n,118p,1000b,2457s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmssbo10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsso10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsso8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsso9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (30 pages, 772021 bytes).
+Output written on main.pdf (34 pages, 799825 bytes).
 
-PDF statistics: 682 PDF objects out of 1000 (max. 8388607)
- 481 compressed objects within 5 object streams
- 66 named destinations out of 1000 (max. 131072)
- 1106 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 775 PDF objects out of 1000 (max. 8388607)
+ 542 compressed objects within 6 object streams
+ 74 named destinations out of 1000 (max. 131072)
+ 1326 words of extra memory for PDF output out of 10000 (max. 100000000)
 
