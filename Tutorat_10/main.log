@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/Arch Linux)  (format=lualatex 2023.7.11)  13 JUL 2023 15:49
+This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/Arch Linux)  (format=lualatex 2023.7.11)  13 JUL 2023 15:57
  system commands enabled.
  file:line:error style messages enabled.
 **main.tex
@@ -2263,6 +2263,9 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <5> not available
 (Font)              Font shape `T1/lmss/m/sl' tried instead on input line 39.
+
+Missing character: There is no − (U+2212) in font cmss8!
+Missing character: There is no − (U+2212) in font cmss8!
 File: ./figures/note.png Graphic file (type png)
 <use ./figures/note.png>
 Package luatex.def Info: ./figures/note.png  used on input line 39.
@@ -2359,7 +2362,7 @@ File: ./figures/note.png Graphic file (type png)
 <use ./figures/note.png>
 Package luatex.def Info: ./figures/note.png  used on input line 39.
 (luatex.def)             Requested size: 8.27663pt x 8.53581pt.
-<./figures/nor_rs_flip_flop_000.png, id=299, 391.4625pt x 170.6375pt>
+<./figures/nor_rs_flip_flop_000.png, id=298, 391.4625pt x 170.6375pt>
 File: ./figures/nor_rs_flip_flop_000.png Graphic file (type png)
 <use ./figures/nor_rs_flip_flop_000.png>
 Package luatex.def Info: ./figures/nor_rs_flip_flop_000.png  used on input line 39.
@@ -2383,7 +2386,7 @@ File: ./figures/note.png Graphic file (type png)
 <use ./figures/note.png>
 Package luatex.def Info: ./figures/note.png  used on input line 39.
 (luatex.def)             Requested size: 8.27663pt x 8.53581pt.
-<./figures/nor_rs_flip_flop_001.png, id=324, 391.4625pt x 170.6375pt>
+<./figures/nor_rs_flip_flop_001.png, id=323, 391.4625pt x 170.6375pt>
 File: ./figures/nor_rs_flip_flop_001.png Graphic file (type png)
 <use ./figures/nor_rs_flip_flop_001.png>
 Package luatex.def Info: ./figures/nor_rs_flip_flop_001.png  used on input line 39.
@@ -2407,7 +2410,7 @@ File: ./figures/note.png Graphic file (type png)
 <use ./figures/note.png>
 Package luatex.def Info: ./figures/note.png  used on input line 39.
 (luatex.def)             Requested size: 8.27663pt x 8.53581pt.
-<./figures/nor_rs_flip_flop_011.png, id=349, 391.4625pt x 170.6375pt>
+<./figures/nor_rs_flip_flop_011.png, id=348, 391.4625pt x 170.6375pt>
 File: ./figures/nor_rs_flip_flop_011.png Graphic file (type png)
 <use ./figures/nor_rs_flip_flop_011.png>
 Package luatex.def Info: ./figures/nor_rs_flip_flop_011.png  used on input line 39.
@@ -2431,7 +2434,7 @@ File: ./figures/note.png Graphic file (type png)
 <use ./figures/note.png>
 Package luatex.def Info: ./figures/note.png  used on input line 39.
 (luatex.def)             Requested size: 8.27663pt x 8.53581pt.
-<./figures/nor_rs_flip_flop_100.png, id=370, 391.4625pt x 170.6375pt>
+<./figures/nor_rs_flip_flop_100.png, id=369, 391.4625pt x 170.6375pt>
 File: ./figures/nor_rs_flip_flop_100.png Graphic file (type png)
 <use ./figures/nor_rs_flip_flop_100.png>
 Package luatex.def Info: ./figures/nor_rs_flip_flop_100.png  used on input line 39.
@@ -2455,7 +2458,7 @@ File: ./figures/note.png Graphic file (type png)
 <use ./figures/note.png>
 Package luatex.def Info: ./figures/note.png  used on input line 39.
 (luatex.def)             Requested size: 8.27663pt x 8.53581pt.
-<./figures/nor_rs_flip_flop_110.png, id=391, 391.4625pt x 170.6375pt>
+<./figures/nor_rs_flip_flop_110.png, id=390, 391.4625pt x 170.6375pt>
 File: ./figures/nor_rs_flip_flop_110.png Graphic file (type png)
 <use ./figures/nor_rs_flip_flop_110.png>
 Package luatex.def Info: ./figures/nor_rs_flip_flop_110.png  used on input line 39.
@@ -2526,12 +2529,12 @@ File: ./figures/note.png Graphic file (type png)
 <use ./figures/note.png>
 Package luatex.def Info: ./figures/note.png  used on input line 26.
 (luatex.def)             Requested size: 8.27663pt x 8.53581pt.
-<./figures/comparison001.png, id=472, 772.8875pt x 632.3625pt>
+<./figures/comparison001.png, id=471, 772.8875pt x 632.3625pt>
 File: ./figures/comparison001.png Graphic file (type png)
 <use ./figures/comparison001.png>
 Package luatex.def Info: ./figures/comparison001.png  used on input line 26.
 (luatex.def)             Requested size: 156.48528pt x 128.0374pt.
-<./figures/timing_diagram_1.png, id=473, 679.03688pt x 574.39594pt>
+<./figures/timing_diagram_1.png, id=472, 679.03688pt x 574.39594pt>
 File: ./figures/timing_diagram_1.png Graphic file (type png)
 <use ./figures/timing_diagram_1.png>
 Package luatex.def Info: ./figures/timing_diagram_1.png  used on input line 26.
@@ -2555,12 +2558,12 @@ File: ./figures/note.png Graphic file (type png)
 <use ./figures/note.png>
 Package luatex.def Info: ./figures/note.png  used on input line 38.
 (luatex.def)             Requested size: 8.27663pt x 8.53581pt.
-<./figures/comparison100.png, id=498, 772.8875pt x 632.3625pt>
+<./figures/comparison100.png, id=497, 772.8875pt x 632.3625pt>
 File: ./figures/comparison100.png Graphic file (type png)
 <use ./figures/comparison100.png>
 Package luatex.def Info: ./figures/comparison100.png  used on input line 38.
 (luatex.def)             Requested size: 156.48528pt x 128.0374pt.
-<./figures/timing_diagram_2.png, id=499, 679.03688pt x 574.39594pt>
+<./figures/timing_diagram_2.png, id=498, 679.03688pt x 574.39594pt>
 File: ./figures/timing_diagram_2.png Graphic file (type png)
 <use ./figures/timing_diagram_2.png>
 Package luatex.def Info: ./figures/timing_diagram_2.png  used on input line 38.
@@ -2584,12 +2587,12 @@ File: ./figures/note.png Graphic file (type png)
 <use ./figures/note.png>
 Package luatex.def Info: ./figures/note.png  used on input line 50.
 (luatex.def)             Requested size: 8.27663pt x 8.53581pt.
-<./figures/comparison000.png, id=521, 772.8875pt x 632.3625pt>
+<./figures/comparison000.png, id=520, 772.8875pt x 632.3625pt>
 File: ./figures/comparison000.png Graphic file (type png)
 <use ./figures/comparison000.png>
 Package luatex.def Info: ./figures/comparison000.png  used on input line 50.
 (luatex.def)             Requested size: 156.48528pt x 128.0374pt.
-<./figures/timing_diagram_3.png, id=522, 679.03688pt x 574.39594pt>
+<./figures/timing_diagram_3.png, id=521, 679.03688pt x 574.39594pt>
 File: ./figures/timing_diagram_3.png Graphic file (type png)
 <use ./figures/timing_diagram_3.png>
 Package luatex.def Info: ./figures/timing_diagram_3.png  used on input line 50.
@@ -2613,12 +2616,12 @@ File: ./figures/note.png Graphic file (type png)
 <use ./figures/note.png>
 Package luatex.def Info: ./figures/note.png  used on input line 62.
 (luatex.def)             Requested size: 8.27663pt x 8.53581pt.
-<./figures/comparison010.png, id=543, 772.8875pt x 632.3625pt>
+<./figures/comparison010.png, id=542, 772.8875pt x 632.3625pt>
 File: ./figures/comparison010.png Graphic file (type png)
 <use ./figures/comparison010.png>
 Package luatex.def Info: ./figures/comparison010.png  used on input line 62.
 (luatex.def)             Requested size: 156.48528pt x 128.0374pt.
-<./figures/timing_diagram_4.png, id=544, 679.03688pt x 574.39594pt>
+<./figures/timing_diagram_4.png, id=543, 679.03688pt x 574.39594pt>
 File: ./figures/timing_diagram_4.png Graphic file (type png)
 <use ./figures/timing_diagram_4.png>
 Package luatex.def Info: ./figures/timing_diagram_4.png  used on input line 62.
@@ -2642,12 +2645,12 @@ File: ./figures/note.png Graphic file (type png)
 <use ./figures/note.png>
 Package luatex.def Info: ./figures/note.png  used on input line 74.
 (luatex.def)             Requested size: 8.27663pt x 8.53581pt.
-<./figures/comparison111.png, id=565, 772.8875pt x 632.3625pt>
+<./figures/comparison111.png, id=564, 772.8875pt x 632.3625pt>
 File: ./figures/comparison111.png Graphic file (type png)
 <use ./figures/comparison111.png>
 Package luatex.def Info: ./figures/comparison111.png  used on input line 74.
 (luatex.def)             Requested size: 156.48528pt x 128.0374pt.
-<./figures/timing_diagram_5.png, id=566, 679.03688pt x 574.39594pt>
+<./figures/timing_diagram_5.png, id=565, 679.03688pt x 574.39594pt>
 File: ./figures/timing_diagram_5.png Graphic file (type png)
 <use ./figures/timing_diagram_5.png>
 Package luatex.def Info: ./figures/timing_diagram_5.png  used on input line 74.
@@ -2671,12 +2674,12 @@ File: ./figures/note.png Graphic file (type png)
 <use ./figures/note.png>
 Package luatex.def Info: ./figures/note.png  used on input line 86.
 (luatex.def)             Requested size: 8.27663pt x 8.53581pt.
-<./figures/comparison011.png, id=587, 772.8875pt x 632.3625pt>
+<./figures/comparison011.png, id=586, 772.8875pt x 632.3625pt>
 File: ./figures/comparison011.png Graphic file (type png)
 <use ./figures/comparison011.png>
 Package luatex.def Info: ./figures/comparison011.png  used on input line 86.
 (luatex.def)             Requested size: 156.48528pt x 128.0374pt.
-<./figures/timing_diagram_6.png, id=588, 679.03688pt x 574.39594pt>
+<./figures/timing_diagram_6.png, id=587, 679.03688pt x 574.39594pt>
 File: ./figures/timing_diagram_6.png Graphic file (type png)
 <use ./figures/timing_diagram_6.png>
 Package luatex.def Info: ./figures/timing_diagram_6.png  used on input line 86.
@@ -2716,7 +2719,7 @@ Overfull \hbox (2.11804pt too wide) has occurred while \output is active
 
 
 ]
-<./figures/011.png, id=619, 772.8875pt x 632.3625pt>
+<./figures/011.png, id=618, 772.8875pt x 632.3625pt>
 File: ./figures/011.png Graphic file (type png)
 <use ./figures/011.png>
 Package luatex.def Info: ./figures/011.png  used on input line 28.
@@ -2736,7 +2739,7 @@ Overfull \hbox (2.11804pt too wide) has occurred while \output is active
 [27
 
 <./figures/011.png>]
-<./figures/111.png, id=632, 772.8875pt x 632.3625pt>
+<./figures/111.png, id=631, 772.8875pt x 632.3625pt>
 File: ./figures/111.png Graphic file (type png)
 <use ./figures/111.png>
 Package luatex.def Info: ./figures/111.png  used on input line 45.
@@ -2756,7 +2759,7 @@ Overfull \hbox (2.11804pt too wide) has occurred while \output is active
 [28
 
 <./figures/111.png>]
-<./figures/001.png, id=644, 772.8875pt x 632.3625pt>
+<./figures/001.png, id=643, 772.8875pt x 632.3625pt>
 File: ./figures/001.png Graphic file (type png)
 <use ./figures/001.png>
 Package luatex.def Info: ./figures/001.png  used on input line 59.
@@ -2776,7 +2779,7 @@ Overfull \hbox (2.11804pt too wide) has occurred while \output is active
 [29
 
 <./figures/001.png>]
-<./figures/100.png, id=656, 772.8875pt x 632.3625pt>
+<./figures/100.png, id=655, 772.8875pt x 632.3625pt>
 File: ./figures/100.png Graphic file (type png)
 <use ./figures/100.png>
 Package luatex.def Info: ./figures/100.png  used on input line 77.
@@ -2796,7 +2799,7 @@ Overfull \hbox (2.11804pt too wide) has occurred while \output is active
 [30
 
 <./figures/100.png>]
-<./figures/11X.png, id=668, 772.8875pt x 632.3625pt>
+<./figures/11X.png, id=667, 772.8875pt x 632.3625pt>
 File: ./figures/11X.png Graphic file (type png)
 <use ./figures/11X.png>
 Package luatex.def Info: ./figures/11X.png  used on input line 97.
@@ -2835,7 +2838,7 @@ Overfull \hbox (2.11804pt too wide) has occurred while \output is active
 [32
 
 ]
-<./figures/01X.png, id=692, 772.8875pt x 632.3625pt>
+<./figures/01X.png, id=691, 772.8875pt x 632.3625pt>
 File: ./figures/01X.png Graphic file (type png)
 <use ./figures/01X.png>
 Package luatex.def Info: ./figures/01X.png  used on input line 117.
@@ -2855,7 +2858,7 @@ Overfull \hbox (2.11804pt too wide) has occurred while \output is active
 [33
 
 <./figures/01X.png>]
-<./figures/00X.png, id=704, 772.8875pt x 632.3625pt>
+<./figures/00X.png, id=703, 772.8875pt x 632.3625pt>
 File: ./figures/00X.png Graphic file (type png)
 <use ./figures/00X.png>
 Package luatex.def Info: ./figures/00X.png  used on input line 129.
@@ -2903,11 +2906,11 @@ Here is how much of LuaTeX's memory you used:
  78503 multiletter control sequences out of 65536+600000
  60 fonts using 3960407 bytes
  133i,17n,118p,1000b,2457s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmssbo10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsso10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsso8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsso9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (34 pages, 799821 bytes).
+{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmssbo10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsso10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsso8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsso9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on main.pdf (34 pages, 793165 bytes).
 
-PDF statistics: 775 PDF objects out of 1000 (max. 8388607)
- 542 compressed objects within 6 object streams
+PDF statistics: 771 PDF objects out of 1000 (max. 8388607)
+ 539 compressed objects within 6 object streams
  74 named destinations out of 1000 (max. 131072)
  1326 words of extra memory for PDF output out of 10000 (max. 100000000)
 
