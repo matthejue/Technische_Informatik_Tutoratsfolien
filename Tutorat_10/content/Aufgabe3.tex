@@ -12,19 +12,33 @@
 
 \setcounter{exercise}{1}
 
+\begin{frame}{Aufgabe \thesection}{NOR RS-Flipflop}
+  \begin{solutionnoinc}
+    \begin{columns}
+      \begin{column}{0.5\textwidth}
+        \begin{itemize}
+          \item Es gibt \alert{fünf stabile Belegungen}:
+          \begin{enumerate} 
+            \item {\highlightonslide<1> $a = 0$, $b = 0$, $c = 0$, $d = 1$}
+            \item {\highlightonslide<2> $a = 0$, $b = 0$, $c = 1$, $d = 0$}
+            \item {\highlightonslide<3> $a = 0$, $b = 1$, $c = 1$, $d = 0$}
+            \item {\highlightonslide<4> $a = 1$, $b = 0$, $c = 0$, $d = 1$}
+            \item {\highlightonslide<5> $a = 1$, $b = 1$, $c = 0$, $d = 0$}
+          \end{enumerate}
+        \end{itemize}
+      \end{column}
+      \begin{column}{0.5\textwidth}
+        \only<1>{\includegraphics[width=\textwidth, center]{./figures/nor_rs_flip_flop_000.png}}
+        \only<2>{\includegraphics[width=\textwidth, center]{./figures/nor_rs_flip_flop_001.png}}
+        \only<3>{\includegraphics[width=\textwidth, center]{./figures/nor_rs_flip_flop_011.png}}
+        \only<4>{\includegraphics[width=\textwidth, center]{./figures/nor_rs_flip_flop_100.png}}
+        \only<5>{\includegraphics[width=\textwidth, center]{./figures/nor_rs_flip_flop_110.png}}
+      \end{column}
+    \end{columns}
+  \end{solutionnoinc}
+\end{frame}
 \begin{frame}[allowframebreaks]{Aufgabe \thesection}{NOR RS-Flipflop}
-  \begin{solution}
-    \begin{itemize}
-      \item Es gibt \alert{fünf stabile Belegungen}:
-      \begin{enumerate}
-        \item $a = 0$, $b = 0$, $c = 0$, $d = 1$
-        \item $a = 0$, $b = 0$, $c = 1$, $d = 0$
-        \item $a = 0$, $b = 1$, $c = 1$, $d = 0$
-        \item $a = 1$, $b = 0$, $c = 0$, $d = 1$
-        \item $a = 1$, $b = 1$, $c = 0$, $d = 0$
-      \end{enumerate}
-    \end{itemize}
-  \end{solution}
+  \stepcounter{exercise}
   \begin{solution}
     \begin{itemize}
       \item bei a = b = 0 wird der aktuelle \alert{Wert gehalten}
