@@ -42,7 +42,7 @@
           \item Im Falle einer Null, wird diese in eine Eins verwandelt und man geht in den Zustand Copy. Hier wird bis zum Wortende alles kopiert. 
           \item Liest man das erste \#, so wird das Übertragsbit ausgegeben
           \begin{itemize}
-            \item Hat man schon 0en gefunden (Copy), ist das Übertragsbit 0, ansonsten 110
+            \item Hat man schon 0en gefunden (Copy), ist das Übertragsbit 0, ansonsten 1
           \end{itemize}
         \item Dann ist man am Wortende angelangt (d. h. man liest zum zweiten Mal \#), wird an die Zahl vorne ein \# angehängt und man geht zum Endzustand
         \item Wegen Vollständigkeit muss jeder Zustand je eine Kante für jeden Eingabebuchstaben besitzten. $*$ kennzeichnet eine Kante, die für alle möglichen Eingabebuchstaben gilt
