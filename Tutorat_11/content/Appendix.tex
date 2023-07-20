@@ -1,0 +1,53 @@
+%!Tex Root = ../main.tex
+% ./Packete.tex
+% ./Design.tex
+% ./Deklarationen.tex
+% ./Vorbereitung.tex
+% ./Aufgabe1.tex
+% ./Aufgabe2.tex
+% ./Aufgabe3.tex
+% ./Aufgabe4.tex
+
+\section{Appendix}
+
+\setcounter{exercise}{1}
+
+\begin{frame}{Appendix}{Mealy-Automaten zu Moore-Automaten umwandeln und vice versa}
+  \begin{columns}
+    \begin{column}{0.45\textwidth}
+      \resizebox{\textwidth}{!}{
+        \begin{minipage}[t]{10cm}
+          \ctikzfig{moore_to_mealy}
+        \end{minipage}
+      }
+      \begin{itemize}
+        \item \alert{Mealy-Automat:}
+        \begin{itemize}
+          \item \alert{Übergangsfunktion} $\delta: S \times I \rightarrow S$
+          \item \alert{Ausgabefunktion} $\lambda: S \times I \rightarrow O$
+        \end{itemize}
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.55\textwidth}
+      \resizebox{\textwidth}{!}{
+        \begin{minipage}[t]{15cm}
+          \ctikzfig{moore_to_mealy_2}
+        \end{minipage}
+      }
+      \begin{itemize}
+        \item \alert{Moore-Automat:}
+        \begin{itemize}
+          \item \alert{Übergangsfunktion} $\delta: S \times I \rightarrow S$
+          \item \alert{Ausgabefunktion} $\lambda: S \rightarrow O$
+        \end{itemize}
+      \end{itemize}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+% - was man beim Moore Automaten beachten muss, ist dass wenn man den ersten Zutand hat, im Zustand ist der Output gespeichert, also muss man sagen, entweder man beachtet den ersten Output nicht, oder man tut nen State dazu einfügen, wir machen letzteres
+% - von jedem (neu erzeugen) State im Moore Automaten aus, unabhänig vom Ouput, alle möglichen Inputs durchgehen und schauen, ob man zu einem State mit Output kommt, der bereits eingezeichnet ist oder nicht
+% - bei gleichem State und Output macht man Loop in sich selbst
+% - man zieht Output von Melay-Kante in nächsten Knoten
+% - überprüfen und Zeitspartrick: alle States zy die dem gleichen Mealy State entsprechen, müssen die gleichen Kanten haben mit gleichem Event und Kanten mit gleichen Event müssen auf den gleichen State zeigen
+% - gleichmächtig, mealy ist kompakter

@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.16.0 (TeX Live 2023/Arch Linux)  (format=lualatex 2023.4.28)  22 JUN 2023 16:06
+This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/Arch Linux)  (format=lualatex 2023.7.11)  17 JUL 2023 11:17
  system commands enabled.
  file:line:error style messages enabled.
 **main.tex
@@ -578,94 +578,15 @@ Package babel Info: Non-standard hyphenation setup on input line 118.
 \l@nohyphenation=\language3
 \l@german-x-2023-03-06=\language4
 \l@ngerman-x-2023-03-06=\language5
-\l@afrikaans=\language6
-\l@ancientgreek=\language7
-\l@ibycus=\language8
-\l@arabic=\language9
-\l@armenian=\language10
-\l@basque=\language11
-\l@belarusian=\language12
-\l@bulgarian=\language13
-\l@catalan=\language14
-\l@pinyin=\language15
-\l@churchslavonic=\language16
-\l@coptic=\language17
-\l@croatian=\language18
-\l@czech=\language19
-\l@danish=\language20
-\l@dutch=\language21
-\l@ukenglish=\language22
-\l@usenglishmax=\language23
-\l@esperanto=\language24
-\l@estonian=\language25
-\l@ethiopic=\language26
-\l@farsi=\language27
-\l@finnish=\language28
-\l@schoolfinnish=\language29
-\l@french=\language30
-\l@friulan=\language31
-\l@galician=\language32
-\l@georgian=\language33
-\l@german=\language34
-\l@ngerman=\language35
-\l@swissgerman=\language36
-\l@greek=\language37
-\l@monogreek=\language38
-\l@hungarian=\language39
-\l@icelandic=\language40
-\l@assamese=\language41
-\l@bengali=\language42
-\l@gujarati=\language43
-\l@hindi=\language44
-\l@kannada=\language45
-\l@malayalam=\language46
-\l@marathi=\language47
-\l@oriya=\language48
-\l@pali=\language49
-\l@panjabi=\language50
-\l@tamil=\language51
-\l@telugu=\language52
-\l@indonesian=\language53
-\l@interlingua=\language54
-\l@irish=\language55
-\l@italian=\language56
-\l@kurmanji=\language57
-\l@classiclatin=\language58
-\l@latin=\language59
-\l@liturgicallatin=\language60
-\l@latvian=\language61
-\l@lithuanian=\language62
-\l@macedonian=\language63
-\l@mongolian=\language64
-\l@mongolianlmc=\language65
-\l@bokmal=\language66
-\l@nynorsk=\language67
-\l@occitan=\language68
-\l@piedmontese=\language69
-\l@polish=\language70
-\l@portuguese=\language71
-\l@romanian=\language72
-\l@romansh=\language73
-\l@russian=\language74
-\l@sanskrit=\language75
-\l@serbian=\language76
-\l@serbianc=\language77
-\l@slovak=\language78
-\l@slovenian=\language79
-\l@spanish=\language80
-\l@swedish=\language81
-\l@thai=\language82
-\l@turkish=\language83
-\l@turkmen=\language84
-\l@ukrainian=\language85
-\l@uppersorbian=\language86
-\l@welsh=\language87
+\l@german=\language6
+\l@ngerman=\language7
+\l@swissgerman=\language8
 \babelcatcodetablenum=\catcodetable12
 \bbl@pattcodes=\catcodetable13
 )
 \babel@savecnt=\count332
 \U@D=\dimen293
-\l@unhyphenated=\language88
+\l@unhyphenated=\language9
  (/usr/share/texmf-dist/tex/generic/babel/luababel.def
 \bbl@attr@locale=\attribute4
 )
@@ -1123,7 +1044,7 @@ File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 \bibhang=\skip79
 \blx@bcfin=\read7
 \blx@bcfout=\write7
-\blx@langwohyphens=\language89
+\blx@langwohyphens=\language10
 \c@mincomprange=\count437
 \c@maxcomprange=\count438
 \c@mincompwidth=\count439
@@ -2729,16 +2650,16 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 61552 strings out of 478285
+ 61462 strings out of 478285
  156366,2848258 words of node,token memory allocated
  6408 words of node memory still in use:
    84 hlist, 10 vlist, 12 rule, 10 disc, 9 local_par, 12 math, 164 glue, 21 kern, 41 penalty, 1 margin_kern, 184 glyph, 452 attribute, 109 glue_spec, 228 attribute_list, 6 write, 45 pdf_literal, 7 pdf_start_link, 7 pdf_end_link, 7 pdf_action, 72 pdf_colorstack nodes
    avail lists: 1:17,2:10818,3:2567,4:987,5:460,6:269,7:6610,8:69,9:4223,10:26,11:204,12:1
- 78710 multiletter control sequences out of 65536+600000
+ 78620 multiletter control sequences out of 65536+600000
  64 fonts using 5401255 bytes
- 133i,17n,118p,1000b,2457s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 133i,17n,118p,1000b,2457s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/opentype/public/lm/lmmono8-regular.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmsans8-oblique.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmsans8-regular.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmsans9-oblique.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmsans10-oblique.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmsans17-regular.otf></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (25 pages, 435914 bytes).
+Output written on main.pdf (25 pages, 436022 bytes).
 
 PDF statistics: 619 PDF objects out of 1000 (max. 8388607)
  428 compressed objects within 5 object streams

@@ -1,0 +1,26 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=circle node] (4) at (9, 0) {$S_0$};
+		\node [style=new style 0] (7) at (6, 0) {start};
+		\node [style=circle node] (8) at (18, 6) {$S_2/11$};
+		\node [style=circle node] (9) at (18, -6) {$S_1/00$};
+		\node [style=circle node] (10) at (23.25, 6) {$S_2'/01$};
+		\node [style=circle node] (11) at (23.25, -6) {$S_1'/10$};
+		\node [style=circle node] (12) at (14, 0) {$S_0'/01$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style={graph_theory_directed_right}] (7) to (4);
+		\draw [style={graph_theory_directed_right}] (4) to node [fill=white] {1} (9);
+		\draw [style={graph_theory_directed_right}] (4) to node [fill=white] {0} (8);
+		\draw [style={graph_theory_directed_right}] (12) to (8);
+		\draw [style={graph_theory_directed_right}, bend left=15] (9) to node [fill=white] {1} (12);
+		\draw [style={graph_theory_directed_right}, bend left=15] (12) to node [fill=white] {1} (9);
+		\draw [style={graph_theory_directed_right}] (8) to node [fill=white] {1} (10);
+		\draw [style={graph_theory_directed_right}, in=135, out=45, loop] (10) to node [fill=white] {1} ();
+		\draw [style={graph_theory_directed_right}] (10) to node [fill=white] {0} (11);
+		\draw [style={graph_theory_directed_right}] (11) to node [fill=white] {1} (12);
+		\draw [style={graph_theory_directed_right}] (9) to node [fill=white] {0} (8);
+		\draw [style={graph_theory_directed_right}, bend left=15] (8) to node [fill=white] {0} (11);
+		\draw [style={graph_theory_directed_right}, bend left=15] (11) to node [fill=white] {0} (8);
+	\end{pgfonlayer}
+\end{tikzpicture}
