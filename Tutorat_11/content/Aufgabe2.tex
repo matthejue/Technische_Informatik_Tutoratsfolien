@@ -112,12 +112,12 @@
     \end{frame}
 
     \begin{frame}{Aufgabe \thesection}{Reduktion von Mealy Automaten, Schaltwerke}
-        \begin{block}{Lösung}
+        \begin{solution}
           \begin{itemize}
             \item $s_{i} = (z_1, z_0), s_{1,6} = (0, 0), s_{2,4} = (0, 1), s_{3} = (1, 0), s_{5} = (1, 1)$
           \end{itemize}
           \includegraphics[height=0.5\paperheight, center]{./figures/Mealy-reduziert-Übergangstafel.png}
-        \end{block}
+        \end{solution}
     \end{frame}
 
     \begin{frame}{Aufgabe \thesection}{Reduktion von Mealy Automaten, Schaltwerke}
@@ -126,9 +126,9 @@
       % \end{exercisenoinc}
       \begin{solution}
         \begin{itemize}
-          \item $z_0^{t+1} = \overline{x}\overline{z_1^t}\overline{z_0^t} +  x\overline{z_1^t}\overline{z_0^t} + \overline{x}z_1^t\overline{z_0^t} + xz_1^t\overline{z_0^t} \overset{Red.}{=} \overline{z}_0^t$
-          \item $z_1^{t+1} = \overline{x}\overline{z_1^t}\overline{z_0^t} + \overline{x}\overline{z_1^t}z_0^t \overset{Red.}{=} \overline{x + z_1^t} = \overline{x} \cdot \overline{z}_1^t$
-          \item $y         = \overline{x}\overline{z_1^t}z_0^t + x\overline{z_1^t}z_0^t + xz_1^t\overline{z_0^t} + \overline{x}z_1^tz_0^t + xz_1^tz_0^t \overset{Red.}{=} z_0^t + x \cdot z_1^t$
+          \item $z_0^{t+1} = \overline{x}\overline{z_1^t}\overline{z_0^t} +  x\overline{z_1^t}\overline{z_0^t} + \overline{x}z_1^t\overline{z_0^t} + xz_1^t\overline{z_0^t}$\only<2>{$\overset{Red.}{=} \overline{z}_0^t$}
+          \item $z_1^{t+1} = \overline{x}\overline{z_1^t}\overline{z_0^t} + \overline{x}\overline{z_1^t}z_0^t$\only<2>{$\overset{Red.}{=} \overline{x + z_1^t} = \overline{x} \cdot \overline{z}_1^t$}
+          \item $y         = \overline{x}\overline{z_1^t}z_0^t + x\overline{z_1^t}z_0^t + xz_1^t\overline{z_0^t} + \overline{x}z_1^tz_0^t + xz_1^tz_0^t$\only<2>{$\overset{Red.}{=} z_0^t + x \cdot z_1^t$}
         \end{itemize}
         \includegraphics[height=0.5\paperheight, center]{./figures/Mealy-reduziert-Schaltwerk.png}
       \end{solution}
