@@ -14,7 +14,7 @@
 
 \begin{frame}{Appendix}{Reduktion von Zustandsdiagrammen}
   \begin{itemize}
-    \item \alert{Hinreichende Bedingung:} Wenn bei zwei Zuständen bei gleicher Eingabe auch die gleiche Ausgabe erzeugt wird und der gleiche Folgezustand angenommen wird, dann sind die Zustände sicherlich äquivalent.
+    \item \alert{Hinreichende Bedingung:} Wenn bei zwei Zuständen bei gleicher Eingabe auch die gleiche Ausgabe erzeugt wird und der gleiche Folgezustand angenommen wird, dann sind die Zustände äquivalent
   \end{itemize}
 \end{frame}
 
@@ -51,9 +51,32 @@
   \end{columns}
 \end{frame}
 
+\begin{frame}{Appendix}{Gruppen von endlichen Automaten}
+  \begin{itemize}
+    \item \alert{Akzeptoren}
+    \item \alert{Transduktoren}, darunter fallen:
+      \begin{itemize}
+        \item \alert{Moore-Automaten}
+        \item \alert{Mealy-Automaten}
+      \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Appendix}{Tricks beim Design von endlichen Automaten}
+  \begin{itemize}
+    \item \alert{Äquivalenzrelation Nerode-Rechtskongruenz:} $x \sim_L y \Longleftrightarrow\left(\forall z \in \Sigma^*: x z \in L \Longleftrightarrow y z \in L\right)$
+  \end{itemize}
+\end{frame}
+
 % - was man beim Moore Automaten beachten muss, ist dass wenn man den ersten Zutand hat, im Zustand ist der Output gespeichert, also muss man sagen, entweder man beachtet den ersten Output nicht, oder man tut nen State dazu einfügen, wir machen letzteres
 % - von jedem (neu erzeugen) State im Moore Automaten aus, unabhänig vom Ouput, alle möglichen Inputs durchgehen und schauen, ob man zu einem State mit Output kommt, der bereits eingezeichnet ist oder nicht
 % - bei gleichem State und Output macht man Loop in sich selbst
 % - man zieht Output von Melay-Kante in nächsten Knoten
 % - überprüfen und Zeitspartrick: alle States zy die dem gleichen Mealy State entsprechen, müssen die gleichen Kanten haben mit gleichem Event und Kanten mit gleichen Event müssen auf den gleichen State zeigen
 % - gleichmächtig, mealy ist kompakter
+%
+% Begriffe:
+% - Acceptor, Transducer
+% - Schaltwerk
+% - Zustandsdiagramm
+% - Zustands- und Ausgangstafel
