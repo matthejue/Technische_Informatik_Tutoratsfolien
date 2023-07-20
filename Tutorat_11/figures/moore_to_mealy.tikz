@@ -6,7 +6,7 @@
 		\node [style=new style 0] (3) at (-9, 0) {start};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
-		\draw [style={graph_theory_directed_right}, bend left, looseness=1.25] (1) to node [fill=white] {0/10} (2);
+		\draw [style={graph_theory_directed_right}, bend left, looseness=1.25] (1) to node [fill=white] {0/11} (2);
 		\draw [style={graph_theory_directed_right}, bend left, looseness=1.25] (2) to node [fill=white] {0/10} (1);
 		\draw [style={graph_theory_directed_right}, bend left=15] (0) to node [fill=white] {1/00} (1);
 		\draw [style={graph_theory_directed_right}, in=-15, out=-165] (1) to node [fill=white] {1/01} (0);
