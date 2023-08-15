@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/Arch Linux)  (format=lualatex 2023.7.11)  13 JUL 2023 15:59
+This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/Arch Linux)  (format=lualatex 2023.7.29)  15 AUG 2023 15:54
  system commands enabled.
  file:line:error style messages enabled.
 **main.tex
@@ -2899,12 +2899,12 @@ Here is how much of LuaTeX's memory you used:
  125086,2848258 words of node,token memory allocated
  13792 words of node memory still in use:
    264 hlist, 12 vlist, 43 rule, 40 disc, 9 local_par, 6 math, 292 glue, 27 kern, 24 penalty, 1 margin_kern, 297 glyph, 1322 attribute, 109 glue_spec, 663 attribute_list, 6 write, 339 pdf_literal, 5 pdf_start_link, 5 pdf_end_link, 5 pdf_action, 84 pdf_colorstack, 1 pdf_setmatrix, 1 pdf_save, 1 pdf_restore nodes
-   avail lists: 1:12,2:1272,3:587,4:404,5:217,6:68,7:3049,8:59,9:497,10:17,11:229,12:1
+   avail lists: 1:11,2:1272,3:587,4:404,5:217,6:68,7:3049,8:59,9:497,10:17,11:229,12:1
  78503 multiletter control sequences out of 65536+600000
  60 fonts using 3960407 bytes
  133i,17n,118p,1000b,2457s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmssbo10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsso10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsso8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsso9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (34 pages, 800239 bytes).
+Output written on main.pdf (34 pages, 802949 bytes).
 
 PDF statistics: 775 PDF objects out of 1000 (max. 8388607)
  542 compressed objects within 6 object streams
