@@ -6,31 +6,40 @@
 % ./Aufgabe2.tex
 % ./Aufgabe3.tex
 % ./Aufgabe4.tex
-% ./Appendix.tex
+% ./Bonus.tex
 
 \section{Aufgabe 1}
 
 \setcounter{exercise}{1}
 
-\begin{frame}[allowframebreaks]{Aufgabe \thesection}{Betrag Zweierkomplementzahl}
-
-\begin{exercisenoinc}
-Entwickle einen Schaltkreis zu:\\
-$$abs_n\ :\ \mathbb{B}^n\rightarrow\mathbb{B}^n, (a_{n-1},...,a_0)\mapsto (s_{n-1},...,s_0)$$
-$$\langle s_{n-1},...,s_0\rangle = |[a_{n-1},...,a_0]|$$
-\end{exercisenoinc}
-
-\begin{requirementsnoinc}
-    $[]$ steht für 2er-Komplement, $\langle\rangle$ ist die \dq klassische\dq\ Binär-Interpretation.\\
-\end{requirementsnoinc}
-
-\begin{solutionnoinc}
-    \center \includegraphics[width=150pt]{figures/Absolute.png}
-\end{solutionnoinc}
-
-\begin{solutionnoinc}
-    $cost(abs_n)=cost(INC_n-1)+(n-1)\cdot cost(XOR)=(n-1)\cdot cost(HA)+(n-1)$\\ $\qquad\qquad\ \ =3(n-1)$\\\ \\
-    Es gibt \textbf{keinen} Überlauf!\quad $|[10...0]|= \langle 10...0\rangle$
-\end{solutionnoinc}
-
+\begin{frame}[fragile, allowframebreaks]{Aufgabe \thesection}{RETI}
+    % \begin{requirementsnoinc}
+    % \end{requirementsnoinc}
+    \begin{exercisenoinc}
+      Es gilt für $n\ge 0$:
+      \begin{align*}
+        &f(0) = 0\\
+        &f(1) = 1\\
+        &f(n)={f(n-1)+f(n-2)}\qquad (\text{für}\;n\geq2)
+      \end{align*}
+    \end{exercisenoinc}
+    \begin{solutionnoinc}
+      \numberedcodebox[minted language=c, minted options={fontsize=\tiny,linenos}]{./figures/example_fib_it_simple.picoc}
+    \end{solutionnoinc}
+    \begin{solutionnoinc}
+      \begin{columns}
+        \begin{column}[t]{0.5\textwidth}
+          \numberedcodebox[minted language=text, minted options={fontsize=\tiny,linenos}]{./figures/fib_it_simple.reti}
+        \end{column}
+        \begin{column}[t]{0.5\textwidth}
+          \numberedcodebox[minted language=text, minted options={fontsize=\tiny,linenos,firstnumber=13}]{./figures/fib_it_simple_2.reti}
+        \end{column}
+      \end{columns}
+      \vspace{0.5cm}
+    \end{solutionnoinc}
+    \begin{solutionnoinc}
+      \centering
+      \href{https://asciinema.org/a/583721}{\includegraphics[width=0.6\textwidth]{./figures/fib_video.png}}
+    \end{solutionnoinc}
+    % highlightlines={5,15,18}
 \end{frame}
